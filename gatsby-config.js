@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `The Localhost Blogs`,
-    description: `This is my coding blog where I write about my coding journey.`,
+    title: `DWIM`,
+    description: `Do What I Mean`,
   },
   plugins: [
     {

@@ -1,22 +1,22 @@
-import { graphql, Link } from 'gatsby';
-
 import React from 'react';
 
-import { Layout } from '../components/Layout';
+import { graphql } from 'gatsby';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCopy, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+import Layout from '../components/Layout';
+import Teaser from '../components/Teaser';
+
+
+library.add(faCopy, faArrowLeft, faArrowRight)
+
 
 export default ({ data }) => {
   return (
     <>
       <Layout>
-        {data.allMdx.nodes.map(({ excerpt, frontmatter, fields }) => (
-          <>
-            <Link to={fields.slug}>
-                <h1>{frontmatter.title}</h1>
-            </Link>
-            <p>{frontmatter.date}</p>
-            <p>{excerpt}</p>
-          </>
-        ))}
+        {data.allMdx.nodes.slice(0,7).map(props => <Teaser {...props} />)}
       </Layout>
     </>
   );
@@ -33,7 +33,7 @@ export const query = graphql`
         excerpt(pruneLength: 250)
         frontmatter {
           title
-          date
+          date(formatString: "YYYY MMMM Do")
         }
         fields {
           slug

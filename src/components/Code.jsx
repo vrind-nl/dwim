@@ -1,7 +1,12 @@
-import Highlight, { defaultProps } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/nightOwl';
 import React from 'react';
+
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import theme from 'prism-react-renderer/themes/palenight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { copyToClipboard } from '../utils/copy-to-clipboard';
+import styles from "./Code.module.css";
+
 
 const Code = ({ codeString, language }) => {
   return (
@@ -17,8 +22,8 @@ const Code = ({ codeString, language }) => {
         getLineProps,
         getTokenProps,
       }) => (
-        <pre className={className} style={style}>
-          <button onClick={() => copyToClipboard(codeString)}>Copy</button>
+        <pre className={`${styles.code} ${className}`} style={style}>
+          <button className={styles.copy} onClick={() => copyToClipboard(codeString)}><FontAwesomeIcon icon="copy" /></button>
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (

@@ -8,10 +8,17 @@
     "build": "gatsby build",
     "serve": "gatsby serve -o"
   },
-  "keywords": ["blog", "gatsby"],
-  "author": "Random Rambler <randomrambler@gmail.com>",
+  "keywords": [
+    "blog",
+    "gatsby"
+  ],
+  "author": "Random Rambler",
+  "email": "randomrambler@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
     "gatsby": "^2.18.21",
@@ -19,7 +26,6 @@
     "gatsby-source-filesystem": "^2.1.46",
     "prism-react-renderer": "^1.0.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-live": "^2.2.2"
+    "react-dom": "^16.12.0"
   }
 }

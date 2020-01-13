@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
-import { Header } from './Header';
+import "./Layout.css";
+import info from "../../package.json";
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -20,12 +21,18 @@ const useSiteMetadata = () => {
   return site.siteMetadata;
 };
 
-export const Layout = ({ children }) => {
+export default ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
     <>
-      <Header siteTitle={title} siteDescription={description} />
+      <div className="header">
+        <Link to="/" style={{float: "left"}}>
+          <h1>{title}</h1>
+        </Link>
+        <p style={{float: "right"}}>{description}</p>
+      </div>
       {children}
+      <footer>&copy; 2020 <a href={"mailto:" + info.email}>{info.author}</a>, v{info.version}</footer>
     </>
   );
 };
