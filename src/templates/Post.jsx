@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 
 
 function PostLink({fields, frontmatter, side}) {
+  if(!fields) return "";
   return <div style={{float: side}}>
     <Link to={fields.slug}>
         {side === "left" ? <FontAwesomeIcon icon="arrow-left" /> : null}
@@ -27,8 +28,8 @@ export default ({ data, pageContext }) => {
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
       <div style={{overflow: "hidden"}}>
-        {previous === false ? null : <PostLink {...previous} side="left" />}
-        {next === false ? null : <PostLink {...next} side="right"/>}
+        <PostLink {...previous} side="left" />
+        <PostLink {...next} side="right"/>
       </div>
     </Layout>
   );

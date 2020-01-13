@@ -23,6 +23,8 @@
     "@mdx-js/react": "^1.5.3",
     "gatsby": "^2.18.21",
     "gatsby-plugin-mdx": "^1.0.67",
+    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-remark-images": "^3.1.42",
     "gatsby-source-filesystem": "^2.1.46",
     "prism-react-renderer": "^1.0.2",
     "react": "^16.12.0",
