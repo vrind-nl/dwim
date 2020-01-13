@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `DWIM`,
+    title: `DWIM(.nl)`,
     description: `Do What I Mean`,
   },
   plugins: [

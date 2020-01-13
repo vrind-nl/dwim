@@ -9,6 +9,7 @@ So, another attempt to start a blog.
 I have been looking for a platform to blog. It should support...
 
 * templates,
+* comments (without tracking, ads or vendor lock-in),
 * tags,
 * history and
 * search. 
@@ -25,4 +26,5 @@ I have looked into Nikola, org-publish, Jeckyll and the likes, but never really 
 So now I have decided to see if I can start one from scratch, based on Gatsby:
 
 1. I started off with this [fantastic tutorial](https://www.freecodecamp.org/news/build-a-developer-blog-from-scratch-with-gatsby-and-mdx/).
-2. I added a [Github pages publish workflow](https://github.com/marketplace/actions/deploy-to-github-pages) (inspired by [gatsby-starter-olga](https://github.com/orgapp/gatsby-starter-orga/blob/master/.github/workflows/ci.yml)). I also needed to [create a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and [store it as a secret](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+2. I added a [Github pages publish workflow](https://github.com/marketplace/actions/deploy-to-github-pages) (inspired by [gatsby-starter-olga](https://github.com/orgapp/gatsby-starter-orga/blob/master/.github/workflows/ci.yml)). I also needed to [create a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and [store it as a secret](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets).
+3. I added comments, using [utteranc.es](https://utteranc.es/) through [react-utterances](https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/react-utterances).

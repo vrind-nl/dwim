@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactUtterences from 'react-utterances'
 
 import Layout from '../components/Layout';
 
@@ -27,6 +28,7 @@ export default ({ data, pageContext }) => {
       <p style={{textAlign: "right", fontSize: "80%"}}>{frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
+      <ReactUtterences repo="randomrambler/dwim" type="pathname" />
       <div style={{overflow: "hidden"}}>
         <PostLink {...previous} side="left" />
         <PostLink {...next} side="right"/>
