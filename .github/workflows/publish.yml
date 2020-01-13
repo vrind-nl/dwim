@@ -15,11 +15,11 @@ jobs:
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 10.x
     - name: Build the Website
       run: |
-        npm ci
-        npm run build -- --prefix-paths
+        yarn
+        yarn run build
       env:
         CI: true
     - name: Deploy to GitHub Pages
