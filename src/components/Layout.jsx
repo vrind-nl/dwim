@@ -7,7 +7,7 @@ import "./Layout.css";
 import info from "../../package.json";
 
 const useSiteMetadata = () => {
-  const { site } = useStaticQuery(
+  return useStaticQuery(
     graphql`
       query SITE_METADATA_QUERY {
         site {
@@ -16,14 +16,33 @@ const useSiteMetadata = () => {
             description
           }
         }
-      }
+
+        allMdx(
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { frontmatter: { published: { eq: true }, pinned: { eq: true } } }
+        ) {
+          nodes {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+              title
+              date(formatString: "YYYY MMMM Do")
+            }
+            fields {
+              slug
+            }
+          }
+        }
+    }
     `
   );
-  return site.siteMetadata;
 };
 
 export default ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { site, allMdx } = useSiteMetadata();
+  const { title, description } = site.siteMetadata;
+  const pinned = allMdx.nodes;
+
   return (
     <>
       <div className="header">
@@ -36,6 +55,7 @@ export default ({ children }) => {
         <button onClick={() => navigate("/")}>Home</button>
         <button onClick={() => navigate("/tags")}>Tags</button>
         <button onClick={() => navigate("/archive")}>Archive</button>
+        {pinned.map(post => <button onClick={() => navigate(post.fields.slug)}>{post.frontmatter.title}</button>)}
       </div>
       {children}
       <footer>&copy; 2020 <a href={"mailto:" + info.email}>{info.author}</a>, v{info.version}</footer>
