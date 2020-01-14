@@ -25,7 +25,7 @@ export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
   return (
-    <Layout>
+    <Layout page={frontmatter.title}>
       <p style={{textAlign: "right", fontSize: "80%"}}>{frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>

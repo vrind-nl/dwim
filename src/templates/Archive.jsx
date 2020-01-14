@@ -9,7 +9,7 @@ export default ({ pageContext }) => {
   const { posts } = pageContext;
   console.log(posts);
   return (
-    <Layout>
+    <Layout page="Archive">
       <h1>Archive</h1>
       <ul>
         { posts.map(post => <li key={post.fields.slug}>{post.frontmatter.date}: <Link to={post.fields.slug}>{post.frontmatter.title}</Link></li>) }

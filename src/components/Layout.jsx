@@ -38,13 +38,14 @@ const useSiteMetadata = () => {
   );
 };
 
-export default ({ children }) => {
+export default ({ page, children }) => {
   const { site, allMdx } = useSiteMetadata();
   const { title, description } = site.siteMetadata;
   const pinned = allMdx.nodes;
 
   return (
     <>
+      <title>{title + (page ? " - " + page : "")}</title>
       <div className="header">
         <Link to="/" style={{float: "left"}}>
           <h1>{title}</h1>

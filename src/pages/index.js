@@ -16,7 +16,7 @@ library.add(faCopy, faArrowLeft, faArrowRight)
 export default ({ data }) => {
   return (
     <>
-      <Layout>
+      <Layout page="Home">
         {data.allMdx.nodes.slice(0,7).map(props => <Teaser {...props} />)}
       </Layout>
     </>

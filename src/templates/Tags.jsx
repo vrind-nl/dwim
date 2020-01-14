@@ -9,7 +9,7 @@ export default ({ pageContext }) => {
   const { tags } = pageContext;
 
   return (
-    <Layout>
+    <Layout page="Tags">
       <h1>Tags</h1>
       {Object.keys(tags).map(tag => <div className="block">
         <h2 id={tag}>{tag}</h2>
