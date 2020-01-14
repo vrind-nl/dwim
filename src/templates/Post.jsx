@@ -30,11 +30,11 @@ export default ({ data, pageContext }) => {
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
       <Tags tags={frontmatter.tags}>tags:</Tags>
-      <ReactUtterences repo="randomrambler/dwim" type="pathname" />
       <div style={{overflow: "hidden"}}>
         <PostLink {...previous} side="left" />
         <PostLink {...next} side="right"/>
       </div>
+      <ReactUtterences repo="randomrambler/dwim" type="pathname" />
     </Layout>
   );
 };
@@ -45,7 +45,7 @@ export const query = graphql`
       body
       frontmatter {
         title
-        date(formatString: "YYYY MMMM Do")
+        date(formatString: "MMMM Do, YYYY")
         tags
       }
     }
