@@ -2,6 +2,7 @@ import React from 'react';
 
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import { navigate } from '@reach/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import "./Layout.css";
 import info from "../../package.json";
@@ -53,10 +54,15 @@ export default ({ page, children }) => {
         <p style={{float: "right"}}><i>{description}</i></p>
       </div>
       <div className="header">
-        <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("/tags")}>Tags</button>
-        <button onClick={() => navigate("/archive")}>Archive</button>
-        {pinned.map(post => <button onClick={() => navigate(post.fields.slug)}>{post.frontmatter.title}</button>)}
+        <div style={{float: "left"}}>
+          <button onClick={() => navigate("/")}>Home</button>
+          <button onClick={() => navigate("/tags")}>Tags</button>
+          <button onClick={() => navigate("/archive")}>Archive</button>
+        </div>
+        <div style={{float: "right"}}>
+          {pinned.map(post => <button onClick={() => navigate(post.fields.slug)}>{post.frontmatter.title}</button>)}
+          <button onClick={() => navigate("/rss.xml")}><FontAwesomeIcon icon="rss"/></button>
+        </div>
       </div>
       {children}
       <footer>&copy; 2020 <a href={"mailto:" + info.email}>{info.author}</a>, v{info.version}</footer>

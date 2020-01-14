@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 
 export default ({ pageContext }) => {
   const { posts } = pageContext;
-  console.log(posts);
+
   return (
     <Layout page="Archive">
       <h1>Archive</h1>
