@@ -49,7 +49,7 @@ export default ({ children }) => {
         <Link to="/" style={{float: "left"}}>
           <h1>{title}</h1>
         </Link>
-        <p style={{float: "right"}}>{description}</p>
+        <p style={{float: "right"}}><i>{description}</i></p>
       </div>
       <div className="header">
         <button onClick={() => navigate("/")}>Home</button>
