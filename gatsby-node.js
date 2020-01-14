@@ -19,6 +19,8 @@ exports.createPages = ({ actions, graphql }) => {
           }
           frontmatter {
             title
+            date(formatString: "YYYY MMMM Do")
+            tags
           }
         }
       }
@@ -29,23 +31,40 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMdx.nodes;
+    const tags = {};
 
     // create page for each mdx node
     posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1];
+      const {fields, frontmatter} = post;
+      const previous = index === posts.length - 1 ? null : posts[index + 1];
       const next = index === 0 ? null : posts[index - 1];
 
       createPage({
-        path: post.fields.slug,
+        path: fields.slug,
         component: blogPostTemplate,
         context: {
-          slug: post.fields.slug,
+          slug: fields.slug,
           previous,
           next,
         },
       });
+
+      frontmatter.tags.forEach(tag => {
+        const context = { slug: fields.slug, title: frontmatter.title, date: frontmatter.date };
+        if(tag in tags) {
+          tags[tag].push(context);
+        } else {
+          tags[tag] = [context];
+        }
+      })
     });
+    createPage({
+      path: "tags",
+      component: path.resolve('src/templates/Tags.jsx'),
+      context: {
+        tags
+      }
+    })
   });
 };
 

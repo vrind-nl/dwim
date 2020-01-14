@@ -1,0 +1,7 @@
+.block {
+    background-color: #eee;
+    padding: 4pt;
+    margin: 6pt 0 6pt;
+    border-radius: 4pt;
+    overflow: hidden;
+}

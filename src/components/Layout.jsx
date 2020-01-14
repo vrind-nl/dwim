@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import { navigate } from '@reach/router';
 
 import "./Layout.css";
 import info from "../../package.json";
@@ -30,6 +31,10 @@ export default ({ children }) => {
           <h1>{title}</h1>
         </Link>
         <p style={{float: "right"}}>{description}</p>
+      </div>
+      <div className="header">
+        <button onClick={() => navigate("/")}>Home</button>
+        <button onClick={() => navigate("tags")}>Tags</button>
       </div>
       {children}
       <footer>&copy; 2020 <a href={"mailto:" + info.email}>{info.author}</a>, v{info.version}</footer>

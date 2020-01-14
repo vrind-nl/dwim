@@ -7,6 +7,7 @@ import { faCopy, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-i
 
 import Layout from '../components/Layout';
 import Teaser from '../components/Teaser';
+import "./index.css";
 
 
 library.add(faCopy, faArrowLeft, faArrowRight)

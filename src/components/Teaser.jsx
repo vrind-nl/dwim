@@ -6,9 +6,8 @@ import styles from "./Teaser.module.css";
 
 
 export default ({ excerpt, frontmatter, fields }) => {
-  console.log(excerpt)
   return (
-    <div className={styles.teaser}>
+    <div className="block">
         <p className={styles.date}>{frontmatter.date}</p>
         <Link to={fields.slug}>
             <h2>{frontmatter.title}</h2>

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ReactUtterences from 'react-utterances'
 
 import Layout from '../components/Layout';
+import Tags from '../components/Tag';
 
 
 function PostLink({fields, frontmatter, side}) {
@@ -28,6 +29,7 @@ export default ({ data, pageContext }) => {
       <p style={{textAlign: "right", fontSize: "80%"}}>{frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
+      <Tags tags={frontmatter.tags}/>
       <ReactUtterences repo="randomrambler/dwim" type="pathname" />
       <div style={{overflow: "hidden"}}>
         <PostLink {...previous} side="left" />
@@ -44,6 +46,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY MMMM Do")
+        tags
       }
     }
   }
