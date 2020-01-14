@@ -34,7 +34,8 @@ export default ({ children }) => {
       </div>
       <div className="header">
         <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("tags")}>Tags</button>
+        <button onClick={() => navigate("/tags")}>Tags</button>
+        <button onClick={() => navigate("/archive")}>Archive</button>
       </div>
       {children}
       <footer>&copy; 2020 <a href={"mailto:" + info.email}>{info.author}</a>, v{info.version}</footer>

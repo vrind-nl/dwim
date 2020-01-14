@@ -33,6 +33,12 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMdx.nodes;
     const tags = {};
 
+    createPage({
+      path: "archive",
+      component: path.resolve('src/templates/Archive.jsx'),
+      context: { posts },
+    });
+
     // create page for each mdx node
     posts.forEach((post, index) => {
       const {fields, frontmatter} = post;

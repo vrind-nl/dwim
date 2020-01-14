@@ -29,7 +29,7 @@ export default ({ data, pageContext }) => {
       <p style={{textAlign: "right", fontSize: "80%"}}>{frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
-      <Tags tags={frontmatter.tags}/>
+      <Tags tags={frontmatter.tags}>tags:</Tags>
       <ReactUtterences repo="randomrambler/dwim" type="pathname" />
       <div style={{overflow: "hidden"}}>
         <PostLink {...previous} side="left" />

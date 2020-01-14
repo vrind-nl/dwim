@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 
 export default ({ pageContext }) => {
   const { tags } = pageContext;
-  console.log(tags);
+
   return (
     <Layout>
       <h1>Tags</h1>
