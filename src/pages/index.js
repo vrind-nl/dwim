@@ -2,15 +2,9 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCopy, faArrowLeft, faArrowRight, faRss } from '@fortawesome/free-solid-svg-icons'
-
 import Layout from '../components/Layout';
 import Teaser from '../components/Teaser';
 import "./index.css";
-
-
-library.add(faCopy, faArrowLeft, faArrowRight, faRss)
 
 
 export default ({ data }) => {

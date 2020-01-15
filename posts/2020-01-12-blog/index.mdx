@@ -30,7 +30,8 @@ So now I have decided to see if I can start one from scratch, based on [Gatsby](
 2. I added a [Github pages publish workflow](https://github.com/marketplace/actions/deploy-to-github-pages) (inspired by [gatsby-starter-olga](https://github.com/orgapp/gatsby-starter-orga/blob/master/.github/workflows/ci.yml)). I also needed to [create a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and [store it as a secret](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets).
 3. I added comments, using [utteranc.es](https://utteranc.es/) through [react-utterances](https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/react-utterances).
 4. I added tags, archive and pinned pages myself.
+5. I added RSS feeds using [gatsby-plugin-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-feed/).
 
 I have decided against adding org-mode support with [gatsby-transformer-orga](https://www.gatsbyjs.org/packages/gatsby-transformer-orga/), because I couldn't figure out an elegant way to support multiple input formats.
 
-This leaves feeds and search as final wishes.
+This leaves search as final wish.

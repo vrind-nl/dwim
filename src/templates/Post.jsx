@@ -2,8 +2,8 @@ import React from 'react';
 
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ReactUtterences from 'react-utterances'
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import Layout from '../components/Layout';
 import Tags from '../components/Tag';
@@ -13,9 +13,9 @@ function PostLink({fields, frontmatter, side}) {
   if(!fields) return "";
   return <div style={{float: side}}>
     <Link to={fields.slug}>
-        {side === "left" ? <FontAwesomeIcon icon="arrow-left" /> : null}
+        {side === "left" ? <FaArrowLeft /> : null}
         &nbsp;{frontmatter.title}&nbsp;
-        {side === "right" ? <FontAwesomeIcon icon="arrow-right" /> : null}
+        {side === "right" ? <FaArrowRight /> : null}
     </Link>
   </div>
 }

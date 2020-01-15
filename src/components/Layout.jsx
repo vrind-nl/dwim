@@ -2,7 +2,7 @@ import React from 'react';
 
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import { navigate } from '@reach/router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaGithub, FaRss } from "react-icons/fa";
 
 import "./Layout.css";
 import info from "../../package.json";
@@ -61,7 +61,10 @@ export default ({ page, children }) => {
         </div>
         <div style={{float: "right"}}>
           {pinned.map(post => <button onClick={() => navigate(post.fields.slug)}>{post.frontmatter.title}</button>)}
-          <button onClick={() => navigate("/rss.xml")}><FontAwesomeIcon icon="rss"/></button>
+          <button onClick={() => navigate("/rss.xml")}><FaRss/></button>
+          <button onClick={() => navigate("https://github.com/randomrambler/dwim")}>
+            <FaGithub/>
+          </button>
         </div>
       </div>
       {children}
