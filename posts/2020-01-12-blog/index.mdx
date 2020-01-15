@@ -8,7 +8,7 @@ tags: [meta, tech]
 I have been looking for a platform to blog. It should support...
 
 * templates,
-* comments (without tracking, ads or vendor lock-in),
+* comments,
 * tags,
 * archive,
 * feeds (RSS or Atom) and
@@ -19,8 +19,9 @@ On the technical side, I [want](/2020-01-01-about%20me/) it to...
 * be open source, 
 * allow me to edit the posts locally in any editor I please (which requires flat-file input),
 * support Markdown and (preferably) Org-mode input,
-* maintain version history of the content
-* deploy to Github Pages (which requires output a site without backend))
+* maintain version history of the content,
+* deploy to Github Pages (which requires output a site without backend)),
+* be as free of tracking, ads or vendor lock-in as possible.
 
 I have looked into [Nikola](https://getnikola.com/), [org-publish](https://orgmode.org/manual/Publishing.html), [Jekyll](https://jekyllrb.com/) and the likes, but never really liked one.
 
@@ -32,6 +33,15 @@ So now I have decided to see if I can start one from scratch, based on [Gatsby](
 4. I added tags, archive and pinned pages myself.
 5. I added RSS feeds using [gatsby-plugin-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-feed/).
 
-I have decided against adding org-mode support with [gatsby-transformer-orga](https://www.gatsbyjs.org/packages/gatsby-transformer-orga/), because I couldn't figure out an elegant way to support multiple input formats.
+Based on the Gatsby page about [adding search](https://www.gatsbyjs.org/docs/adding-search/) it seems you need some backend for search. As I don't want a backend, the blog will not have a search feature for now.
 
-This leaves search as final wish.
+I have also decided against adding org-mode support with [gatsby-transformer-orga](https://www.gatsbyjs.org/packages/gatsby-transformer-orga/), because I couldn't figure out an elegant way to support multiple input formats and I am fine with Markdown for now.
+
+My workflow is now really simple:
+
+1. To add a post, I create a folder in `/posts` with an `index.mdx` file in it.
+2. I edit `index.mdx` in Markdown.
+3. I commit and push.
+4. After a couple of minutes, Github has generated my new website.
+
+Feel free to check [Github](https://github.com/randomrambler/dwim) for all the gory details.
