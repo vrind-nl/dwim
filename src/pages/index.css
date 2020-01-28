@@ -1,11 +1,20 @@
 .block {
-    background-color: #eee;
-    padding: 4pt;
-    margin: 6pt 0 6pt;
-    border-radius: 4pt;
-    overflow: hidden;
+  background-color: #eee;
+  padding: 4pt;
+  margin: 6pt 0 6pt;
+  border-radius: 4pt;
+  overflow: hidden;
 }
 
 .footnotes {
-    font-size: 80%;
+  font-size: 80%;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 2pt;
 }

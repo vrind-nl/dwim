@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import Layout from '../components/Layout';
-
+import Layout from "../components/Layout";
 
 export default ({ pageContext }) => {
   const { tags } = pageContext;
@@ -11,12 +10,20 @@ export default ({ pageContext }) => {
   return (
     <Layout page="Tags">
       <h1>Tags</h1>
-      {Object.keys(tags).map(tag => <div className="block">
-        <h2 id={tag}>{tag}</h2>
-        <ul>
-          { tags[tag].map(post => <li key={post.slug}><Link to={post.slug}>{post.title}</Link> ({post.date})</li>) }
-        </ul>
-      </div>)}
+      {Object.keys(tags)
+        .sort()
+        .map(tag => (
+          <div key={tag} className="block">
+            <h2 id={tag}>{tag}</h2>
+            <ul>
+              {tags[tag].map(post => (
+                <li key={post.slug}>
+                  <Link to={post.slug}>{post.title}</Link> ({post.date})
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
     </Layout>
   );
 };

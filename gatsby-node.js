@@ -3,21 +3,16 @@ const path = require(`path`);
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(
-    'src/templates/Post.jsx'
-  );
+  const blogPostTemplate = path.resolve("src/templates/Post.jsx");
 
   return graphql(`
     {
-      allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        filter: { frontmatter: { published: { eq: true } } }
-      ) {
+      allOrgContent(sort: { fields: [metadata___date], order: DESC }) {
         nodes {
           fields {
             slug
           }
-          frontmatter {
+          metadata {
             title
             date(formatString: "MMMM Do, YYYY")
             tags
@@ -30,18 +25,18 @@ exports.createPages = ({ actions, graphql }) => {
       throw result.errors;
     }
 
-    const posts = result.data.allMdx.nodes;
+    const posts = result.data.allOrgContent.nodes;
     const tags = {};
 
     createPage({
       path: "archive",
-      component: path.resolve('src/templates/Archive.jsx'),
-      context: { posts },
+      component: path.resolve("src/templates/Archive.jsx"),
+      context: { posts }
     });
 
     // create page for each mdx node
     posts.forEach((post, index) => {
-      const {fields, frontmatter} = post;
+      const { fields, metadata } = post;
       const previous = index === posts.length - 1 ? null : posts[index + 1];
       const next = index === 0 ? null : posts[index - 1];
 
@@ -51,37 +46,40 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           slug: fields.slug,
           previous,
-          next,
-        },
+          next
+        }
       });
 
-      frontmatter.tags.forEach(tag => {
-        const context = { slug: fields.slug, title: frontmatter.title, date: frontmatter.date };
-        if(tag in tags) {
+      metadata.tags.forEach(tag => {
+        const context = {
+          slug: fields.slug,
+          title: metadata.title,
+          date: metadata.date
+        };
+        if (tag in tags) {
           tags[tag].push(context);
         } else {
           tags[tag] = [context];
         }
-      })
+      });
     });
     createPage({
       path: "tags",
-      component: path.resolve('src/templates/Tags.jsx'),
+      component: path.resolve("src/templates/Tags.jsx"),
       context: {
         tags
       }
-    })
+    });
   });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode });
+  if (node.internal.type === "OrgContent") {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: "/" + node.metadata.export_file_name
     });
   }
 };

@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby";
 
-import Layout from '../components/Layout';
-import Teaser from '../components/Teaser';
+import Layout from "../components/Layout";
+import Teaser from "../components/Teaser";
 import "./index.css";
 
-
 export default ({ data }) => {
+  const nodes = data.allOrgContent.nodes;
   return (
     <>
       <Layout page="Home">
-        {data.allMdx.nodes.slice(0,7).map(props => <Teaser {...props} />)}
+        {nodes.slice(0, 7).map((props, nr) => (
+          <Teaser key={nr} {...props} />
+        ))}
       </Layout>
     </>
   );
@@ -19,20 +21,24 @@ export default ({ data }) => {
 
 export const query = graphql`
   query SITE_INDEX_QUERY {
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { eq: true }, pinned: { ne: true } } }
+    allOrgContent(
+      sort: { fields: [metadata___date], order: DESC }
+      filter: {
+        metadata: { keyword: { eq: "PUBLISHED" }, pinned: { ne: "t" } }
+      }
     ) {
       nodes {
         id
-        excerpt(pruneLength: 250)
-        frontmatter {
+        metadata {
           title
           date(formatString: "YYYY MMMM Do")
+          keyword
+          pinned
         }
         fields {
           slug
         }
+        html
       }
     }
   }

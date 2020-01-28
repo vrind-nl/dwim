@@ -1,18 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 import styles from "./Teaser.module.css";
 
+export default ({ metadata, fields, html }) => {
+  const cut = html.indexOf("<p>", 200);
+  const excerpt = cut > 0 ? html.substring(0, cut - 1) : html;
 
-export default ({ excerpt, frontmatter, fields }) => {
   return (
     <div className="block">
-        <p className={styles.date}>{frontmatter.date}</p>
-        <Link to={fields.slug}>
-            <h2>{frontmatter.title}</h2>
-        </Link>
-        <p>{excerpt.split()[0]}</p>
+      <p className={styles.date}>{metadata.date}</p>
+      <Link to={fields.slug}>
+        <h2>{metadata.title}</h2>
+      </Link>
+      <div dangerouslySetInnerHTML={{ __html: excerpt }} />
     </div>
   );
 };

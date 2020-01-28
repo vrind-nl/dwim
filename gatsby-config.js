@@ -1,37 +1,20 @@
 const siteMetadata = {
-    title: `DWIM(.nl)`,
-    description: `Do What I Mean`,
-    siteUrl: `https://dwim.nl`,
-}
+  title: `DWIM(.nl)`,
+  description: `Do What I Mean`,
+  siteUrl: `https://dwim.nl`
+};
 
 module.exports = {
   siteMetadata,
   plugins: [
     {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 590,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/posts`,
-        name: `posts`,
-      },
+        name: `posts`
+      }
     },
-      {
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -48,29 +31,29 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
+            serialize: ({ query: { site, allOrgContent } }) => {
+              return allOrgContent.edges.map(edge => {
+                return Object.assign({}, edge.node.metadata, {
+                  // description: edge.node.excerpt,
+                  description: "---",
+                  date: edge.node.metadata.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
             },
             query: `
               {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { published: { eq: true }, pinned: { ne: true } } }
+                allOrgContent(
+                  sort: { order: DESC, fields: [metadata___date] },
+                  filter: { metadata: { keyword: { eq: "PUBLISHED" }, pinned: { ne: "t" } } }
                 ) {
                   edges {
                     node {
-                      excerpt
                       html
                       fields { slug }
-                      frontmatter {
+                      metadata {
                         title
                         date
                       }
@@ -80,7 +63,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: siteMetadata.description,
+            title: siteMetadata.description
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
@@ -89,9 +72,10 @@ module.exports = {
 
             // optional configuration to specify external rss feed, such as feedburner
             // link: "https://feeds.feedburner.com/gatsby/blog",
-          },
-        ],
-      },
+          }
+        ]
+      }
     },
-  ],
+    "gatsby-transformer-orga"
+  ]
 };
