@@ -13,17 +13,17 @@ A versatile tool like org mode can be an intimidating beast. So, here is my org 
 
 Org mode allows you to structure your files by using headings. Simply create a heading by beginning a line with an asterisk (\ast). Headings can be nested by adding asterisks (\ast\ast\ast for a level three heading). This way you can build an infinitely branching hierarchical tree of information. You can move headings around with =M-<arrow>= and whole subtrees with =S-M-<arrow>=.
 
-Headinds mark the beginning of a section. Within those sections can be metadata, text or further subtrees. The metadata is a whole new topic, so for now we will stick with text. The basic mark up of text looks like this:
+Headings mark the beginning of a section. Within those sections can be metadata, text or further subtrees. The metadata is a whole new topic, so for now we will stick with text. The basic mark up of text looks like this:
 
 #+BEGIN_SRC org
 *Markup: *bold*, /italic/, _underlined_, +strikethrough+, =verbatim=, ~code~
 
 - list
   + nested list
-    1. Numbered list (cycle list types with =S-<left/right>=)
+    1. Numbered list
 #+END_SRC
 
-Which is displayed as:
+Which shows as:
 
 Markup: *bold*, /italic/, _underlined_, +strikethrough+, =verbatim=, ~code~
 
@@ -93,6 +93,9 @@ I migrated the source of this blog to [[https://orgmode.org/][org mode]], using 
 
 * CANCELLED VSCode Shortcuts                            :coding:productivity:
 CLOSED: [2020-12-16 za 19:43]
+:PROPERTIES:
+:ID:       5de52e07-002b-45d0-aa38-60c307480fb1
+:END:
 
 As [[/2020-01-01-about%20me][indicated]] I bounce back and forth between [[https://emacs.org][Emacs]] and [[https://code.visualstudio.com/][VSCode]] for coding.
 
@@ -201,18 +204,15 @@ Feel free to check [[https://github.com/randomrambler/dwim][Github]] for all the
 * PUBLISHED Peter Principle for software                :organisation:coding:
 CLOSED: [2020-01-06 ma 19:43]
 
-The [[https://en.wikipedia.org/wiki/Peter_principle][Peter Principle]]
-states:
+The [[https://en.wikipedia.org/wiki/Peter_principle][Peter Principle]] states:
 
 #+BEGIN_QUOTE
   people in a hierarchy tend to rise to their "level of incompetence"
 #+END_QUOTE
 
-It boils down to this: when you are competent at your job, you are
-promoted until you're /not/ competent anymore.
+It boils down to this: when you are competent at your job, you are promoted until you're /not/ competent anymore.
 
-I think something similar holds for software development. We increase
-the ambition of our software projects until we're no longer comfortable
+I think something similar holds for software development. We increase the ambition of our software projects until we're no longer comfortable
 to build it.
 
 * PUBLISHED Package management                                       :coding:
@@ -255,7 +255,10 @@ I prefer /open technologies/: I use open source software (OSS) whenever I can. A
 Have a look at [[/2020-01-12-blog/][this]] blog post to find out how I
 set up this blog.
 
-* DRAFT Test post
+* DRAFT Test post                                                      :meta:
+:PROPERTIES:
+:ID:       b5d76ebc-ac1f-4d9a-aaaf-68166835322f
+:END:
 #+date: 2099-12-31
 #+published: nil
 #+tags: [meta]
