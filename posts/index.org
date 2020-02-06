@@ -2,6 +2,52 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
+
+* DRAFT Yesterbox                                              :productivity:
+
+https://yesterbox.com/
+
+Slow cooking, slow communication
+
+* DRAFT When in doubt                                                 :emacs:
+
+Stay on the same road
+
+Emacs:
+- one customization/keys section, or many
+- literate programming, or comments
+
+If it's not broken, don't fix it :it:
+
+* PUBLISHED Peter Principle for assholes                       :organisation:
+CLOSED: [2020-02-06 do 08:38]
+
+The [[https://en.wikipedia.org/wiki/Peter_principle][Peter Principle]] states:
+
+#+BEGIN_QUOTE
+  people in a hierarchy tend to rise to their "level of incompetence"
+#+END_QUOTE
+
+It boils down to this: when you are competent at your job, you are promoted until you're /not/ competent anymore.
+
+But I think something more sinister is at play here. In [[http://www.dilbert.com/][The Dilbert Principle]] Scott Adams suggests that the main task of management is to "Eliminate the Assholes". However, my view is that management /are/ the assholes. Nothing personal, so let me explain.
+
+We are all constantly working for (1) our own position and (2) the higher good. Working for our own position may mean making our work as enjoyable as possible, maximizing status/income/power, or anything that you want to achieve for yourself. The higher good is the reason your job exists in the first place: the business of your customers, some political ideal, or a charity.
+
+Most people most of the time look for a middle ground between their own position and the higher good. They try to strike a balance where the one not does not harm the other. But sometimes this doesn't work and you have to make a choice. For example, if you stand up for an important but unpopular policy, it may help the higher good, but it may harm your position.
+
+This also works in unexpected ways. For example, if you work late to provide a critical feature for your client before its deadline, you would think this would help both the higher good and your position. But the latter is rarely the case. We are often not rewarded for extra effort we put in. Why is this?
+
+I think this is because some people do /not/ balance their own position and the higher good, but instead choose just one of these. In particular, some people focus exclusively on their own position, and work for their own promotion only. So in the contest for income, status or power, these people win from anyone who divide their focus between their position and the higher good.
+
+It is just as in sports: to really make it to the top, you have to sacrifice everything and everyone and put all your effort into becoming the best you can be at your chosen sport. This doesn't mean success is guaranteed if you do that (in fact, chances are remote), because others who do the same may have more talent. But it /does/ mean you will be more successful than people with similar talent who do not dedicate their life.
+
+In organizations this works the same: in the end not only talent, but also dedication decides who makes it to the top. And don't let the word "talent" fool you here. I do not mean the talent to care for the elderly, build good software or make beautiful things. I mean the talent /to make it to the top/!
+
+So in the end, ruthless career tigers will bubble up the hierarchy and rule the rest of us. Not because they are good care-takers, engineers or even managers, but because they are better at and more dedicated to promoting their own position. Even well-meaning managers (fortunately most of them) are no match and will be stuck in mid-level management.
+
+This may sound cynical, and maybe it is, but I find it gives me peace. I am an engineer and like to build useful and beautiful things. That means I can't compete with people who's only objective it is to move up. So, I won't. I try to stay away from people and situations that focus to much on their own position, and build my professional life in such a way that it is as satisfying and enjoyable as possible.
+
 * PUBLISHED 10 minute org mode 101                                      :org:
 CLOSED: [2020-02-02 za 08:38]
 
@@ -200,20 +246,6 @@ My workflow is now really simple:
 4. After a couple of minutes, Github has generated my new website.
 
 Feel free to check [[https://github.com/randomrambler/dwim][Github]] for all the gory details.
-
-* PUBLISHED Peter Principle for software                :organisation:coding:
-CLOSED: [2020-01-06 ma 19:43]
-
-The [[https://en.wikipedia.org/wiki/Peter_principle][Peter Principle]] states:
-
-#+BEGIN_QUOTE
-  people in a hierarchy tend to rise to their "level of incompetence"
-#+END_QUOTE
-
-It boils down to this: when you are competent at your job, you are promoted until you're /not/ competent anymore.
-
-I think something similar holds for software development. We increase the ambition of our software projects until we're no longer comfortable
-to build it.
 
 * PUBLISHED Package management                                       :coding:
 CLOSED: [2020-01-04 za 19:40]
