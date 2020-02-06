@@ -3,6 +3,21 @@
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
 
+* DRAFT Software development is a craft                                  :it:
+
+It is not a science (yet)
+Learn through master/apprentice
+
+* DRAFT Work vs problems                                       :productivity:
+
+I distinguish between work and problems.
+
+Work can be done by following well-known, accepted rules. It may not be easy, but you know from the start how hard it is and how much effort it takes. Work just takes time, energy and commitment. So, just do it already!
+
+There are no predefined rules for problems. You have to figure them out as you go along. It's not even clear how to know which solution is best, because problems usually have multiple perspectives with (possibly conflicting) interests. Problems may even have multiple stakeholders. So you have to analyze the problem to come up with possible solutions, evaluate the solutions by all different criteria, and than choose on basis of incomplete information. And that's all /before/ you can start actually solving them problem itself.
+
+The obvious trap here is that you can get stuck in the analysis/evaluation, because choosing is hard and often involves conflict. So my approach often is to just choose one option, fix the problem and deal with the consequences. Which may involve a whole new solution. I am happy to solve a problem more than once, because it means you always have a solution in place (as imperfect as it may be), and it will gradually get better.
+
 * DRAFT Yesterbox                                              :productivity:
 
 https://yesterbox.com/
@@ -18,6 +33,35 @@ Emacs:
 - literate programming, or comments
 
 If it's not broken, don't fix it :it:
+
+
+* PUBLISHED What is Org mode                                            :org:
+CLOSED: [2020-02-07 vr 09:23]
+
+So I wrote about how to [[10 minute org mode 101][use]] Org mode, but only briefly discussed what it /is/:
+
+#+BEGIN_QUOTE
+Org mode is a fast and effective tool to manage personal information, like notes, tasks, and references. It is also used for authoring and publishing blogs, books and academic papers. Org mode is part of Emacs and stores its data in plain-text files.
+#+END_QUOTE
+
+That's not a lie, but it barely scratches the surface. I was listening to [[https://emacscast.org/episode_3/][Emacscast]] today, and the explanation by host Rakhim inspired this post.
+
+Basically, I see Org mode as three parts:
+
+- a markup language :: The markup language supports structuring with nested sections and formatting like for example Markdown. Unlike Markdown, and more like XML, org mode also supports meta data, like categories, tags, and properties
+- an editor :: Org mode is part of Emacs, so when editing org mode, you can use all functions that Emacs provides. But it adds powerful features to manage complexity, like outlining, navigating, folding and tables.
+- modules :: Org mode provides a myriad of modules out of the box, including, but definitely not limited to:
+  - todos: Keep your task list with todo states, priorities, deadlines and scheduling.
+  - agenda: Manage your tasks by sorting and filtering them in any way you can think of.
+  - spreadsheet: Interactively calculate values in a table.
+  - publish: Edit your content in org mode, and publish it as Markdown, HTML, PDF or EPUB out of the box, or [[https://github.com/kawabata/ox-pandoc][any other form]] via Pandoc.
+  - literate programming: Execute code right in your document with Babel.
+  - capture thoughts: With minimal disruption to your workflow.
+  - time management: Estimate, register and report how you spend uour time.
+
+As the markup is just plain text, you can edit org mode files in any text editor you like. This ensures you never loose access to your data. The editor is where org mode begins to distinguish itself: editors like [[https://github.com/vscode-org-mode/vscode-org-mode][VSCode]], [[https://github.com/jceb/vim-orgmode][Vim]] and [[https://packagecontrol.io/packages/orgmode][Sublime]] support only a small subset of the features you get when editing org mode in Emacs. But the modules are where org mode really starts to shine. They add such amazingly powerful features that they make org mode unlike any other tool I know.
+
+The strength of these modules is that they are +integrated+ loosely coupled. By that I mean they have maximum cohesion and minimum dependency. And by that I mean that the modules form a suite where every tool works together with the others, but the do not /need/ each other. This way you can gradually add modules to get an ever richer experience and truly [[http://doc.norang.ca/org-mode.html][Organize Your Life In Plain Text!]]
 
 * PUBLISHED Peter Principle for assholes                       :organisation:
 CLOSED: [2020-02-06 do 08:38]
@@ -124,7 +168,6 @@ Here are some references from beginner to advanced:
 1. [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org4Beginners]] to get a quick overview of what org mode can do: editing, navigating
 2. [[http://thagomizer.com/blog/2017/03/16/five-useful-org-mode-features.html][5 useful features]] with info about tables, tags, embedded code
 3. [[http://emacslife.com/blog-posts/2014-01-13-tips-learning-org-mode-emacs.html][Emacs Life]] tips for learning org mode
-4. [[http://doc.norang.ca/org-mode.html][Organize Your Life In Plain Text!]][fn:The title says it al]
 5. [[https://orgmode.org/orgcard.pdf][RefCard]] a 2-page PDF with a load of key bindings ([[https://orgmode.org/orgcard.txt][text version]])
 6. [[https://orgmode.org/guide/][Guide]] a compact version of the manual with all the essentials
 7. [[https://karl-voit.at/2019/09/25/using-orgmode/][UOMF]] Using Org Mode Features
