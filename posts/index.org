@@ -2,8 +2,47 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
+* DRAFT Emacs is no text editor | Eigenbahn blog                       :blog:
 
-* DRAFT Software development is a craft                                  :it:
+https://www.eigenbahn.com/2020/01/12/emacs-is-no-editor
+
+* DRAFT Impossible choices                    :productivity:org:emacs:coding:
+
+Life is full of impossible choices.
+
+** Emacs vs other editors
+
+I keep bouncing back and forth between [[https://emacs.org][Emacs]] and other text editors (most recently: [[https://code.visualstudio.com/][VSCode]]) for coding.
+
+Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "/the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor/", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (Lisp is an elegant language, but just not for everyone).
+
+One thing that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they may seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =C-x C-f=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
+
+But, at the same time, that's also one of the major down-sides of Emacs: every time I switch to another application, my mind has to switch to other key bindings. All of a sudden the ubiquitous =C-x= and =C-c= of Emacs have become =cut= and =copy=. And when I hit =C-w= (=kill-region=) to cut a piece of text, instead I close a tab. This switching is an annoying mental effort and /very/ error prone. Of course, I am aware of [[https://www.gnu.org/software/emacs/manual/html_node/emacs/CUA-Bindings.html][CUA mode]] but I prefer to use every tool as it was intended.
+
+But the killer app that currently drove me back to Emacs is [[/what-is-org-mode][Org mode]]. There is nothing comparable.
+
+_Result_: For now, I am back using Emacs, but I can already feel the rising frustration with the lack of compatibility with other apps, so at some point I will probably change back.
+
+** Literate coding or comments
+
+As an org mode user literate programming is all the rage, with [[https://orgmode.org/worg/org-contrib/babel/intro.html][org-babel]] to 'untangle'. Emacs configs in an org mode document [[https://www.google.com/search?q=org+mode+emacs+config][abound]] online. And they /do/ make for very nicely readable documents. So, I have long intended to try this approach but never came round to it.
+
+In the end, the extra indirection and level of complexity added by literate programming need to be justified by some benefit. So, unless you are writing a book or blog posts, code comments are the easiest way to document code.
+
+_Result_: I just add comments.
+
+** Where to put stuff
+
+Many things can (or should) be stored only once. For example, a book, a piece of code, or the contact information of your doctor. But to be able to find them, it may be useful to store them in different places. A book, for example, can be stored alphabetically by title, by author, or by subject. But if you have only one copy (and why shouldn't you), you can only store it in one place at a time.
+
+Fortunaltely, indexing
+
+** Programming language
+
+** Emacs completion framework
+
+* DRAFT Software development is a craft                                  :coding:
 
 It is not a science (yet)
 Learn through master/apprentice
@@ -34,6 +73,20 @@ Emacs:
 
 If it's not broken, don't fix it :it:
 
+* PUBLISHED Backup your email! It's easy                    :productivity:it:
+CLOSED: [2020-02-10 ma 11:39]
+
+Email has become the core of corporate (and often private) communication. Most of us use it all day every day.
+
+There used to be a time, where you downloaded your email and read it locally. But these days, email lives on a server somewhere. Which is A Good Thing, because we are mobile and this lets us read our email everywhere (which, in itself, is a mixed blessing at best).
+
+But there's a downside: We now depend on the service providers. When their service is down, or we are off-line (the horror!) we don't have access to our email anymore. Or worse, if our provider goes out of business or just decides to discontinue its service, we may even loose our email permanently.
+
+Fortunately, the solution is easy: back up your email. On Linux the most mentioned solutions are [[http://www.offlineimap.org/][offlineimap]] and [[http://isync.sourceforge.net/][mbsync]]. A little research shows many people choosing mbsync over offlineimap, so I decided to follow suit. With the help of [[http://fengxia.co.s3-website-us-east-1.amazonaws.com/mbsync%20mu4e%20email.html][this]] and [[https://ryanwhittingham.com/using-multiple-email-accounts-with-mu4e/][this]] post I had it set up without too many problems.
+
+Then I watched over 20k (almost 10 years worth) of my emails being pulled in, which comes to almost 6GB. It's now all save and cosy on my local hard drive. Synchronizing takes just seconds and I can still also access my email in the cloud from my smart phone and tablet.
+
+As a bonus, and not entirely by accident, I can now read my email in Emacs using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]]. But that's for another post.
 
 * PUBLISHED What is Org mode                                            :org:
 CLOSED: [2020-02-07 vr 09:23]
@@ -178,7 +231,14 @@ Here are some references from beginner to advanced:
 * PUBLISHED Migrated to org                                        :org:meta:
 CLOSED: [2020-02-02 zo 08:36]
 
-I migrated the source of this blog to [[https://orgmode.org/][org mode]], using [[https://www.gatsbyjs.org/packages/gatsby-transformer-orga/][gatsby-transformer-orga]]. My source now lives in a single org mode file. Great!
+I migrated [[/setting-up-this-blog][my setup]] of this blog to [[https://orgmode.org/][org mode]], using [[https://www.gatsbyjs.org/packages/gatsby-transformer-orga/][gatsby-transformer-orga]]. My source now lives in a single org mode file. Great!
+
+My workflow is now really simple:
+
+1. To add a post, I add a heading in my org file.
+2. I change its status to =PUBLISHED= (org mode automatically records a timestamp).
+3. I commit and push.
+4. After a couple of minutes, Github has generated my new website.
 
 * CANCELLED VSCode Shortcuts                            :coding:productivity:
 CLOSED: [2020-12-16 za 19:43]
@@ -279,14 +339,7 @@ So now I have decided to see if I can start one from scratch, based on
 
 Based on the Gatsby page about [[https://www.gatsbyjs.org/docs/adding-search/][adding search]] it seems you need some backend for search. As I don't want a backend, the blog will not have a search feature for now.
 
-I have also decided against adding org-mode support with [[https://www.gatsbyjs.org/packages/gatsby-transformer-orga/][gatsby-transformer-orga]], because I couldn't figure out an elegant way to support multiple input formats and I am fine with Markdown for now.
-
-My workflow is now really simple:
-
-1. To add a post, I create a folder in =/posts= with an =index.mdx= file in it.
-2. I edit =index.mdx= in Markdown.
-3. I commit and push.
-4. After a couple of minutes, Github has generated my new website.
+[[/migrated-to-org][Update Feb 2, 2020]]: I migrated to org mode.
 
 Feel free to check [[https://github.com/randomrambler/dwim][Github]] for all the gory details.
 

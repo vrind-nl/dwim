@@ -14,7 +14,7 @@ export default ({ metadata, fields, html }) => {
       <Link to={fields.slug}>
         <h2>{metadata.title}</h2>
       </Link>
-      <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+      <div dangerouslySetInnerHTML={{ __html: excerpt }}></div>
     </div>
   );
 };
