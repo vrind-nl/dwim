@@ -6,15 +6,19 @@
 
 https://www.eigenbahn.com/2020/01/12/emacs-is-no-editor
 
-* DRAFT Impossible choices                    :productivity:org:emacs:coding:
+* DRAFT How to make impossible choices        :productivity:org:emacs:coding:
 
-Life is full of impossible choices.
+Life is full of impossible choices. In those cases I follow these conservative but practical rules:
+- When in doubt, stay on the same road.
+- If it's not broken, don't fix it.
+
+Let me give you some examples:
 
 ** Emacs vs other editors
 
 I keep bouncing back and forth between [[https://emacs.org][Emacs]] and other text editors (most recently: [[https://code.visualstudio.com/][VSCode]]) for coding.
 
-Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "/the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor/", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (Lisp is an elegant language, but just not for everyone).
+Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (Lisp is an elegant language, but just not for everyone).
 
 One thing that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they may seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =C-x C-f=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
 
@@ -40,22 +44,16 @@ Fortunaltely, indexing
 
 ** Programming language
 
+ [[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]]. Lately I am even drawn to [[http://www.typescriptlang.org/][Typescript]].
+
 ** Emacs completion framework
+
+Completion makes life so much easier. On the command line first bash, but these days [[https://ohmyz.sh/][Oh My ZSH!]].
 
 * DRAFT Software development is a craft                                  :coding:
 
 It is not a science (yet)
 Learn through master/apprentice
-
-* DRAFT Work vs problems                                       :productivity:
-
-I distinguish between work and problems.
-
-Work can be done by following well-known, accepted rules. It may not be easy, but you know from the start how hard it is and how much effort it takes. Work just takes time, energy and commitment. So, just do it already!
-
-There are no predefined rules for problems. You have to figure them out as you go along. It's not even clear how to know which solution is best, because problems usually have multiple perspectives with (possibly conflicting) interests. Problems may even have multiple stakeholders. So you have to analyze the problem to come up with possible solutions, evaluate the solutions by all different criteria, and than choose on basis of incomplete information. And that's all /before/ you can start actually solving them problem itself.
-
-The obvious trap here is that you can get stuck in the analysis/evaluation, because choosing is hard and often involves conflict. So my approach often is to just choose one option, fix the problem and deal with the consequences. Which may involve a whole new solution. I am happy to solve a problem more than once, because it means you always have a solution in place (as imperfect as it may be), and it will gradually get better.
 
 * DRAFT Yesterbox                                              :productivity:
 
@@ -63,15 +61,16 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
-* DRAFT When in doubt                                                 :emacs:
+* PUBLISHED Work vs problems                                   :productivity:
+CLOSED: [2020-02-11 di 20:59]
 
-Stay on the same road
+I distinguish between work and problems.
 
-Emacs:
-- one customization/keys section, or many
-- literate programming, or comments
+Work can be done by following well-known, accepted rules. It may not be easy, but you know from the start how hard it is and how much effort it takes. Work just takes time, energy and commitment. So, just do it already!
 
-If it's not broken, don't fix it :it:
+There are no predefined rules for problems. You have to figure them out as you go along. It's not even clear how to know which solution is best, because problems usually have multiple perspectives with (possibly conflicting) interests. Problems may even have multiple stakeholders. So you have to analyze the problem to come up with possible solutions, evaluate the solutions by all different criteria, and than choose on basis of incomplete information. And that's all /before/ you can start actually solving the problem itself.
+
+The obvious trap here is that you can get stuck in the analysis/evaluation, because choosing is hard and often involves conflict. So my approach often is to just choose one option, fix the problem and deal with the consequences. Which may require me to get back to the drawing board to come up with a whole new solution. I am happy to solve a problem more than once, because it means you always have a solution in place (as imperfect as it may be), and it will gradually get better.
 
 * PUBLISHED Backup your email! It's easy                    :productivity:it:
 CLOSED: [2020-02-10 ma 11:39]
@@ -380,8 +379,7 @@ I prefer /open technologies/: I use open source software (OSS) whenever I can. A
 - [[https://www.docker.com/][Docker]] for managing development environments when [[https://pipenv.kennethreitz.org/][pipenv]] or [[https://yarnpkg.com/][yarn]] are not enough.
 - [[file:orgmode.org][org-mode]] and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]] for plain text editing.
 
-Have a look at [[/2020-01-12-blog/][this]] blog post to find out how I
-set up this blog.
+Have a look at [[/setting-up-this-blog/][this]] blog post to find out how I set up this blog.
 
 * DRAFT Test post                                                      :meta:
 :PROPERTIES:

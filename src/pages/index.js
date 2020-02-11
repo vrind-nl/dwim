@@ -9,13 +9,11 @@ import "./index.css";
 export default ({ data }) => {
   const nodes = data.allOrgContent.nodes;
   return (
-    <>
-      <Layout page="Home">
-        {nodes.slice(0, 7).map((props, nr) => (
-          <Teaser key={nr} {...props} />
-        ))}
-      </Layout>
-    </>
+    <Layout page="Home">
+      {nodes.slice(0, 7).map((props, nr) => (
+        <Teaser key={nr} {...props} />
+      ))}
+    </Layout>
   );
 };
 

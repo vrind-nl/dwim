@@ -18,3 +18,7 @@ th,
 td {
   padding: 2pt;
 }
+
+button {
+  border: none;
+}
