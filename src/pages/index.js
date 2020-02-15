@@ -21,9 +21,7 @@ export const query = graphql`
   query SITE_INDEX_QUERY {
     allOrgContent(
       sort: { fields: [metadata___date], order: DESC }
-      filter: {
-        metadata: { keyword: { eq: "PUBLISHED" }, pinned: { ne: "t" } }
-      }
+      filter: { metadata: { pinned: { ne: "t" } } }
     ) {
       nodes {
         id

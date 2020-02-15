@@ -329,12 +329,12 @@ I am looking into a way to do ETL (Extract, Transform, Load) in Node. It seams t
 In a diagram this would look like:
 
 #+CAPTION: flow diagram of a pipe
-[[file:pipe.png]]
+[[file:./pipe.png]]
 
 But imagine I want to zip a file and mark it if it fails an expected checksum. In a diagram, that would look like:
 
 #+CAPTION: flow diagram of a network
-[[file:network.png]]
+[[file:./network.png]]
 
 In order to do that, I would need Stream operations like =split= and =join=, but these don't seem to exist.
 
