@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby";
 import ReactUtterences from "react-utterances";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import Tags from "../components/Tag";
 
 function PostLink({ fields, metadata, side }) {

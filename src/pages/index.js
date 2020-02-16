@@ -2,12 +2,13 @@ import React from "react";
 
 import { graphql } from "gatsby";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import Teaser from "../components/Teaser";
 import "./index.css";
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const nodes = data.allOrgContent.nodes;
+  console.log("Location: ", location);
   return (
     <Layout page="Home">
       {nodes.slice(0, 7).map((props, nr) => (

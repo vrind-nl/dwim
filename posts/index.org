@@ -4,7 +4,7 @@
 
 * DRAFT Definition of Done
 
-Resist the urge to tinkering
+Resist the urge to tinker
 
 When you automate something, you do not just make that task easier, but you also improve your automation skills. This means that next time you want to automate something, that too will be easier, and the
 
@@ -19,31 +19,6 @@ For instance, I was editing an extensive code comment lately, and my fingers jus
 Compared to Emacs, most text editors (like VSCode) are glorified typewriters.
 Compared to Emacs, most word processors (like MS Word) are just text editors with formatting.
 Emacs is a true text processing platform.
-
-* PUBLISHED Emacs? Help!                                              :emacs:
-CLOSED: [2020-02-15 za 17:37]
-
-A powertool like Emacs can be intimidating for beginners. But actually, Emacs is very beginner-friendly, because it comes standard with a plethora of help features. In this post, I'll give some starting points, and show what help functions I use the most.
-
-First, just start up a vanilla Emacs (use =emacs -q= to bypass any user configuration files, if necessary) and the startup screen provides you with some helpful entry points, like the Emacs manual and [[https://www.gnu.org/software/emacs/tour/][guided tour]]. Of course, you can find the same information, and much more, under the /Help/ menu item.
-
-The manual that you can open from the startup screen teaches you some Emacs jargon, like how key bindings are defined. It provides an interactive introduction with exercises you can perform in the same buffer. It teaches you the Emacs-way to do things like navigate a document. To my taste its a bit dogmatic about that: I prefer arrow keys and PgUp/Dn to navigate, but the tutorial sticks to =C-v/M-v= and the likes.
-
-The startup screen also contains a link to the Emacs manual, which introduces us to the wonderful world of [[https://www.gnu.org/software/texinfo/manual/info-stnd/html_node/index.html][Info]]. We'll come back to that later, when we discuss the =C-h= key. For now, let's assume that Info is like the web: hypertext with links. So, open the manual and have a look around. What I like to do every now and then, is page though the documents by just pressing the space bar repeatedly. This is like leafing through a book and never fails to uncover gems I didn't know yet.
-
-Section 1 "The Organization of the Screen" introduces much Emacs jargon that may put off beginners. This section explains words like /frame/, /window/, /buffer/, /point/, /mode line/ and /mini buffer/, all essential to be able to use all other information that is available to us.
-
-Then, when you actually start to use Emacs, the menu bar provides access to most common commands, including the key bindings that go with them for commands you find you need most often. /Please/ resist the urge to install all those shiny third-party packages for now, and first dig through all the features that Emacs ships with out of the box, like searching, bookmarks, email and version control. Also have a look at all you can customize through the /Options/ menu. But again, /please/ stick with the defaults at first. They have been selected based on years of experience, and more often than not make more sense that you might think at first (promise!).
-
-Finally, I you ever wonder /How do I do X?:/ =C-h= is your friend.
-- =C-h ?= shows all help command, including the ones I use most:
-- =C-h a= (apropos) show commands matching a pattern
-- =C-h k= describes a key
-- =C-h f= describes a function (by default the function under point) and the keys associated with it
-- =C-h v= describes a variable, its current value, its original value, and its possible values
-- =C-h i= starts Info, which opens a whole library full of manuals, I don't believe you I will ever finish in this lifetime
-
-Have fun exploring Emacs!
 
 * DRAFT How to make impossible choices        :productivity:org:emacs:coding:
 
@@ -99,6 +74,31 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+
+* PUBLISHED Emacs? Help!                                              :emacs:
+CLOSED: [2020-02-15 za 17:37]
+
+A powerful tool like Emacs can be intimidating for beginners. But actually, Emacs is very beginner-friendly, because it comes standard with a plethora of help features. In this post, I'll give some starting points, and show what help functions I use the most.
+
+First, just start up a vanilla Emacs (use =emacs -q= to bypass any user configuration files, if necessary) and the startup screen provides you with some helpful entry points, like the Emacs manual and [[https://www.gnu.org/software/emacs/tour/][guided tour]]. Of course, you can find the same information, and much more, under the /Help/ menu item.
+
+The manual that you can open from the startup screen teaches you some Emacs jargon, like how key bindings are defined. It provides an interactive introduction with exercises you can perform in the same buffer. It teaches you the Emacs-way to do things like navigate a document. To my taste its a bit dogmatic about that: I prefer arrow keys and PgUp/Dn to navigate, but the tutorial sticks to =C-v/M-v= and the likes.
+
+The startup screen also contains a link to the Emacs manual, which introduces us to the wonderful world of [[https://www.gnu.org/software/texinfo/manual/info-stnd/html_node/index.html][Info]]. We'll come back to that later, when we discuss the =C-h= key. For now, let's assume that Info is like the web: hypertext with links. So, open the manual and have a look around. What I like to do every now and then, is page though the documents by just pressing the space bar repeatedly. This is like leafing through a book and never fails to uncover gems I didn't know yet.
+
+Section 1 "The Organization of the Screen" introduces much Emacs jargon that may put off beginners. This section explains words like /frame/, /window/, /buffer/, /point/, /mode line/ and /mini buffer/, all essential to be able to use all other information that is available to us.
+
+Then, when you actually start to use Emacs, the menu bar provides access to most common commands, including the key bindings that go with them for commands you find you need most often. /Please/ resist the urge to install all those shiny third-party packages for now, and first dig through all the features that Emacs ships with out of the box, like searching, bookmarks, email and version control. Also have a look at all you can customize through the /Options/ menu. But again, /please/ stick with the defaults at first. They have been selected based on years of experience, and more often than not make more sense that you might think at first (promise!).
+
+Finally, I you ever wonder /How do I do X?:/ =C-h= is your friend.
+- =C-h ?= shows all help command, including the ones I use most:
+- =C-h a= (apropos) show commands matching a pattern
+- =C-h k= describes a key
+- =C-h f= describes a function (by default the function under point) and the keys associated with it
+- =C-h v= describes a variable, its current value, its original value, and its possible values
+- =C-h i= starts Info, which opens a whole library full of manuals, I don't believe you I will ever finish in this lifetime
+
+Have fun exploring Emacs!
 
 * PUBLISHED Work vs problems                                   :productivity:
 CLOSED: [2020-02-11 di 20:59]
@@ -188,7 +188,7 @@ CLOSED: [2020-02-02 za 08:38]
 
 [[https://orgmode.org/][Org mode]] is a fast and effective tool to manage personal information, like notes, tasks, and references. It is also used for authoring and publishing blogs, books and academic papers. Org mode is part of [[https://www.gnu.org/software/emacs][Emacs]] and stores its data in plain-text files.
 
-A versatile tool like org mode can be an intimidating beast. So, here is my org mode 101 to get you up to speed in 10 minutes flat[fn:To make this possible, I will stick to the essential commands, and leave customization for another post.].
+A versatile tool like org mode can be an intimidating beast. So, here is my org mode 101 to get you up to speed in 10 minutes flat. To make this possible, I will stick to the essential commands, and leave customization for another post.
 
 ** Editing
 
@@ -223,7 +223,7 @@ You can schedule a task using =C-c C-s= and set a deadline using =C-c C-d=.
 You can assign tags to headers using =C-c C-q=. A tag can be almost any text you like. I use:
 - the projects the section belongs to starting with a =%= (like =%blog= and =%killer_app=),
 - the person the section is relevant to starting with =@= (like =@alice= and =@bob=), or
-- the context[fn:A concept from GTD] where I can work on the task starting with =#= (like =#office= and =#home)=.
+- the context, a concept from GTD, where I can work on the task starting with =#= (like =#office= and =#home)=.
 By using special markers in tags, I can more easily find the headlines I am looking for.
 
 ** Capture
@@ -236,7 +236,7 @@ Once you're done entering text, you can store it in its default location using =
 
 After a while you will find that your tasks become unmanageable. So, one other custom binding org mode [[https://orgmode.org/guide/Introduction.html][advices]] is =C-c a= for [[https://orgmode.org/worg/org-tutorials/advanced-searching.html][Agenda]], which provides well-organized views of your tasks.
 
-This is a life saver! It allows me to just dump all my tasks on one big heap and manage them through the agenda. I never bother to structure or cleanup my tasks. Searching is far more efficient than organizing[fn:See also [[https://karl-voit.at/2020/01/25/avoid-complex-folder-hierarchies/][public voit]]]!
+This is a life saver! It allows me to just dump all my tasks on one big heap and manage them through the agenda. I never bother to structure or cleanup my tasks. Searching is far more efficient than organizing [[[https://karl-voit.at/2020/01/25/avoid-complex-folder-hierarchies/][src]]]!
 
 ** Categories
 
@@ -248,7 +248,7 @@ Each file and each header can belong to exactly one category. You can define the
 #+END_SRC
 
 Categories are an extra tool to structure your agenda views. I use these:
-- PKB[fn:Personal Knowledge Base]
+- Personal Knowledge Base
 - Work
 - Journal
 - Links
@@ -286,9 +286,9 @@ CLOSED: [2020-12-16 za 19:43]
 
 As [[/2020-01-01-about%20me][indicated]] I bounce back and forth between [[https://emacs.org][Emacs]] and [[https://code.visualstudio.com/][VSCode]] for coding.
 
-Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "/the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor/", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]][fn:1].
+Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "/the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor/", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (an elegant language, but just not for everyone).
 
-The one thing[fn:2] that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =Ctrl-X Ctrl-F=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
+The one thing that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =Ctrl-X Ctrl-F=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
 
 Today I read [[https://dev.to/devmount/23-lesser-known-vs-code-shortcuts-as-gif-80][this post]] and it hit me that I could try to learn shortcuts in VSCode like I did in Emacs. I am sure that many of the things I do with the keyboard in Emacs can also be done in VSCode. So, I will try to add one shortcut every day to my repertoire.
 
@@ -307,10 +307,6 @@ Keys:
 | <2020-01-20>   | =Alt-Down=                | move line down          |
 | <2020-01-21>   | =Ctrl-R R=                | NPM rerun last script   |
 
-[fn:1] Lisp is an elegant language, but just not for everyone.
-
-[fn:2] Well... actually /one/ of the things, but that's for another
-       post.
 
 * PUBLISHED Node Streams                                      :node:research:
 CLOSED: [2020-01-13 ma 19:41]
