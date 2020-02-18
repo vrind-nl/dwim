@@ -1,0 +1,5 @@
+The source for this blog is in the [[https://github.com/randomrambler/dwim/tree/develop][develop]] branch, while a Github [[https://github.com/randomrambler/dwim/blob/develop/.github/workflows/publish.yml][workflow]] generates the content to the [[https://github.com/randomrambler/dwim/tree/master][master]] branch.
+
+[[https://github.com/randomrambler/dwim/tree/develop/posts][Here]] are the post sources, and the comments are stored as [[https://github.com/randomrambler/dwim/issues][issues]].
+
+Read [[https://dwim.nl/setting-up-this-blog][this]] blog page for further details.

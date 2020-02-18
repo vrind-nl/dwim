@@ -44,7 +44,7 @@ _Result_: For now, I am back using Emacs, but I can already feel the rising frus
 
 ** Literate coding or comments
 
-As an org mode user literate programming is all the rage, with [[https://orgmode.org/worg/org-contrib/babel/intro.html][org-babel]] to 'untangle'. Emacs configs in an org mode document [[https://www.google.com/search?q=org+mode+emacs+config][abound]] online. And they /do/ make for very nicely readable documents. So, I have long intended to try this approach but never came round to it.
+As an org mode user, literate programming is all the rage, with [[https://orgmode.org/worg/org-contrib/babel/intro.html][org-babel]] to 'untangle'. Emacs configs in an org mode document [[https://www.google.com/search?q=org+mode+emacs+config][abound]] online. And they /do/ make for very nicely readable documents. So, I have long intended to try this approach but never came round to it.
 
 In the end, the extra indirection and level of complexity added by literate programming need to be justified by some benefit. So, unless you are writing a book or blog posts, code comments are the easiest way to document code.
 
@@ -58,7 +58,7 @@ Fortunaltely, indexing
 
 ** Programming language
 
- [[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]]. Lately I am even drawn to [[http://www.typescriptlang.org/][Typescript]].
+[[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]]. Lately I am even drawn to [[http://www.typescriptlang.org/][Typescript]].
 
 ** Emacs completion framework
 
@@ -301,11 +301,11 @@ To get me going, these are some useful resources:
 
 Keys:
 
-| Date           | Key binding               | Effect                  |
-|----------------+---------------------------+-------------------------|
-| <2020-01-17>   | =Ctrl-Alt-Shft NumDown=   | copy line to below      |
-| <2020-01-20>   | =Alt-Down=                | move line down          |
-| <2020-01-21>   | =Ctrl-R R=                | NPM rerun last script   |
+| Date         | Key binding           | Effect                |
+|--------------+-----------------------+-----------------------|
+| <2020-01-17> | =Ctrl-Alt-Shft NumDown= | copy line to below    |
+| <2020-01-20> | =Alt-Down=              | move line down        |
+| <2020-01-21> | =Ctrl-R R=              | NPM rerun last script |
 
 
 * PUBLISHED Node Streams                                      :node:research:
@@ -353,17 +353,15 @@ On the technical side, I [[/2020-01-01-about%20me/][want]] it to...
 - be open source,
 - allow me to edit the posts locally in any editor I please (which
   requires flat-file input),
-- support Markdown and (preferably) Org-mode input,
+- support Org-mode input,
 - maintain version history of the content,
 - deploy to Github Pages (which requires output a site without
-  backend)),
+  backend),
 - be as free of tracking, ads or vendor lock-in as possible.
 
-I have looked into e.g. [[https://getnikola.com/][Nikola]], [[https://orgmode.org/manual/Publishing.html][org-publish]], [[https://jekyllrb.com/][Jekyll]] and the likes, but never really liked
-one.
+I have looked into e.g. [[https://getnikola.com/][Nikola]], [[https://orgmode.org/manual/Publishing.html][org-publish]], [[https://jekyllrb.com/][Jekyll]] and the likes, but never really liked one.
 
-So now I have decided to see if I can start one from scratch, based on
-[[http://gatsbyjs.org/][Gatsby]]:
+So now I have decided to see if I can start one from scratch, based on [[http://gatsbyjs.org/][Gatsby]]:
 
 1. I started off with this [[https://www.freecodecamp.org/news/build-a-developer-blog-from-scratch-with-gatsby-and-mdx/][excellent tutorial]].
 2. I added a [[https://github.com/marketplace/actions/deploy-to-github-pages][Github pages publish workflow]] (inspired by [[https://github.com/orgapp/gatsby-starter-orga/blob/master/.github/workflows/ci.yml][gatsby-starter-olga]]). I also needed to [[https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line][create a personal access token]] and [[https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets][store it as a secret]].
