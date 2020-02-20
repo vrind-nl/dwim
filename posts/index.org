@@ -112,7 +112,7 @@ Resist the urge to tinker.
 #+END_QUOTE
 I don't remember where I found it, but it may have been in [[https://en.wikipedia.org/wiki/The_Mythical_Man-Month][The Mythical Man-Month]] by Frederick Brooks.
 
-I think at the moment I have struck an acceptable balance. In the past I have been known to spend many hours making Emacs more beautiful. A thankless challenge in many ways, because Emacs is many things, but beautiful is not one of them. But currently, I experiment with packages that help me /now/ (as opposed to with some task in the future). Moreover, I try to stick with what available out of the box and with the default configuration as much as possible.
+I think at the moment I have struck an acceptable balance. In the past I have been known to spend many hours making Emacs more beautiful. A thankless challenge in many ways, because Emacs is many things, but beautiful is not one of them. So currently, I experiment with packages that help me /now/ (as opposed to with some task in the future). Moreover, I try to stick with what's available out of the box and with the default configuration as much as possible.
 
 * PUBLISHED Emacs? Help!                                              :emacs:
 CLOSED: [2020-02-15 za 17:37]
