@@ -2,11 +2,21 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
-* DRAFT Definition of Done
 
-Resist the urge to tinker
+* DRAFT Head-voice vs. quiet-mind
+:PROPERTIES:
+:ID:       ca3a7f14-f4af-4a91-981b-f795b631a17e
+:END:
 
-When you automate something, you do not just make that task easier, but you also improve your automation skills. This means that next time you want to automate something, that too will be easier, and the
+http://esr.ibiblio.org/?p=8558
+
+* DRAFT Goodbye, Clean Code — Overreacted
+
+https://overreacted.io/goodbye-clean-code/
+
+
+* DRAFT News                                                        :society:
+Uit "alle mensen deugen": Ik ben nog opgevoed met de gedachte dat het nieuws goed is voor je ontwikkeling. Een betrokken burger zou regelmatig de krant moeten lezen en het journaal kijken. Hoe beter we het nieuws volgen, hoe beter we geïnformeerd zijn, hoe gezonder de democratie.
 
 * DRAFT Emacs is no text editor | Eigenbahn blog                       :emacs:
 
@@ -74,6 +84,35 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+
+* PUBLISHED Emacs: Is it worth it?                   :emacs:org:productivity:
+CLOSED: [2020-02-20 do 16:05]
+
+[[https://www.reddit.com/r/emacs/comments/f61ipx/is_it_worth_it/][This Reddit post]] dares to ask the question if Emacs is worth it. Quite courageous in the =r/emacs= subreddit, if you ask me...
+
+What we get is some refreshingly blunt replies:
+- Org Mode will mostly just cause you to waste your life configuring it. It will never end, always presenting another way to be more efficient/clever. One day you will find yourself sharing your story in an Orgaholics Anonymous meeting while gripping your paper notebook.
+- I'm watching 10+ year old YouTube videos of Emacs presentations trying to find what possible configurations I've missed
+- Emacs and Org present great temptations for procrastination when you need to get work done
+- "I am learning to limit that because it was getting in the way of getting things done." leads to "Ah yes, the addiction at its finest."
+
+It's all /so/ relatable. Here I am, writing a blog post I am not being paid for, while I have a long lists of tasks with actual deadlines. Org mode makes it into a /beautiful/ and /manageable/ list, true, but I am /not/ working on it.
+
+Then [[https://www.reddit.com/user/publicvoit/][publicvoit]] nails it by:
+#+BEGIN_QUOTE
+Everybody is procrastinating. Anybody who disagrees is either lying or she/he is not aware of doing X as procrastinating.
+The good news here is that you seem to optimize your working environment while procrastinating.
+#+END_QUOTE
+
+And that's also true. Fortunately. Better yet, when you automate some part of your workflow, you do not just make that task easier, but you also improve your automation skills. This means that next time you want to automate something, that too will be easier, and less of an obstacle to make further improvements.
+
+My pitfall is that I am tempted to tinker. I tend to optimize and optimize my code (or my workflow), until it is just too clever. Just as the Reddit post above, [[https://overreacted.io/goodbye-clean-code/][this]] blog post is also very relatable. Fortunately, these days I am aware of this, and signal I am doing it again earlier. I once read the following advice, which I have been trying to follow ever since:
+#+BEGIN_QUOTE
+Resist the urge to tinker.
+#+END_QUOTE
+I don't remember where I found it, but it may have been in [[https://en.wikipedia.org/wiki/The_Mythical_Man-Month][The Mythical Man-Month]] by Frederick Brooks.
+
+I think at the moment I have struck an acceptable balance. In the past I have been known to spend many hours making Emacs more beautiful. A thankless challenge in many ways, because Emacs is many things, but beautiful is not one of them. But currently, I experiment with packages that help me /now/ (as opposed to with some task in the future). Moreover, I try to stick with what available out of the box and with the default configuration as much as possible.
 
 * PUBLISHED Emacs? Help!                                              :emacs:
 CLOSED: [2020-02-15 za 17:37]

@@ -50,7 +50,8 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
 
-      metadata.tags.forEach(tag => {
+      const postTags = metadata.tags.length > 0 ? metadata.tags : ["notags"];
+      postTags.forEach(tag => {
         const context = {
           slug: fields.slug,
           title: metadata.title,

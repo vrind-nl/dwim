@@ -5,8 +5,8 @@ import { Link } from "gatsby";
 import styles from "./Teaser.module.css";
 
 export default ({ metadata, fields, html }) => {
-  const text = html.replace(/<[^>]*>?/gm, '');
-  const cut = text.indexOf(".", 200);
+  const text = html.replace(/\\n*/gm, ' ').replace(/<[^>]*>?/gm, '');
+  const cut = text.indexOf(".", 300);
   const excerpt = cut > 0 ? text.substring(0, cut + 1) : html;
   // const cut = html.indexOf("<p>", 200);
   // const excerpt = cut > 0 ? html.substring(0, cut - 1) : html;

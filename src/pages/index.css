@@ -1,6 +1,9 @@
-.block {
+* {
+    line-height: 1.5;
+}
+.block, blockquote {
   background-color: #eee;
-  padding: 4pt;
+  padding: 6pt;
   margin: 6pt 0 6pt;
   border-radius: 4pt;
   overflow: hidden;
@@ -21,4 +24,9 @@ td {
 
 button {
   border: none;
+}
+
+blockquote {
+    font-style: italic;
+    margin-left: 20pt;
 }
