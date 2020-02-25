@@ -1,62 +1,8 @@
 #+TITLE: DWIM
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
-* PUBLISHED Subdocuments in Mongodb                                :mongo:js:
-CLOSED: [2020-02-23 zo 17:23]
 
-I have done many attempts to wrap my head around [[https://www.mongodb.com/][MongoDB]]. As I come from the traditional world of RDBMSs, this does not come naturally to me. But the more I work with Javascript, the more natural the step to Mongo becomes.
-
-So far, my attempts to use Mongo failed, due to my inability to overcome the learning curve. In this post I will discuss one of my the biggest hurdles: subdocuments and many-to-many-relationships.
-
-In the relational world I hardly ever work in the database directly. I almost always use an ORM like [[https://www.sqlalchemy.org/][SQLAlchemy]], [[https://sequelize.org/][Sequelize]], or [[https://laravel.com/docs/master/eloquent][Eloquent]]. In the past I worked on projects with [[https://www.meteor.com/][Meteor]] which uses Mongo as a backend and uses [[https://guide.meteor.com/collections.html#schemas][schemas]] to help manage your data. [[https://mongoosejs.com/][Mongoose]] provides similar functionality, which I like.
-
-Documents in MongoDB are hierarchical by nature. They easily map to JSON and Javascript objects, which makes the match with Javascript so elegant. This means that 1:n relations are modeled by having nested documents.
-
-For example, in my current project organisations have teams, which in turn have members. The organisations data would look like:
-#+BEGIN_SRC javascript
-  [
-    {
-      name: "Universal Exports",
-      teams: [
-        {
-          name: "development",
-          members: [...]
-        },
-        {
-          name: "marketing",
-          members: [...]
-        }
-      ]
-    },
-    {
-      name: "ACME",
-      teams: [
-        {
-          name: "design",
-          members: [...]
-        },
-        {
-          name: "production",
-          members: [...]
-        }
-      ]
-    }
-  ]
-#+END_SRC
-
-Team members are the system's users. Each team has multiple members and every user can be member of multiple teams. This results in a many-to-many-relationship, which can no longer be modeled hierarchically. Instead of containing the user data itself, the members refer to the ids of the users and the users are in their own collection.
-
-Similarly, I could have chosen to make teams a separate collection and have the =teams= field of the organisation refer to the team ids. But in that case, a subdocument is more natural as each team belongs to exactly one organisation. Making organisations and teams separate collections would have been the relational way, and then I should have stayed with Sequelize and Postgres.
-
-I run into the limitations of my Mongo knowledge as I attempt to find the teams a user belongs to. I tried some queries in the Mongo client:
-#+BEGIN_SRC js
-db.organisations.find({teams: {members: ObjectId("5e5146d2b941b21ccea02c48")}})
-// no response
-
-db.organisations.find({"teams.members": ObjectId("5e5146d2b941b21ccea02c48")})
-// gives the correct organisation, but includes all teams
-#+END_SRC
-So far, I haven't been able to figure out how to get the relavant teams only. So, I end up writing Javascript code instead of Mongo queries. Hopefully, I will be able to follow-up on this post soon with a solution.
+* DRAFT Microsoft Office on Schools
 
 * DRAFT Emacs Language Server Protocol                            :emacs:dev:
 
@@ -71,12 +17,9 @@ https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/
 
 http://esr.ibiblio.org/?p=8558
 
-* DRAFT Goodbye, Clean Code — Overreacted
-
-https://overreacted.io/goodbye-clean-code/
-
 
 * DRAFT News                                                        :society:
+
 Uit "alle mensen deugen": Ik ben nog opgevoed met de gedachte dat het nieuws goed is voor je ontwikkeling. Een betrokken burger zou regelmatig de krant moeten lezen en het journaal kijken. Hoe beter we het nieuws volgen, hoe beter we geïnformeerd zijn, hoe gezonder de democratie.
 
 * DRAFT Emacs is no text editor | Eigenbahn blog                       :emacs:
@@ -145,6 +88,77 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+* PUBLISHED Different perspectives                            :society:books:
+CLOSED: [2020-02-25 di 20:41]
+
+#+attr_org: :width 200
+#+attr_html: :width 200px
+[[./godel-escher-bach-cover.jpg]]
+
+I firmly believe that many differences of opinion are actually differences of perspective. To explain what I mean, the front cover of [[https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach][Gödel, Escher, Bach]] provides a perfect visualization.
+
+We see three complex 3D wooden shapes that are seemingly become simple 2D shapes when viewed from different angles. The viewers from the left see the letter E over G, the viewers from the right see the letter G over E, and the viewers from the top see the letter B.
+
+Now envision all the discussions that will ensue. The viewers from the top are convinced there is Only One Letter (they could start a church), while the others will maintain there are two. The viewers from the left are sure the E is above the G, while the viewers from the right think it's the other way around, and the viewers from the top know for sure there is no G or E at all (in whatever order).
+
+I think this abstract figure translates directly to reality. For example in a discussion between graphical designers, marketeers and software developers. More often than not, they actually agree, even though they embark on endless discussions.
+
+* PUBLISHED Embedded Documents in Mongodb                                :mongo:js:
+CLOSED: [2020-02-23 zo 17:23]
+
+I have done many attempts to wrap my head around [[https://www.mongodb.com/][MongoDB]]. As I come from the traditional world of RDBMSs, this does not come naturally to me. But the more I work with Javascript, the more natural the step to Mongo becomes.
+
+So far, my attempts to use Mongo failed, due to my inability to overcome the learning curve. In this post I will discuss one of my the biggest hurdles: embedded documents and many-to-many-relationships.
+
+In the relational world I hardly ever work in the database directly. I almost always use an ORM like [[https://www.sqlalchemy.org/][SQLAlchemy]], [[https://sequelize.org/][Sequelize]], or [[https://laravel.com/docs/master/eloquent][Eloquent]]. In the past I worked on projects with [[https://www.meteor.com/][Meteor]] which uses Mongo as a backend and uses [[https://guide.meteor.com/collections.html#schemas][schemas]] to help manage your data. [[https://mongoosejs.com/][Mongoose]] provides similar functionality, which I like.
+
+Documents in MongoDB are hierarchical by nature. They easily map to JSON and Javascript objects, which makes the match with Javascript so elegant. This means that 1:n relations are modeled by having nested documents.
+
+For example, in my current project organisations have teams, which in turn have members. The organisations data would look like:
+#+BEGIN_SRC javascript
+  [
+    {
+      name: "Universal Exports",
+      teams: [
+        {
+          name: "development",
+          members: [...]
+        },
+        {
+          name: "marketing",
+          members: [...]
+        }
+      ]
+    },
+    {
+      name: "ACME",
+      teams: [
+        {
+          name: "design",
+          members: [...]
+        },
+        {
+          name: "production",
+          members: [...]
+        }
+      ]
+    }
+  ]
+#+END_SRC
+
+Team members are the system's users. Each team has multiple members and every user can be member of multiple teams. This results in a many-to-many-relationship, which can no longer be modeled hierarchically. Instead of containing the user data itself, the members refer to the ids of the users and the users are in their own collection.
+
+Similarly, I could have chosen to make teams a separate collection and have the =teams= field of the organisation refer to the team ids. But in that case, a embedded document is more natural as each team belongs to exactly one organisation. Making organisations and teams separate collections would have been the relational way, and then I should have stayed with Sequelize and Postgres.
+
+I run into the limitations of my Mongo knowledge as I attempt to find the teams a user belongs to. I tried some queries in the Mongo client:
+#+BEGIN_SRC js
+db.organisations.find({teams: {members: ObjectId("5e5146d2b941b21ccea02c48")}})
+// no response
+
+db.organisations.find({"teams.members": ObjectId("5e5146d2b941b21ccea02c48")})
+// gives the correct organisation, but includes all teams
+#+END_SRC
+So far, I haven't been able to figure out how to get the relavant teams only. So, I end up writing Javascript code instead of Mongo queries. Hopefully, I will be able to follow-up on this post soon with a solution.
 
 * PUBLISHED Emacs: Is it worth it?                   :emacs:org:productivity:
 CLOSED: [2020-02-20 do 16:05]

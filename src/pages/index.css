@@ -30,3 +30,8 @@ blockquote {
     font-style: italic;
     margin-left: 20pt;
 }
+
+img {
+    float: right;
+    margin: 10pt;
+}
