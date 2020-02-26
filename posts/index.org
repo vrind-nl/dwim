@@ -97,7 +97,7 @@ CLOSED: [2020-02-25 di 20:41]
 
 I firmly believe that many differences of opinion are actually differences of perspective. To explain what I mean, the front cover of [[https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach][Gödel, Escher, Bach]] provides a perfect visualization.
 
-We see three complex 3D wooden shapes that are seemingly become simple 2D shapes when viewed from different angles. The viewers from the left see the letter E over G, the viewers from the right see the letter G over E, and the viewers from the top see the letter B.
+We see three complex 3D wooden shapes that seemingly become simple 2D shapes when viewed from different angles. The viewers from the left see the letter E over G, the viewers from the right see the letter G over E, and the viewers from the top see the letter B.
 
 Now envision all the discussions that will ensue. The viewers from the top are convinced there is Only One Letter (they could start a church), while the others will maintain there are two. The viewers from the left are sure the E is above the G, while the viewers from the right think it's the other way around, and the viewers from the top know for sure there is no G or E at all (in whatever order).
 
