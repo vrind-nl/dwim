@@ -1,5 +1,6 @@
 * {
     line-height: 1.5;
+    font-family: Ubuntu, sans-serif;
 }
 .block, blockquote, pre {
   background-color: #ddd;
@@ -28,7 +29,7 @@ button {
 
 blockquote {
     font-style: italic;
-    margin-left: 20pt;
+    margin: 0 50pt 0 20pt;
 }
 
 img {

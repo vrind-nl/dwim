@@ -11,9 +11,6 @@
 https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/
 
 * DRAFT Head-voice vs. quiet-mind
-:PROPERTIES:
-:ID:       ca3a7f14-f4af-4a91-981b-f795b631a17e
-:END:
 
 http://esr.ibiblio.org/?p=8558
 
@@ -88,6 +85,32 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+
+* PUBLISHED Let's talk!                                             :society:
+CLOSED: [2020-02-28 vr 19:21]
+
+The post [[http://esr.ibiblio.org/?p=8609][The right to be rude]] by Eric Raymond struck a chord with me:
+
+#+BEGIN_QUOTE
+The habit of institutional tone policing, even when well-intentioned, too easily slides into the active censorship of disfavored views.
+#+END_QUOTE
+
+I feel the same way. Although for me the problem is not so much the /institutions/, but more the unchecked power of small, highly vocal interest groups, that set the tone. These groups manage to control the public debate to the extent that public figures (like politicians and talk show hosts) cannot afford to publicly disagree with them. Some topics have been made so sensitive, that they can no longer discuss them openly and freely, for fear of damaging their reputation.
+
+Raymond puts it like this:
+
+#+BEGIN_QUOTE
+The cost of a culture in which avoiding offense trumps the liberty to speak is that crybullies control the discourse.
+#+END_QUOTE
+
+However, there is no need to be "rude". We can politely and respectfully disagree, without offending or insulting each other. That's what I would /like/ to say, but I can't. Because some groups take offense so easily, that I feel it has become all but impossible to have a meaningful dialogue. It seems these groups think that shutting up their opponents by  smothering the public debate actually changes their minds. But this approach doesn't bring ideas closer together. Instead, it fosters frustration, prejudice and polarization.
+
+#+BEGIN_QUOTE
+I disapprove of what you say, but I will defend to the death your right to say it.
+#+END_QUOTE
+([[https://quoteinvestigator.com/2015/06/01/defend-say/][src]])
+
+I would like to live in a society that encourages the free exchange of ideas, where we accept and even respect viewpoints that differ from our own. This requires the possibility to safely disagree with each other.
 * PUBLISHED Different perspectives                            :society:books:
 CLOSED: [2020-02-25 di 20:41]
 
