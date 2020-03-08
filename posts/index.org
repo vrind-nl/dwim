@@ -110,9 +110,9 @@ Slow cooking, slow communication
 * PUBLISHED Virtual Machine Management                             :sysop:vm:
 CLOSED: [2020-03-08 zo 20:03]
 
-I have been using [[https://www.virtualbox.org/][VirtualBox]] for years to manage my virtual machines (including [[https://www.vagrantup.com][Vagrant]]). It always worked fine, but with over 150MB in size, it felt a little on the heavy side (compared to less than 50MB for Qemu/virt-manager).
+I have been using [[https://www.virtualbox.org/][VirtualBox]] for years to manage my virtual machines (including [[https://www.vagrantup.com][Vagrant]]). It always worked fine, but with over 150MB in size, it felt a little on the heavy side.
 
-Today I looked into [[https://www.qemu.org/][Qemu]] again. In the past I found it too complicated to get to work, but these days [[https://virt-manager.org/][virt-manager]] provides a familiar GUI. I got [[https://pureos.net/][PureOS]] working in no time flat. As Qemu uses KVMs (or [[https://www.linux-kvm.org/][Kernel-based Virtual Machine]]) it is neatly integrated with the Linux kernel, with all the advantages that that brings.
+Today I looked into [[https://www.qemu.org/][Qemu]] again. In the past I found it too complicated to get to work, but these days [[https://virt-manager.org/][virt-manager]] provides a familiar GUI. I got [[https://pureos.net/][PureOS]] working in no time flat. As Qemu uses KVMs (or [[https://www.linux-kvm.org/][Kernel-based Virtual Machine]]) it is neatly integrated with the Linux kernel, with all the advantages that that brings. Likeo less than 50MB for the combo of Qemu/virt-manager.
 
 And to top it all off, libvirt can also be used as a [[https://github.com/vagrant-libvirt/vagrant-libvirt][Vagrant provider]].
 
@@ -473,7 +473,6 @@ Keys:
 | <2020-01-17> | =Ctrl-Alt-Shft NumDown= | copy line to below    |
 | <2020-01-20> | =Alt-Down=              | move line down        |
 | <2020-01-21> | =Ctrl-R R=              | NPM rerun last script |
-
 
 * PUBLISHED Node Streams                                      :node:research:
 CLOSED: [2020-01-13 ma 19:41]
