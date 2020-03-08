@@ -2,6 +2,27 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
+* DRAFT Freedom!
+
+I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
+
+What I want:
+- test-drive as VM (Qemu with virt-manager)
+- work on my laptop
+- relatively painless (be productive quickly_
+- pleasing on the eye
+
+To get networking in the guest I had to select NAT for network source and "hypervisor default" for device model as my NIC.
+
+- https://guix.gnu.org: Running quickly but after that the going gets rough.
+- https://pureos.net/: looks good (GNOME).
+- https://trisquel.info/
+- https://guix.gnu.org/manual/devel/en/html_node/Running-Guix-in-a-VM.html
+
+- https://virt-manager.org/
+
+* DRAFT https://kentcdodds.com/blog/make-your-test-fail                :blog:
+
 * DRAFT Microsoft Office on Schools
 
 * DRAFT Emacs Language Server Protocol                            :emacs:dev:
@@ -85,6 +106,15 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+
+* PUBLISHED Virtual Machine Management                             :sysop:vm:
+CLOSED: [2020-03-08 zo 20:03]
+
+I have been using [[https://www.virtualbox.org/][VirtualBox]] for years to manage my virtual machines (including [[https://www.vagrantup.com][Vagrant]]). It always worked fine, but with over 150MB in size, it felt a little on the heavy side (compared to less than 50MB for Qemu/virt-manager).
+
+Today I looked into [[https://www.qemu.org/][Qemu]] again. In the past I found it too complicated to get to work, but these days [[https://virt-manager.org/][virt-manager]] provides a familiar GUI. I got [[https://pureos.net/][PureOS]] working in no time flat. As Qemu uses KVMs (or [[https://www.linux-kvm.org/][Kernel-based Virtual Machine]]) it is neatly integrated with the Linux kernel, with all the advantages that that brings.
+
+And to top it all off, libvirt can also be used as a [[https://github.com/vagrant-libvirt/vagrant-libvirt][Vagrant provider]].
 
 * PUBLISHED Let's talk!                                             :society:
 CLOSED: [2020-02-28 vr 19:21]
