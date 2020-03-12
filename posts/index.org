@@ -107,6 +107,25 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
+* PUBLISHED Low expectations                                         :it:oss:
+CLOSED: [2020-03-12 do 08:32]
+
+I don't usually do Microsoft Bashing, but this one was too good to let go.
+
+On LinkedIn I saw an ad which read (translated):
+#+BEGIN_QUOTE
+Don't let IT get in the way of your growth.
+#+END_QUOTE
+Which sounds as sensible a plan as any.
+
+But on second thought, this is a very modest objective. Shouldn't the point of IT be to /help/ me grow? And why only /growth/?
+
+When I work on Windows it feels as if it is always in my way. When I want to start working, it needs to update (which too often fails if my PC is older than 18 months). If I receive a document from someone else, it is in a newer version of Word than mine (granted, I am the one who chooses to keep using an 'old' version of Word). When I want to run Docker, I need to upgrade to Windows Pro. Etc, etc.
+
+So one of the main reasons I use Open Source Software is that I feel liberated. Also in the beer and speech sense, but in this case I mean in the 'wearing comfortable shoes' sense.
+
+It updates in the background and never fails. Therefore, I always have the latest (or at least a recent) version of every tool I use. And I can use Docker (or any other tool) any way I want.
+
 * PUBLISHED Virtual Machine Management                             :sysop:vm:
 CLOSED: [2020-03-08 zo 20:03]
 
