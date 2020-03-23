@@ -2,129 +2,6 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
-* PUBLISHED COVID-19                                                  :society:
-CLOSED: [2020-03-23 ma 08:20]
-
-Just like everybody else COVID-19 is on my mind constantly these days. In this post I look at what is going on according to main stream media, what other views experts may have, and I try to figure out what is happening.
-
-I am not an expert: I am not a virologist, nor a data scientist. So, my intention is to rely on those who are. But between them and me are the media, politics and public opinion, which may obscure my view if I am not careful. So, let's dig in.
-
-** First
-My heart goes out to all the victims of this virus. I wish strength to those who are sick, those who have lost or fear the loss of a loved one, and the care-givers who are working hard to help them. You deserve our support!
-
-** What we hear in the news
-These [[https://www.vox.com/future-perfect/2020/3/12/21172040/coronavirus-covid-19-virus-charts][11 charts]] [March 17] nicely summarize the data we see in the news every day. The gist:
-- the virus is spreading rapidly
-- this is much more severe than the ordinary flu:
-|                        | Seasonal Flu | COVID-19 |
-|------------------------+--------------+--------|
-| infection rate ([[https://en.wikipedia.org/wiki/Basic_reproduction_number][R0]])    |          1.3 |    2.3 |
-| incubation time (days) |          1-4 |   1-14 |
-| hospitalization rate   |           2% |    19% |
-| death rate             |         0.1% |   3.4% |
-- people dying of COVID-19 are almost all more that 60 years old and often have pre-existing conditions
-- there are significant differences between the testing strategies of each country, ranging from 23 per million people in the US to 3,692 per million people in South Korea
-- Flattening the Curve by Social Distancing currently is the best strategy to contain the virus
-
-In his [[https://www.elysee.fr/emmanuel-macron/2020/03/16/adresse-aux-francais-covid19][address]] [March 16, French] to the nation the French President Emmanual Macron said: "We are at war, in a health war, of course: we are not fighting against an army or against another Nation. But the enemy is there, invisible, elusive, advancing. And that requires our general mobilization."
-
-If statements like this don't strike fear in the hearts of citizens, nothing will...
-
-** But...
-
-In [[https://www.statnews.com/2020/03/17/a-fiasco-in-the-making-as-the-coronavirus-pandemic-takes-hold-we-are-making-decisions-without-reliable-data/][STAT news]] [March 17], John P.A. Ioannidis of the Meta-Research Innovation Center at Stanford ([[https://metrics.stanford.edu/][METRICS]]), comes with some provoking statements:
-- The data collected so far on how many people are infected and how the epidemic is evolving are utterly unreliable.
-- Reported case fatality rates, like the official 3.4% rate from the World Health Organization, cause horror — and are meaningless.
-- If we had not known about a new virus out there, and had not checked individuals with [[https://en.wikipedia.org/wiki/Polymerase_chain_reaction][PCR tests]], the number of total deaths due to “influenza-like illness” would not seem unusual this year.
-- Draconian countermeasures have been adopted in many countries. In the coronavirus pandemic, we're making decisions without reliable data
-- If the level of the epidemic does overwhelm the health system and extreme measures have only modest effectiveness, then flattening the curve may make things worse: Instead of being overwhelmed during a short, acute phase, the health system will remain overwhelmed for a more protracted period.
-
-This prompted me to see if I could find out more.
-
-*** How bad is COVID-19, really?
-
-The death rate of COVID-19 is estimated by the WHO to be 3.4%, based on numbers from Wuhan. But newer number [[https://www.nytimes.com/2020/03/19/health/wuhan-coronavirus-deaths.html][reports]] [March 20] suggest this are much lower there, more like 1.4%.
-
-The Centre for Evidence-Based Medicine (CEBM) of the University of Oxford [[https://www.cebm.net/global-covid-19-case-fatality-rates/][explains]] that the /Infection Rate Fatality/ (IFR) differs from the /Case Fatality  Rate/ (CFR) in that it aims to estimate the fatality rate in /all/ those with infection: the patients who have been tested positive (cases) and those with an undetected disease (asymptomatic and not tested group). "Our current best assumption, as of the 22nd March, is the IFR  is approximate 0.19%." What this means is clearly visible in [[https://www.ft.com/content/c0755b30-69bb-11ea-800d-da70cff6e4d3][Germany]] where 24,873 people have been tested positive and 94 have died (0.4%): the point here is that Germany performs 160,000 COVID-19 tests every week which means they find far more infections than any other country, but their fatality rate is much lower.
-
-Ioannidis refers to the [[https://www.princess.com/news/notices_and_advisories/notices/diamond-princess-update.html][Diamond Princess Cruise Ship]] as one situation where an entire, closed population was tested (six deaths occurred out of 705 who tested positive constituting a CFR of 0.85%. All six deaths six occurred in patients > 70. No one under 70 died): "Projecting the Diamond Princess mortality rate onto the age structure of the U.S. population, the death rate among people infected with Covid-19 would be 0.125%." (the article continues with further nuances). This is confirmed by this [[https://www.medrxiv.org/content/10.1101/2020.03.05.20031773v2][study]]: comparing deaths onboard with expected deaths based on naive CFR estimates using China data, they estimated CFR 1.1% and IFR 0.5%.
-
-To put things in perspective, the seasonal flu in the Netherlands (17 million people) cost 9,500 deaths in [[https://www.snpg.nl/wp-content/uploads/2018/10/infographic-RIVM-Griep-in-beeld-winter-2017-18.pdf][season 2017/2018]] [Dutch] and hardly anybody noticed. Compare this to the 179 deaths from COVID-19 in The Netherlands now (March 22), or the 5476 deaths in Italy ([[https://en.wikipedia.org/wiki/Lombardy][Lombardy]] has 10 million inhabitants) and the 3275 deaths in China ([[https://en.wikipedia.org/wiki/Wuhan][Wuhan]] has 11 million). The season 2017/2018 was a severe flu season in The Netherlands but [[https://www.volksgezondheidenzorg.info/onderwerp/influenza/cijfers-context/sterfte][other seasons]] [Dutch] still show significant numbers.
-
-We have had similar outbreaks of viruses in the past, like the [[https://en.wikipedia.org/wiki/2009_flu_pandemic][2009/2010 swine or Mexican flu pandamic]] with estimates of 700 million-1.4 billion confirmed cases and 151,700-575,400 deaths. These are staggering numbers, but in The Journal of the American Medical Association as early as Sept 8 2010 Edward A. Belongia and colleagues [[https://jamanetwork.com/journals/jama/fullarticle/186549][report]] numbers that suggest that the swine flu were no worse than the seasonal flu. The WHO [[https://www.reuters.com/article/us-health-flu-who/world-must-prepare-for-inevitable-next-flu-pandemic-who-says-idUSKBN1QS1EP][confirmed]] in 2019 that swine flu ended up with a fatality rate of 0.02%. And this pandemic also saw the Mexican government closing most of Mexico city and clinics in some areas being overwhelmed by infected people.
-
-CEBM conclude that evaluating CFR during a pandemic is a hazardous exercise, and high-end estimates must be treated with caution as the H1N1 pandemic highlights that original estimates were off by a factor greater than 10.
-
-*** How effective is the current strategy?
-
-/Flatten the curve/ and /Social Distancing/ are the current strategies of choice. CEBM [[https://www.cebm.net/what-is-the-evidence-for-social-distancing-during-global-pandemics-a-rapid-summary-of-current-knowledge/][states]]: "Although limited, the best available evidence appears to support social distancing measures as a means of reducing transmission and delaying spread. Staggered and cumulative implementation of these interventions may prove most effective. The timing and duration of such measures is critical." but [[https://www.cebm.net/what-is-the-evidence-for-mass-gatherings-during-global-pandemics/][also]]: "The effect of restricting and cancelling mass gatherings and sporting events on infectious diseases is poorly established and requires further assessment. The best-available evidence suggests multiple-day events with crowded communal accommodations are most associated with increased risk. Mass gatherings are not homogenous and risk should be assessed on a case-by-case basis."
-
-*** Where is this going?
-
-Michael Levitt, an American-British-Israeli biophysicist who won the 2013 Nobel prize for chemistry has [[https://m.jpost.com/HEALTH-SCIENCE/Israeli-nobel-laureate-Coronavirus-spread-is-slowing-621145][monitored]] [March 20] the virus in China since the early days. He predicted the current decline in number of infections two weeks before it happened and now predicts the virus will disappear from China by the end of March. This [[http://www.casperalbers.nl/nl/post/2020-03-11-coronagrafieken/][explanation]] [March 11, Dutch] by Applied Statistics professor Casper Albers shows why the exponential model to predict new cases doesn't fit the data, but that [[https://en.wikipedia.org/wiki/Logistic_regression][logistic regression]] does and probably provides a better model.
-
-Notice the [[https://en.wikipedia.org/wiki/Basic_reproduction_number][definition]] of the infection rate /R0/:
-#+BEGIN_QUOTE
-the expected number of cases directly generated by one case in a population where all individuals are susceptible to infection.
-#+END_QUOTE
-The key words here are "susceptible to infection". Of course, in time not all individuals will be susceptible to infection anymore and the virus will die out. And the more contagious a virus is, the sooner this will happen.
-
-The social media bombard us with cries of panic and pleas for help from doctors and nurses from Italy, but we also get [[https://www.repubblica.it/cronaca/2020/02/26/news/coronavirus_la_virologa_gismondo_e_le_notti_in_laboratorio_contro_la_psicosi_basta_la_verita_ora_tanti_mi_stanno_dando_ra-249593378/?refresh_ce][this interview]] [Feb 26, Italian] with Maria Rita Gismondo, the director of the [[https://www.asst-fbf-sacco.it/reparti-e-servizi/info/microbiologia-clinica-virologia-e-diagnostica-bioemergenze][Laboratory]] of Clinical Microbiology, Virology and bio-emergencies in Milan, who states "There is a bombardment of news that foment fear, there has been a collective brainwashing", but COVID-19 "is little more than a normal flu", and "we are /not/ at war". For this, Gismondo has received [[https://www.repubblica.it/salute/medicina-e-ricerca/2020/03/22/news/coronavirus_lopalco_diffida_gismondo_per_difendere_cittadini_e_scienza_-251984326/][serious flack]] [22 March, Italian] but that hasn't changed her mind.
-
-** What's going on here?
-
-Current data cannot tell us yet how bad COVID-19 actually is. It may be bad, but it may also be comparable to the common flu. We just don't know yet.
-
-That makes we wonder why the response is so strong and why COVID-19 has lead to draconian measures like totally locking down entire countries. I can come up with a number of possible explanations:
-
-*** COVID-19 may actually be worse
-
-From the looks of it, I get the impression that COVID-19 is /fast/. The numbers may be similar to those of the common flu, but they are achieved in weeks instead of months. That pushes us to also /respond/ fast. Don't think, act!
-
-*** FUD
-
-In marketing [[https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt][FUD]], for /Fear, Uncertainty, Doubt/, is a well-known strategy. It pushes people towards the perceived safer option.
-
-These days we are used to big data giving immediate answers. We are used to be in control: when you're sick, go to the doctor. The doctor knows best.
-
-So, when we see experts without answers and doctors panicking, we start to panic too, and flock to anyone who pretends to have a solution.
-
-*** Social media
-
-Even during the 2009 swine flu pandemic, social media were not as ubiquitous as they are today. Back then we got updates a couple of times a day, mostly text, sometimes with a photo. These days we get updates almost live and with video. That has a significantly different impact by instilling a constant sense of urgency.
-
-If we got similarly frequent updates about the common flu during flu season, we might respond as we do now. In fact, [[http://flunewseurope.org/][similar maps]] exist, but probably don't get the same amount of traffic as those for COVID-19 ([[https://localfocus2.appspot.com/5e6f877460e13][this map]] shows the global numbers and [[https://localfocus2.appspot.com/5e68e7405456b][this map]] shows the Dutch situation).
-
-Moreover, even more than in tradition news sources, on social media panic mongers get the same amount of screen time as experts, if not more. Experts are difficult, while demagogues provide snappy sound bites. We bother less and less with the longer, more complicated, but also more nuanced articles.
-
-*** Sign of the times
-
-I feel like we live in times where small vocal groups have a strong grip on the media and politicians.
-
-In The Netherlands the official guide lines are:
-- wash you hands and sneeze in the inside of your elbow
-- keep 1.5 meters distance (so, don't shake hands)
-- work at home if possible
-- stay at home if you don't feel well (sneezing, coughing, fever)
-- events with more than 100 attendees have been cancelled
-
-Schools have been closed since March 16. Not because experts thought it necessary, but [[https://www.parool.nl/nederland/coronavirus-is-nachtmerrie-voor-kabinet-niemand-wil-een-lockdown~b2315da1/][because]] [Dutch] "society voted with their feet". In other words: the government had no other choice, because school leaders wanted to close and parents kept their kids at home.
-
-Also, on social media people are shamed for visiting parks, letting their children play outside, and generally being social. Usually by [[https://knowyourmeme.com/memes/karen][Karens]] on Twitter, celebrities in talk shows or other non-experts. They seem to feel the need to 'educate' their fellow citizens and demonstrate their superior correctness.
-
-But also local mayors and individual medical professionals feel the need to be stricter that the official guide-lines. They seem to think they know better than multi-disciplinary teams of experts that weighed the pros and cons of all options. As a software developer, I know that local optimization may have disastrous global side-effects.
-
-** Conclusion
-
-We just don't know yet, and anybody who suggest they do are lying.
-
-My two cents, and remember I am no expert, so this is not much more than divination and is intended primarily for myself to look back and see where I was most wrong:
-- I support the moderate approach chosen by the Dutch government (mind your hygiene and reduce your number of social contacts). It makes sense and won't hurt. But more draconian measures like total lock-downs may be less effective and more harmful than we think. Especially long-term.
-- COVID-19 is a nasty, aggressive bug and I fear we're up for a couple of rough weeks. I hope that in The Netherlands by mid April the worst will be over and around May we will pretty much be back to normal. But I am known to be an optimist. I expect that next year COVID-19 will be part of the [[https://en.wikipedia.org/wiki/Influenza_vaccine][flu shot cocktail]].
-- The economic ramifications may outlast the medical ones. The stock exchange is ruled by emotion and consumers will be cautious for a long time. In a couple of years we may conclude that over-reacting now has cost more than we thought possible, both in terms of lives as financially.
-
-Most importantly: Let's keep calm and use our heads.
-
 * DRAFT Freedom!
 
 I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
@@ -229,6 +106,129 @@ Learn through master/apprentice
 https://yesterbox.com/
 
 Slow cooking, slow communication
+
+* PUBLISHED COVID-19                                                  :society:
+CLOSED: [2020-03-23 ma 08:20]
+
+Just like everybody else COVID-19 is on my mind constantly these days. In this post I look at what is going on according to main stream media, what other views experts may have, and I try to figure out what is happening.
+
+I am not an expert: I am not a virologist, nor a data scientist. So, my intention is to rely on those who are. But between them and me are the media, politics and public opinion, which may obscure my view if I am not careful. So, let's dig in.
+
+** First
+My heart goes out to all the victims of this virus. I wish strength to those who are sick, those who have lost or fear the loss of a loved one, and the care-givers who are working hard to help them. You deserve our support!
+
+** What we hear in the news
+These [[https://www.vox.com/future-perfect/2020/3/12/21172040/coronavirus-covid-19-virus-charts][11 charts]] [March 17] nicely summarize the data we see in the news every day. The gist:
+- the virus is spreading rapidly
+- this is much more severe than the ordinary flu:
+|                        | Seasonal Flu | COVID-19 |
+|------------------------+--------------+--------|
+| infection rate ([[https://en.wikipedia.org/wiki/Basic_reproduction_number][R0]])    |          1.3 |    2.3 |
+| incubation time (days) |          1-4 |   1-14 |
+| hospitalization rate   |           2% |    19% |
+| death rate             |         0.1% |   3.4% |
+- people dying of COVID-19 are almost all more that 60 years old and often have pre-existing conditions
+- there are significant differences between the testing strategies of each country, ranging from 23 per million people in the US to 3,692 per million people in South Korea
+- Flattening the Curve by Social Distancing currently is the best strategy to contain the virus
+
+In his [[https://www.elysee.fr/emmanuel-macron/2020/03/16/adresse-aux-francais-covid19][address]] [March 16, French] to the nation the French President Emmanual Macron said: "We are at war, in a health war, of course: we are not fighting against an army or against another Nation. But the enemy is there, invisible, elusive, advancing. And that requires our general mobilization."
+
+If statements like this don't strike fear in the hearts of citizens, nothing will...
+
+** But...
+
+In [[https://www.statnews.com/2020/03/17/a-fiasco-in-the-making-as-the-coronavirus-pandemic-takes-hold-we-are-making-decisions-without-reliable-data/][STAT news]] [March 17], John P.A. Ioannidis of the Meta-Research Innovation Center at Stanford ([[https://metrics.stanford.edu/][METRICS]]), comes with some provoking statements:
+- The data collected so far on how many people are infected and how the epidemic is evolving are utterly unreliable.
+- Reported case fatality rates, like the official 3.4% rate from the World Health Organization, cause horror — and are meaningless.
+- If we had not known about a new virus out there, and had not checked individuals with [[https://en.wikipedia.org/wiki/Polymerase_chain_reaction][PCR tests]], the number of total deaths due to “influenza-like illness” would not seem unusual this year.
+- Draconian countermeasures have been adopted in many countries. In the coronavirus pandemic, we're making decisions without reliable data
+- If the level of the epidemic does overwhelm the health system and extreme measures have only modest effectiveness, then flattening the curve may make things worse: Instead of being overwhelmed during a short, acute phase, the health system will remain overwhelmed for a more protracted period.
+
+This prompted me to see if I could find out more.
+
+*** How bad is COVID-19, really?
+
+The death rate of COVID-19 is estimated by the WHO to be 3.4%, based on numbers from Wuhan. But newer [[https://www.nytimes.com/2020/03/19/health/wuhan-coronavirus-deaths.html][reports]] [March 20] suggest the number were much lower there, more like 1.4%.
+
+The Centre for Evidence-Based Medicine (CEBM) of the University of Oxford [[https://www.cebm.net/global-covid-19-case-fatality-rates/][explains]] that the /Infection Rate Fatality/ (IFR) differs from the /Case Fatality  Rate/ (CFR) in that it aims to estimate the fatality rate in /all/ those with infection: the patients who have been tested positive (cases) and those with an undetected disease (asymptomatic and not tested group). "Our current best assumption, as of the 22nd March, is the IFR  is approximate 0.19%." What this means is clearly visible in [[https://www.ft.com/content/c0755b30-69bb-11ea-800d-da70cff6e4d3][Germany]] where 24,873 people have been tested positive and 94 have died (0.4%): the point here is that Germany performs 160,000 COVID-19 tests every week which means they find far more infections than any other country, but their fatality rate is much lower.
+
+Ioannidis refers to the [[https://www.princess.com/news/notices_and_advisories/notices/diamond-princess-update.html][Diamond Princess Cruise Ship]] as one situation where an entire, closed population was tested (six deaths occurred out of 705 who tested positive constituting a CFR of 0.85%. All six deaths six occurred in patients > 70. No one under 70 died): "Projecting the Diamond Princess mortality rate onto the age structure of the U.S. population, the death rate among people infected with Covid-19 would be 0.125%." (the article continues with further nuances). This is confirmed by this [[https://www.medrxiv.org/content/10.1101/2020.03.05.20031773v2][study]]: comparing deaths onboard with expected deaths based on naive CFR estimates using China data, they estimated CFR 1.1% and IFR 0.5%.
+
+To put things in perspective, the seasonal flu in the Netherlands (17 million people) cost 9,500 deaths in [[https://www.snpg.nl/wp-content/uploads/2018/10/infographic-RIVM-Griep-in-beeld-winter-2017-18.pdf][season 2017/2018]] [Dutch] and hardly anybody noticed. Compare this to the 179 deaths from COVID-19 in The Netherlands now (March 22), or the 5476 deaths in Italy ([[https://en.wikipedia.org/wiki/Lombardy][Lombardy]] has 10 million inhabitants) and the 3275 deaths in China ([[https://en.wikipedia.org/wiki/Wuhan][Wuhan]] has 11 million). The season 2017/2018 was a severe flu season in The Netherlands but [[https://www.volksgezondheidenzorg.info/onderwerp/influenza/cijfers-context/sterfte][other seasons]] [Dutch] still show significant numbers.
+
+We have had similar outbreaks of viruses in the past, like the [[https://en.wikipedia.org/wiki/2009_flu_pandemic][2009/2010 swine or Mexican flu pandamic]] with estimates of 700 million-1.4 billion confirmed cases and 151,700-575,400 deaths. These are staggering numbers, but in The Journal of the American Medical Association as early as Sept 8 2010 Edward A. Belongia and colleagues [[https://jamanetwork.com/journals/jama/fullarticle/186549][report]] numbers that suggest that the swine flu were no worse than the seasonal flu. The WHO [[https://www.reuters.com/article/us-health-flu-who/world-must-prepare-for-inevitable-next-flu-pandemic-who-says-idUSKBN1QS1EP][confirmed]] in 2019 that swine flu ended up with a fatality rate of 0.02%. And this pandemic also saw the Mexican government closing most of Mexico city and clinics in some areas being overwhelmed by infected people.
+
+CEBM conclude that evaluating CFR during a pandemic is a hazardous exercise, and high-end estimates must be treated with caution as the H1N1 pandemic highlights that original estimates were off by a factor greater than 10.
+
+*** How effective is the current strategy?
+
+/Flatten the curve/ and /Social Distancing/ are the current strategies of choice. CEBM [[https://www.cebm.net/what-is-the-evidence-for-social-distancing-during-global-pandemics-a-rapid-summary-of-current-knowledge/][states]]: "Although limited, the best available evidence appears to support social distancing measures as a means of reducing transmission and delaying spread. Staggered and cumulative implementation of these interventions may prove most effective. The timing and duration of such measures is critical." but [[https://www.cebm.net/what-is-the-evidence-for-mass-gatherings-during-global-pandemics/][also]]: "The effect of restricting and cancelling mass gatherings and sporting events on infectious diseases is poorly established and requires further assessment. The best-available evidence suggests multiple-day events with crowded communal accommodations are most associated with increased risk. Mass gatherings are not homogenous and risk should be assessed on a case-by-case basis."
+
+*** Where is this going?
+
+Michael Levitt, an American-British-Israeli biophysicist who won the 2013 Nobel prize for chemistry has [[https://m.jpost.com/HEALTH-SCIENCE/Israeli-nobel-laureate-Coronavirus-spread-is-slowing-621145][monitored]] [March 20] the virus in China since the early days. He predicted the current decline in number of infections two weeks before it happened and now predicts the virus will disappear from China by the end of March. This [[http://www.casperalbers.nl/nl/post/2020-03-11-coronagrafieken/][explanation]] [March 11, Dutch] by Applied Statistics professor Casper Albers shows why the exponential model to predict new cases doesn't fit the data, but that [[https://en.wikipedia.org/wiki/Logistic_regression][logistic regression]] does and probably provides a better model.
+
+Notice the [[https://en.wikipedia.org/wiki/Basic_reproduction_number][definition]] of the infection rate /R0/:
+#+BEGIN_QUOTE
+the expected number of cases directly generated by one case in a population where all individuals are susceptible to infection.
+#+END_QUOTE
+The key words here are "susceptible to infection". Of course, in time not all individuals will be susceptible to infection anymore and the virus will die out. And the more contagious a virus is, the sooner this will happen.
+
+The social media bombard us with cries of panic and pleas for help from doctors and nurses from Italy, but we also get [[https://www.repubblica.it/cronaca/2020/02/26/news/coronavirus_la_virologa_gismondo_e_le_notti_in_laboratorio_contro_la_psicosi_basta_la_verita_ora_tanti_mi_stanno_dando_ra-249593378/?refresh_ce][this interview]] [Feb 26, Italian] with Maria Rita Gismondo, the director of the [[https://www.asst-fbf-sacco.it/reparti-e-servizi/info/microbiologia-clinica-virologia-e-diagnostica-bioemergenze][Laboratory]] of Clinical Microbiology, Virology and bio-emergencies in Milan, who states "There is a bombardment of news that foment fear, there has been a collective brainwashing", but COVID-19 "is little more than a normal flu", and "we are /not/ at war". For this, Gismondo has received [[https://www.repubblica.it/salute/medicina-e-ricerca/2020/03/22/news/coronavirus_lopalco_diffida_gismondo_per_difendere_cittadini_e_scienza_-251984326/][serious flack]] [22 March, Italian] but that hasn't changed her mind.
+
+** What's going on here?
+
+Current data cannot tell us yet how bad COVID-19 actually is. It may be bad, but it may also be comparable to the common flu. We just don't know yet.
+
+That makes we wonder why the response is so strong and why COVID-19 has lead to draconian measures like totally locking down entire countries. I can come up with a number of possible explanations:
+
+*** COVID-19 may actually be worse
+
+From the looks of it, I get the impression that COVID-19 is /fast/. The numbers may be similar to those of the common flu, but they are achieved in weeks instead of months. That pushes us to also /respond/ fast. Don't think, act!
+
+*** FUD
+
+In marketing [[https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt][FUD]], for /Fear, Uncertainty, Doubt/, is a well-known strategy. It pushes people towards the perceived safer option.
+
+These days we are used to big data giving immediate answers. We are used to be in control: when you're sick, go to the doctor. The doctor knows best.
+
+So, when we see experts without answers and doctors panicking, we start to panic too, and flock to anyone who pretends to have a solution.
+
+*** Social media
+
+Even during the 2009 swine flu pandemic, social media were not as ubiquitous as they are today. Back then we got updates a couple of times a day, mostly text, sometimes with a photo. These days we get updates almost live and with video. That has a significantly different impact by instilling a constant sense of urgency.
+
+If we got similarly frequent updates about the common flu during flu season, we might respond as we do now. In fact, [[http://flunewseurope.org/][similar maps]] exist, but probably don't get the same amount of traffic as those for COVID-19 ([[https://localfocus2.appspot.com/5e6f877460e13][this map]] shows the global numbers and [[https://localfocus2.appspot.com/5e68e7405456b][this map]] shows the Dutch situation).
+
+Moreover, even more than in tradition news sources, on social media panic mongers get the same amount of screen time as experts, if not more. Experts are difficult, while demagogues provide snappy sound bites. We bother less and less with the longer, more complicated, but also more nuanced articles.
+
+*** Sign of the times
+
+I feel like we live in times where small vocal groups have a strong grip on the media and politicians.
+
+In The Netherlands the official guide lines are:
+- wash you hands and sneeze in the inside of your elbow
+- keep 1.5 meters distance (so, don't shake hands)
+- work at home if possible
+- stay at home if you don't feel well (sneezing, coughing, fever)
+- events with more than 100 attendees have been cancelled
+
+Schools have been closed since March 16. Not because experts thought it necessary, but [[https://www.parool.nl/nederland/coronavirus-is-nachtmerrie-voor-kabinet-niemand-wil-een-lockdown~b2315da1/][because]] [Dutch] "society voted with their feet". In other words: the government had no other choice, because school leaders wanted to close and parents kept their kids at home.
+
+Also, on social media people are shamed for visiting parks, letting their children play outside, and generally being social. Usually by [[https://knowyourmeme.com/memes/karen][Karens]] on Twitter, celebrities in talk shows or other non-experts. They seem to feel the need to 'educate' their fellow citizens and demonstrate their superior correctness.
+
+But also local mayors and individual medical professionals feel the need to be stricter that the official guide-lines. They seem to think they know better than multi-disciplinary teams of experts that weighed the pros and cons of all options. As a software developer, I know that local optimization may have disastrous global side-effects.
+
+** Conclusion
+
+We just don't know yet, and anybody who suggest they do are lying.
+
+My two cents, and remember I am no expert, so this is not much more than divination and is intended primarily for myself to look back and see where I was most wrong:
+- I support the moderate approach chosen by the Dutch government (mind your hygiene and reduce your number of social contacts). It makes sense and won't hurt. But more draconian measures like total lock-downs may be less effective and more harmful than we think. Especially long-term.
+- COVID-19 is a nasty, aggressive bug and I fear we're up for a couple of rough weeks. I hope that in The Netherlands by mid April the worst will be over and around May we will pretty much be back to normal. But I am known to be an optimist. I expect that next year COVID-19 will be part of the [[https://en.wikipedia.org/wiki/Influenza_vaccine][flu shot cocktail]].
+- The economic ramifications may outlast the medical ones. The stock exchange is ruled by emotion and consumers will be cautious for a long time. In a couple of years we may conclude that over-reacting now has cost more than we thought possible, both in terms of lives as financially.
+
+Most importantly: Let's keep calm and use our heads.
 
 * PUBLISHED Low expectations                                         :it:oss:
 CLOSED: [2020-03-12 do 08:32]
