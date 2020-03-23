@@ -16,16 +16,16 @@
   "email": "randomrambler@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.3",
-    "@mdx-js/react": "^1.5.3",
-    "gatsby": "^2.18.21",
-    "gatsby-plugin-feed": "^2.3.26",
-    "gatsby-source-filesystem": "^2.1.46",
+    "@mdx-js/mdx": "^1.5.7",
+    "@mdx-js/react": "^1.5.7",
+    "gatsby": "^2.20.2",
+    "gatsby-plugin-feed": "^2.4.0",
+    "gatsby-source-filesystem": "^2.2.1",
     "gatsby-transformer-orga": "^1.8.4",
     "prism-react-renderer": "^1.0.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-icons": "^3.8.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
     "react-utterances": "^0.6.4"
   }
 }

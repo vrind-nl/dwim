@@ -2,6 +2,7 @@
     line-height: 1.5;
     font-family: Ubuntu, sans-serif;
 }
+
 .block, blockquote, pre {
   background-color: #ddd;
   padding: 6pt;
@@ -12,6 +13,10 @@
 
 .footnotes {
   font-size: 80%;
+}
+
+table {
+    margin: auto;
 }
 
 th {
