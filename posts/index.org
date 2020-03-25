@@ -107,6 +107,76 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
+* DRAFT COVID-19 psycho/social aspects                              :society:
+
+* PUBLISHED How I work from home                               :productivity:
+CLOSED: [2020-03-25 wo 10:03]
+During this COVID-19 pandemic many people are forced to work at home. Not by choice, but by necessity. For many of us, this is new territory, for some of us it isn't.
+
+I have been working from home for 15+ years. In this post I share how I make that work.
+
+** My typical work day
+
+The rest of this post I will try to keep as general as possible, but the tips below are inspired by my personal situation. So, it helps if you know what that situation is like:
+- I am a software engineer. Working for me means responding to email and phone calls, writing documents, and coding. That means the most specific tools I need are a desk and a more than decent computer.
+- We have kids at home between the ages of 14 and 20.
+- A couple of times a week I have meetings with customers. Usually at their premises.
+
+** Demand your own space
+
+Nothing kills my productivity like regular interrupts from other members of our household. My daughter comes for a hug, my spouse comes to discuss diner plans, other kids come to share the latest news, and on, and on, and on. All of them valid reasons to ask my attention, but it requires me to switch context a couple of times an hour if I let it go.
+
+So, I taught my kids that even though I am at home, I really am at work. Just like other parents cannot be disturbed at their office, I cannot be disturbed at mine.
+
+Of course, this doesn't work. They can see me sitting there, so I /must/ be available. So, I get grumpy and tell them "if it doesn't bleed, I don't need to know". This may sound harsh, but for me it's the only way to get work done.
+
+This is getting easier now the kids are getting older. They better understand the concepts of focus and distraction. They better understand that my work pays their bills. With younger kids this is harder, especially in these strange and disturbing times. They need and deserve more attention from their parents than usual. But if you want to get work done, demand to be left alone at least some of the time.
+
+** Take a break
+
+I learned the hard way that working without regular breaks is bad for me. RSI in my neck and shoulder have hampered my productivity for years. So these days I work in 45 minutes intervals. At first I needed a timer (I used [[http://www.workrave.org/][Workrave]]) but by now my internal clock reminds me to take a break. And if I ignore that, my neck and shoulder will remind me.
+
+During those breaks, I eat a snack, walk the dog, clean the kitchen counter top, go for a jog, put the laundry in the dryer, buy groceries, or just watch TV. You would think these breaks would be a good time to talk with the kids (they certainly think so), but to me that is /not/ time off. It doesn't let me relax.
+
+In my case, a /break/ is meant to turn off my brain for a moment. So, exercise is great, and simple chores and mindless entertainment also work. But when your work is more physical in nature, this may be just the other way around. Find out what works for you, but relax at regular intervals.
+
+** Reduce distractions
+
+Apart from distraction by members of our household, there are many other distractions. As my work is digital by nature, I am online all the time. And, as you know (because you are reading this), the web is a quagmire of distractions, with websites specifically designed to lure you in.
+
+So, I use separate browser windows: one for private email, one for business email, and one for actual work. The first two are minimized most of the time (actually, they are in a separate [[https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html.en][workspace]]), and I have developed the habit to keep them that way. I only check my email two or three times a day and use the [[https://www.process.st/inbox-zero/][Inbox Zero]] approach. This means I handle each incoming email as follows:
+1. Delete if not relevant
+2. Do now if it is done within two minutes
+3. Defer by putting it in your [[What is Org mode][task management]] if it needs more time
+4. Delegate if somebody else can do it better
+5. Respond (this I always do when appropriate, if only to let them know their message was received)
+After steps 2 though 5 I archive the email, so my inbox is almost always mostly empty.
+
+Finally, I have adopted the habit to only read social media and news feeds on my tablet. That tablet is in our living room, so social media and news feeds do not distract me when I am working at my desk. I read those during my breaks, but mostly during the evening.
+
+I am aware that most of these strategies depend on self-discipline and developing habits, but I am afraid that's a fact of life when your working at home.
+
+** Keep a regular schedule
+
+Every morning I get up with my spouse. When she leaves for the office, I start work too (and save 40 minutes commute time twice a day). Around noon I have my lunch break. And I start cooking diner around 5 p.m. This regular schedule helps me to get in the 'work mood' and to switch it off again at the end of the day.
+
+And don't underestimate the importance of the latter. You may tempted to think that all that time you spent during the day on chores, breaks, your kids and online news must be compensated in the evening, but that is not true. I find I am way more productive at home than I ever was in the office, with distracting managers, meaningless meetings that drag on forever, small-talk at the coffee machine, and so on. Don't get me wrong, just like the distractions at home, these are important elements of the social fabric that build communities, but they /do/ keep you from being productive /now/.
+
+Just as office workers you should adopt the OA5 strategy (/Out at 5/ from chapter 26 of [[https://thegistyoumissed.wordpress.com/2013/05/03/the-dilbert-principle-by-scott-adams/][The Dilbert Principle]]).
+
+** Use available tools
+
+I use the following tools (usually on [[https://ubuntu.com/][Ubuntu]]) for remote cooperation, in order of frequency:
+- [[What is Org mode][Org mode]] for task management
+- email (GMail in my case) for communication with customers
+- Whatsapp for private communication (I try to keep business communication away from Whatsapp, but that doesn't always work)
+- [[https://github.com/otech-nl][Github]] for version management, issue management, and code sharing
+- my [[https://www.motorola.com/us/smartphones-moto-x4-android-one/p][phone]]
+- [[https://docs.google.com/][Google docs]] for documents
+- [[https://www.skype.com/][Skype]] for conference calls, mainly because of its feature that let's you share you desktop with others
+- [[https://slack.com/][Slack]] for groups
+- [[https://www.teamviewer.com/][TeamViewer]] and [[https://remmina.org/][Remmina]] for remote access (only occasionally)
+
 * PUBLISHED COVID-19                                                  :society:
 CLOSED: [2020-03-23 ma 08:20]
 
@@ -148,7 +218,7 @@ This prompted me to see if I could find out more.
 
 *** How bad is COVID-19, really?
 
-The death rate of COVID-19 is estimated by the WHO to be 3.4%, based on numbers from Wuhan. But newer [[https://www.nytimes.com/2020/03/19/health/wuhan-coronavirus-deaths.html][reports]] [March 20] suggest the number were much lower there, more like 1.4%.
+The death rate of COVID-19 is estimated by the WHO to be 3.4%, based on numbers from Wuhan. But newer [[https://www.nytimes.com/2020/03/19/health/wuhan-coronavirus-deaths.html][reports]] [March 20] suggest the number was much lower there, more like 1.4%.
 
 The Centre for Evidence-Based Medicine (CEBM) of the University of Oxford [[https://www.cebm.net/global-covid-19-case-fatality-rates/][explains]] that the /Infection Rate Fatality/ (IFR) differs from the /Case Fatality  Rate/ (CFR) in that it aims to estimate the fatality rate in /all/ those with infection: the patients who have been tested positive (cases) and those with an undetected disease (asymptomatic and not tested group). "Our current best assumption, as of the 22nd March, is the IFR  is approximate 0.19%." What this means is clearly visible in [[https://www.ft.com/content/c0755b30-69bb-11ea-800d-da70cff6e4d3][Germany]] where 24,873 people have been tested positive and 94 have died (0.4%): the point here is that Germany performs 160,000 COVID-19 tests every week which means they find far more infections than any other country, but their fatality rate is much lower.
 
