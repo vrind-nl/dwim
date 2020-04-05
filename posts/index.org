@@ -21,8 +21,8 @@ To get networking in the guest I had to select NAT for network source and "hyper
 
 - https://virt-manager.org/
 
-* DRAFT https://kentcdodds.com/blog/make-your-test-fail                :blog:
-
+* DRAFT Make your tests fail                                           :blog:
+ https://kentcdodds.com/blog/make-your-test-fail
 * DRAFT Microsoft Office on Schools
 
 * DRAFT Emacs Language Server Protocol                            :emacs:dev:
@@ -108,6 +108,60 @@ https://yesterbox.com/
 Slow cooking, slow communication
 
 * DRAFT COVID-19 psycho/social aspects                              :society:
+
+* DRAFT I know best, and you're doing it wrong!                     :society:
+
+Do I have your attention? Good!
+
+The title above is /not/ my view on things, but it /is/ how I perceive the attitude of some during this COVID-19 pandemic.
+
+Here in The Netherlands we have our [[https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/veelgestelde-vragen-over-de-aanpak-van-het-nieuwe-coronavirus-in-nederland][official guidelines]], which boil down to:
+- stay at home if possible
+- keep 1.5m (6ft, 2 arm lengths) apart from each other
+- regularly wash your hands
+
+This approach has been called 'intelligent lock-down': instead of forcing everybody indoors, we trust the common sense of our citizens. But to make intelligent decisions, we need knowledge, and I feel like many try to compensate a [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters][lack of knowledge]] by erring on the side of caution. In other words, I feel like they overdo it. Not because I think caution is a bad thing, but because I expect we will have to endure this for some time to come, so we need to be practical about it. But more on that later.
+
+As I understand it, the virus [[https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html][spreads]] person-to-person through respiratory droplets, mostly by air (e.g. through sneezing), and also through objects we touch (my face → my hands → object → your hands → your face). Hence the social distancing.
+
+What I derive from this:
+- Intimate places like bars, (movie) theaters, and gyms are a perfect breading ground for this virus. Parks and beaches not so much, as long as you keep the 1.5m distance.
+- Rubber gloves don't work. It just changes the contamination chain to: my face → my glove → object → your glove → your face. You can only break this chain by not touching your face (so much).
+- Face masks help to prevent you contaminating others, because you can't touch your face as easily and it contains your sneezes. But they don't save you from becoming infected, unless you use them [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks][properly]], which is so hard you probably won't. So save masks for the sick and the professionals.
+- The 1.5m distance is important, but the risk of e.g. passing each other in the aisle of the grocery store is minimal, as long as you don't kiss each other (tempting, I know) and don't sneeze. Just don't hang around.
+
+But what I see is:
+- Closed parks and beaches. Which I get, because getting too close when you're having a good time is just too tempting.
+- Parents not allowing their kids out of the house.
+- Rubber gloves and face masks.
+- One-way aisles, turning the grocery store into a maze, and people running the other way when they see me coming or giving me angry looks because I forgot something and had to go back.
+- People touching the fresh produce to feel how ripe they are.
+
+My gut-feeling is that the official guidelines are fine, and we need to relax a little on all the extra's we come up with. They may do more harm than good:
+- This is going to take longer than anyone of us will be comfortable with. So we need to allow each other some space. I fear that in a couple of weeks the [[https://www.youtube.com/watch?v=pLu07aXTEKY][holier than thou]] types and the /this doesn't concern me/ types will have grown so far apart, that conflicts become inevitable.
+- Our society needs to get back to normal soon, and we need to find other ways than a lock-down to deal with this pandemic. The IC personel can't keep this up for more than a couple of months, locked-up people go mad, and we need to have a healthy economy to pay for all this.
+
+Some alternatives to lock-down:
+- a [[https://fee.org/articles/an-alternative-to-the-lockdown-strategy-in-the-fight-against-coronavirus/][Market-Oriented Strategy]]?
+
+
+* PUBLISHED When will we turn?                                      :society:
+CLOSED: [2020-04-05 zo 17:49]
+
+In my previous post on [[covid-19][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
+
+[[https://www.tweedekamer.nl/sites/default/files/atoms/files/20200325_briefing_coronavirus_tweede_kamer_presentatie_rivm.pdf][Last week]] [25 March, Dutch] the Dutch [[https://www.rivm.nl/en][National Institute for Public Health and the Environment]] gave the first careful signals that things were getting better: the daily growth of new patients was slowing down. In other words: the reproduction number /R0/ was moving below 1.0. [[https://www.tweedekamer.nl/sites/default/files/atoms/files/powerpoint_rivm_1_april_2020.pdf][This  week]] [April 1, Dutch] this trend was confirmed and more positive developments were starting to show. But the message is still: We need to keep doing what we're doing.
+
+The [[https://www.tweedekamer.nl/sites/default/files/atoms/files/tech_briefing_1_apr_2020_gommers.pdf][message]] from the [[https://nvic.nl/][Dutch Association for Intensive Care]] was less optimistic: they were expecting to need 2500 IC beds by the end of May.
+
+[[https://nos.nl/data/image/2020/04/04/641321/1280x720a.jpg]]
+The most telling statistics at this point to me are that today's [[https://nos.nl/artikel/2329478-de-coronacijfers-van-5-april-nieuwe-ziekenhuisopnames-laagste-in-twee-weken.html][number of new hospital admissions]] was the lowest in two weeks and the peek was on March 31. Also, in Belgium [[https://nos.nl/liveblog/2329431-rivm-115-nieuwe-sterfgevallen-drukte-in-natuur-lijkt-opnieuw-mee-te-vallen#UPDATE-container-44494253][today]] more corona-patients left the hospital than entered (granted, Belgium is not Holland, but still). Yesterday's statistics already show the growth of IC admissions slowing down. With this trend it would seem that the current capacity of 1900 will be more than sufficient, and the feared 2500 seem unlikely. The latest [[https://nos.nl/liveblog/2329431-instroom-op-intensive-care-vlakt-af-doelstelling-ic-bedden-gehaald][news]] from the national coordination centre seems to confirm this.
+
+So, the question is when and how will we turn from [[https://www.nd.nl/nieuws/varia/961390/rutte-grootste-crisis-in-vredestijd-sinds-woii][this is the biggest disaster since WWII]] to "let's be reasonable about this". Politicians and policy makers cannot change their minds, without serious repercussions for their credibility and careers. So, this needs to be spinned carefully.
+
+I think the /when/ cannot be far away, because the [[ https://www.lastampa.it/cronaca/2020/04/03/news/esce-il-sole-strade-e-piazze-affollate-con-la-scusa-della-spesa-1.38674825][situation]] in Italy shows there's an end to how long people will endure a lock-down. So I expect within two weeks from now the pressure will be rising, when it becomes clear that hundreds of IC-beds are remaining empty. By then more [[https://nos.nl/nieuwsuur/artikel/2329144-sterftecijfers-moeten-die-elke-dag-zo-expliciet-in-het-nieuws.html][critical]] messages will become more acceptable and more main stream. The media will more and more start to question the wisdom of the current lock-down. But it is not politically viable to change tack before the end of the current measures on April 28.
+
+The /how/ is trickier, but I expect the tone will be "now we've brought COVID-19 successfully under control, we need to turn our attention to the economy". Look at [[https://nos.nl/liveblog/2329431-instroom-op-intensive-care-vlakt-af-doelstelling-ic-bedden-gehaald][how]] the possible over-capacity of IC beds is presented: "target achieved". I expect the common sense measures (wash you hands, reduce social contacts) will remain in place for some time, but the economy-killing measures like closing schools and the catering and entertainment industries will be reduced gradually by the end of the month. The [[https://www.rtlnieuws.nl/nieuws/politiek/artikel/5081496/ondernemersvoorman-meivakantie-hans-de-boer-vno-ncw-corona-gas][first signs]] are already there by the call of the Dutch entrepreneurs association [[https://www.vno-ncw.nl/][VNO-NCW]] to speed up after the May holidays.
 
 * PUBLISHED How I work from home                               :productivity:
 CLOSED: [2020-03-25 wo 10:03]
@@ -324,7 +378,7 @@ CLOSED: [2020-03-08 zo 20:03]
 
 I have been using [[https://www.virtualbox.org/][VirtualBox]] for years to manage my virtual machines (including [[https://www.vagrantup.com][Vagrant]]). It always worked fine, but with over 150MB in size, it felt a little on the heavy side.
 
-Today I looked into [[https://www.qemu.org/][Qemu]] again. In the past I found it too complicated to get to work, but these days [[https://virt-manager.org/][virt-manager]] provides a familiar GUI. I got [[https://pureos.net/][PureOS]] working in no time flat. As Qemu uses KVMs (or [[https://www.linux-kvm.org/][Kernel-based Virtual Machine]]) it is neatly integrated with the Linux kernel, with all the advantages that that brings. Likeo less than 50MB for the combo of Qemu/virt-manager.
+Today I looked into [[https://www.qemu.org/][Qemu]] again. In the past I found it too complicated to get to work, but these days [[https://virt-manager.org/][virt-manager]] provides a familiar GUI. I got [[https://pureos.net/][PureOS]] working in no time flat. As Qemu uses KVMs (or [[https://www.linux-kvm.org/][Kernel-based Virtual Machine]]) it is neatly integrated with the Linux kernel, with all the advantages that that brings. Like less than 50MB for the combo of Qemu/virt-manager.
 
 And to top it all off, libvirt can also be used as a [[https://github.com/vagrant-libvirt/vagrant-libvirt][Vagrant provider]].
 

@@ -8,7 +8,7 @@ import "./index.css";
 
 export default ({ data, location }) => {
   const nodes = data.allOrgContent.nodes;
-  console.log("Location: ", location);
+
   return (
     <Layout page="Home">
       {nodes.slice(0, 7).map((props, nr) => (
