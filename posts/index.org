@@ -145,7 +145,7 @@ Some alternatives to lock-down:
 - a [[https://fee.org/articles/an-alternative-to-the-lockdown-strategy-in-the-fight-against-coronavirus/][Market-Oriented Strategy]]?
 
 
-* PUBLISHED When will we turn?                                      :society:
+* PUBLISHED Turning point                                           :society:
 CLOSED: [2020-04-05 zo 17:49]
 
 In my previous post on [[covid-19][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
