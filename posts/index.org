@@ -144,8 +144,20 @@ My gut-feeling is that the official guidelines are fine, and we need to relax a 
 Some alternatives to lock-down:
 - a [[https://fee.org/articles/an-alternative-to-the-lockdown-strategy-in-the-fight-against-coronavirus/][Market-Oriented Strategy]]?
 
+* PUBLISHED COVID-19 vs Y2K                                      :society:it:
+CLOSED: [2020-04-08 wo 10:04]
 
-* PUBLISHED Turning point                                           :society:
+In some ways the COVID-19 pandemic reminds me of the [[https://en.wikipedia.org/wiki/Year_2000_problem][Y2K bug]]. I remember in the late 1990s there was a lot of [[https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt][FUD]] regarding the millennium bug. If we didn't act, civilization as we knew it would end. Public facilities, like communications, electricity and water, would grind to a halt and crucial databases would be lost. Major efforts were undertaken to remedy the problem and prevent this fatal melt-down.
+
+Come January 1, 2000 nothing happened.
+
+I still feel dissatisfied at the fact that I don't know if nothing happened because the problem had been tackled so effectively, or because the problem wasn't so big to begin with. I also remember the impression I had that the parties that boosted the scare were the same parties that stood to profit massively from its solution.
+
+I fear something similar will happen now that COVID-19 is turning out to be not such a big thing in the part of The Netherlands where I live and is starting to get under control in the hotspots around the world. Are we starting to see the effect of the measures that have been taken, or would the virus have blown over anyway? I feel like it is a bit of both: it is a nasty virus that we should take seriously and try to control with reasonable measures, but not as apocalyptic as in the [[https://www.imdb.com/title/tt0114069/][movie]] or the [[https://www.goodreads.com/book/show/11989.The_Plague][book]].
+
+A big difference with Y2K is that COVID-19 will be a recurring phenomenon. If we get too lax a about it, it may get back at us with a vengeance.
+
+* PUBLISHED COVIS-19: Turning point                                 :society:
 CLOSED: [2020-04-05 zo 17:49]
 
 In my previous post on [[covid-19][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
