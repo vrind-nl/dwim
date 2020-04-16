@@ -135,11 +135,11 @@ This is going to take longer than anyone of us will be comfortable with. The IC 
 - We should stay at home if we have any symptoms or suspicions (like contact with someone with symptoms), but we should get back to work otherwise. Be smart about it: work from home if you can, not too many people in one room (use video-conferencing), avoid physical contact.
 - We should keep quarantining known and suspected cases.
 - We should customize our approach per region. I live in the [[https://www.dvhn.nl/groningen/Experts-Misschien-kan-het-Noorden-wel-eerder-uit-de-lockdown-dan-de-rest-van-Nederland-25564568.html][north]] of The Netherlands, where we have only a few casualties, while in the south it runs in the thousands. Solidarity is important, but nobody gains from killing the economy here, to solve a problem elsewhere.
-- We should enable and support elderly (and other vulnerable population groups) if they want to self-isolate. But if they want, we should also allow contact with their loved ones. I suspect this is hard to execute (what with dementia, what with conflicting wishes in nursing homes, etc.), but we should at least /try/ to give them control over their own lives.
+- We should enable and support elderly (and other vulnerable population groups) if they want to self-isolate. But if they don't, we should also allow contact with their loved ones. I suspect this is hard to execute (what with dementia, what with conflicting wishes in nursing homes, etc.), but we should at least /try/ to give them control over their own lives.
 - We should open schools again, except perhaps in highly contaminated regions.
 - We should stop obsessing about daily numbers. They are meaningless. And although statistics (not the same as daily body counts in bold headlines) are a powerful tool, if I have learned anything from my college classes, it is that /statistics are tricky/. So, remember: [[https://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics][lies, damn lies, and statistics]].
 
-But remember the disclaimer above.
+And remember the disclaimer above.
 
 * PUBLISHED COVID-19 vs Y2K                                      :society:it:
 CLOSED: [2020-04-08 wo 10:04]
