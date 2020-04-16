@@ -109,40 +109,37 @@ Slow cooking, slow communication
 
 * DRAFT COVID-19 psycho/social aspects                              :society:
 
-* DRAFT I know best, and you're doing it wrong!                     :society:
+* PUBLISHED COVID-19 End Game                                       :society:
+CLOSED: [2020-04-16 do 10:14]
 
-Do I have your attention? Good!
+We have been in Corona-lockdown for about 5 weeks now, here in the Netherlands. As we are starting to see light at the end of the tunnel, it is time to start thinking on how we can get out of it.
 
-The title above is /not/ my view on things, but it /is/ how I perceive the attitude of some during this COVID-19 pandemic.
+** Disclaimer
 
-Here in The Netherlands we have our [[https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/veelgestelde-vragen-over-de-aanpak-van-het-nieuwe-coronavirus-in-nederland][official guidelines]], which boil down to:
-- stay at home if possible
-- keep 1.5m (6ft, 2 arm lengths) apart from each other
-- regularly wash your hands
+I am no expert by any means. The views below are just my personal dribble. Follow the [[https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/veelgestelde-vragen-over-de-aanpak-van-het-nieuwe-coronavirus-in-nederland][official guidelines]] of your government. I know I do. Better to be safe than sorry.
 
-This approach has been called 'intelligent lock-down': instead of forcing everybody indoors, we trust the common sense of our citizens. But to make intelligent decisions, we need knowledge, and I feel like many try to compensate a [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters][lack of knowledge]] by erring on the side of caution. In other words, I feel like they overdo it. Not because I think caution is a bad thing, but because I expect we will have to endure this for some time to come, so we need to be practical about it. But more on that later.
+** My view
 
-As I understand it, the virus [[https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html][spreads]] person-to-person through respiratory droplets, mostly by air (e.g. through sneezing), and also through objects we touch (my face → my hands → object → your hands → your face). Hence the social distancing.
+- The virus [[https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html][spreads]] person-to-person through respiratory droplets, mostly by air (e.g. through sneezing, singing or shouting), and much less through objects we touch.
+- Almost all casualties are over 50 with the median around 83, and about half had an underlying condition. But I think it is patronizing and inhumane to isolate the elderly and the vulnerable in times when they are in desperate need of human contact.
+- Closing schools is highly disruptive to our society. It drives children and parents insane, and keeps adults away from their jobs. And infected children almost never develop any serious symptoms, so they hardly ever sneeze, so they hardly ever contaminate others.
+- The pandemic seems to be highly regional (Lombardy, New York, the south of The Netherlands).
+- I am [[COVID-19][still]] not convinced that COVID-19 is significantly worse than the common flu. What I think we /can/ all agree on, is that COVID-19 is /new/, which means nobody had any immunity against it. I can't help but wonder if that is sufficient to explain the current pandemic.
 
-What I derive from this:
-- Intimate places like bars, (movie) theaters, and gyms are a perfect breading ground for this virus. Parks and beaches not so much, as long as you keep the 1.5m distance.
-- Rubber gloves don't work. It just changes the contamination chain to: my face → my glove → object → your glove → your face. You can only break this chain by not touching your face (so much).
-- Face masks help to prevent you contaminating others, because you can't touch your face as easily and it contains your sneezes. But they don't save you from becoming infected, unless you use them [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks][properly]], which is so hard you probably won't. So save masks for the sick and the professionals.
-- The 1.5m distance is important, but the risk of e.g. passing each other in the aisle of the grocery store is minimal, as long as you don't kiss each other (tempting, I know) and don't sneeze. Just don't hang around.
+** What I think we should do
 
-But what I see is:
-- Closed parks and beaches. Which I get, because getting too close when you're having a good time is just too tempting.
-- Parents not allowing their kids out of the house.
-- Rubber gloves and face masks.
-- One-way aisles, turning the grocery store into a maze, and people running the other way when they see me coming or giving me angry looks because I forgot something and had to go back.
-- People touching the fresh produce to feel how ripe they are.
+This is going to take longer than anyone of us will be comfortable with. The IC personel can't keep this up for more than a couple of months, locked-up people go mad, and we need to have a healthy economy to pay for all this. I fear that in a couple of weeks the [[https://www.youtube.com/watch?v=pLu07aXTEKY][holier than thou]] types and the /this doesn't concern me/ types will have grown so far apart, that conflicts become inevitable. So, our society needs to get back to normal soon, and we need to find other ways than a lock-down to deal with this pandemic:
 
-My gut-feeling is that the official guidelines are fine, and we need to relax a little on all the extra's we come up with. They may do more harm than good:
-- This is going to take longer than anyone of us will be comfortable with. So we need to allow each other some space. I fear that in a couple of weeks the [[https://www.youtube.com/watch?v=pLu07aXTEKY][holier than thou]] types and the /this doesn't concern me/ types will have grown so far apart, that conflicts become inevitable.
-- Our society needs to get back to normal soon, and we need to find other ways than a lock-down to deal with this pandemic. The IC personel can't keep this up for more than a couple of months, locked-up people go mad, and we need to have a healthy economy to pay for all this.
+- We should /not/ sacrifice our civil rights. They are more important than the stress on ICs, the economy, or anyone we are trying to save from COVID-19.
+- We should relax a bit about the 1.5m rule. We should avoid situations where we are packed together over longer periods of time (like in movie theaters), where we sing and shout (like churches and bars), and/or with bad ventilation (like saunas and festival tents). So, we /should/ keep the ban on gatherings, but we shouldn't worry too much if we pass each other in parks or super market aisles.
+- We should stay at home if we have any symptoms or suspicions (like contact with someone with symptoms), but we should get back to work otherwise. Be smart about it: work from home if you can, not too many people in one room (use video-conferencing), avoid physical contact.
+- We should keep quarantining known and suspected cases.
+- We should customize our approach per region. I live in the [[https://www.dvhn.nl/groningen/Experts-Misschien-kan-het-Noorden-wel-eerder-uit-de-lockdown-dan-de-rest-van-Nederland-25564568.html][north]] of The Netherlands, where we have only a few casualties, while in the south it runs in the thousands. Solidarity is important, but nobody gains from killing the economy here, to solve a problem elsewhere.
+- We should enable and support elderly (and other vulnerable population groups) if they want to self-isolate. But if they want, we should also allow contact with their loved ones. I suspect this is hard to execute (what with dementia, what with conflicting wishes in nursing homes, etc.), but we should at least /try/ to give them control over their own lives.
+- We should open schools again, except perhaps in highly contaminated regions.
+- We should stop obsessing about daily numbers. They are meaningless. And although statistics (not the same as daily body counts in bold headlines) are a powerful tool, if I have learned anything from my college classes, it is that /statistics are tricky/. So, remember: [[https://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics][lies, damn lies, and statistics]].
 
-Some alternatives to lock-down:
-- a [[https://fee.org/articles/an-alternative-to-the-lockdown-strategy-in-the-fight-against-coronavirus/][Market-Oriented Strategy]]?
+But remember the disclaimer above.
 
 * PUBLISHED COVID-19 vs Y2K                                      :society:it:
 CLOSED: [2020-04-08 wo 10:04]
@@ -157,7 +154,7 @@ I fear something similar will happen now that COVID-19 is turning out to be not 
 
 A big difference with Y2K is that COVID-19 will be a recurring phenomenon. If we get too lax a about it, it may get back at us with a vengeance.
 
-* PUBLISHED COVIS-19: Turning point                                 :society:
+* PUBLISHED COVID-19: Turning point                                 :society:
 CLOSED: [2020-04-05 zo 17:49]
 
 In my previous post on [[covid-19][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
