@@ -124,7 +124,7 @@ I am no expert by any means. The views below are just my personal dribble. Follo
 - Almost all casualties are over 50 with the median around 83, and about half had an underlying condition. But I think it is patronizing and inhumane to isolate the elderly and the vulnerable in times when they are in desperate need of human contact.
 - Closing schools is highly disruptive to our society. It drives children and parents insane, and keeps adults away from their jobs. And infected children almost never develop any serious symptoms, so they hardly ever sneeze, so they hardly ever contaminate others.
 - The pandemic seems to be highly regional (Lombardy, New York, the south of The Netherlands).
-- I am [[COVID-19][still]] not convinced that COVID-19 is significantly worse than the common flu. What I think we /can/ all agree on, is that COVID-19 is /new/, which means nobody had any immunity against it. I can't help but wonder if that is sufficient to explain the current pandemic.
+- I am [[covid-19][still]] not convinced that COVID-19 is significantly worse than the common flu. What I think we /can/ all agree on, is that COVID-19 is /new/, which means nobody had any immunity against it. I can't help but wonder if that is sufficient to explain the current pandemic.
 
 ** What I think we should do
 
