@@ -109,6 +109,35 @@ Slow cooking, slow communication
 
 * DRAFT COVID-19 psycho/social aspects                              :society:
 
+* PUBLISHED COVID19: What's the point?                              :society:
+CLOSED: [2020-04-22 wo 11:27]
+
+Yesterday, our prime minister told us to [[https://nos.nl/liveblog/2331161-nog-geen-contactberoepen-of-bezoek-aan-verpleeghuizen-basisscholen-11-mei-open.html][keep it up]]. The current corona measures in The Netherlands are extended for weeks and months. The policy makes perfect sense.
+
+Except that it doesn't. To me.
+
+To me it felt like our government is working from a different set of rules than I would. And that made me wonder what their basic principle is. The official line is the policy aims to reduce the pressure on our healthcare system, and the intensive care in particular. But I think it is this:
+
+#+BEGIN_QUOTE
+We must provide COVID19 patients with the absolute best medical care.
+#+END_QUOTE
+
+Notice this statement is about medical care only. Not about economy, mental health, or happiness. Yesterday our prime minister said "National health is more important than the economy". Who wouldn't agree? Except, we're /not/ talking about national health. We are talking about personal tragedies like loosing your mother, grandfather or partner. The current number of casualties (3916) is less than 3% of the total number of 150.000 yearly deaths in the Netherlands. That would leave COVID19 on tenth place in the [[https://www.volksgezondheidenzorg.info/ranglijst/ranglijst-doodsoorzaken-op-basis-van-sterfte][ranking]] of causes of death. Less than a quarter of dementia, and less than half of lung cancer, stroke and heart diseases (each). And we don't consider those "crises". At least, we don't lock down our whole society to fight them. We don't even ban cigarettes, soft drinks, and fast food.
+
+Notice this is about COVID19 patients only. The care for all other patients has been reduced or even suspended. But why would their care be less important and less urgent?
+
+Notice this is about "absolute best" medical care. We are told the situation on ICs is like a war zone. But when someone suggest one breathing apparatus can be used for multiple patients, this is [[https://nos.nl/artikel/2328509-twee-ic-patienten-op-een-beademingsapparaat-extreem-terughoudend-mee-zijn.html][suboptimal]] and only for [[https://zorgnu.avrotros.nl/nieuws/item/in-uiterst-geval-meerdere-patienten-aan-een-beademingsapparaat/][extreme cases]]. 600.000 face masks delivered from China were [[https://www.telegraaf.nl/nieuws/262896058/600-000-mondkapjes-uit-china-afgekeurd-door-ministerie][rejected]] because they did not stand up to our medical standards. So, although we are in a crisis, apparently it is not bad enough yet that we are happy with any help we can get and try to make do with what we've got.
+
+Notice this is a doctor's objective. Which in itself is fine; it is what they are trained for. But it is not about what patients want or what society wants. We spend/loose [[https://nos.nl/artikel/2331159-grote-pensioenfondsen-diep-onder-water-77-miljard-verdampt.html][billions]] to save COVID19 patients. Including [[https://www.rtlnieuws.nl/nieuws/nederland/artikel/5092456/corona-verpleeghuizen-ouderen-besmet][many]] elderly in nursing homes where the average live expectancy is [[https://www.zorgvisie.nl/sterftecijfer-verpleeghuis-stijgt-met-kwart/][less than a year]]. Many of those are suffering from dementia, and especially for them, the lockdown is [[https://www.medischcontact.nl/opinie/lezers-schrijven/lezersverhalen/lezersverhaal/als-ook-zwaaien-niet-meer-mag.htm][hell]]. Wouldn't it be more humane to make their last months as pleasant as possible, instead of extending their lives with a couple of miserable, unhappy months?
+
+Notice the word "must". Apparently this principle is above any discussion and worth sacrificing civil rights for. To quote our prime minister yesterday: "The freedom of one, may not harm the health of others". I assume he meant "freedom to go to bars/parks/churches" and not "civil rights", but we have already sacrificed our freedom of movement and our privacy, so statements like this scare me.
+
+Finally, let me say this. One thing I /did/ agree with in the prime minister's speech yesterday was his appreciation of the healthcare providers. We ask a lot of them in the area's that have been hit hard by the Corona virus, both in terms of workload and mental strain. But I don't [[https://www.ad.nl/home/applaus-voor-onze-helden-van-de-zorg~aeba83ee/][applaud]] or wave a [[https://www.persberichten.com/persbericht/97544/Vlag-voor-de-Zorg-steun-onze-zorgbranche-in-tijden-van-crisis-en-wereldwijde-coronaprojecten][flag]]. As recent as November, 2019 we had the [[https://www.hartvannederland.nl/nieuws/2019/grootste-staking-ziekenhuizen-ooit/][biggest hospital strike ever]]. Nurses asked for higher pay and lower workload, but as far as I know, they never got them. But right in the middle of the Corona crisis, we are [[https://www.welingelichtekringen.nl/economie/1696986/klm-wil-2-miljard-steun-en-een-hoger-salaris-voor-de-directeur.html][discussing]] an /extra/ bonus for the CEO of the KLM, which is also asking for state support to stay in business. Let's applaud mr. Elbers and raise a flag for him if we have to, but save our money for the nurses!
+
+PS1: Fortunately, after pressure from the government and the public, KLM have [[https://nieuws.klm.com/geen-voorgestelde-aanpassing-beloningsbeleid-klm/][cancelled]] raises and bonuses of the CEO in 2020.
+
+PS2: In my [[covid-19-end-game][previous post]] I have indicated what I think we /should/ do.
+
 * PUBLISHED COVID-19 End Game                                       :society:
 CLOSED: [2020-04-16 do 10:14]
 
