@@ -107,7 +107,39 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
-* DRAFT COVID-19 psycho/social aspects                              :society:
+* PUBLISHED COVID-19 and Pareto                                     :society:
+CLOSED: [2020-05-16 za 19:20]
+
+I am a firm believer in the [[https://en.wikipedia.org/wiki/Pareto_principle][Pareto Principle]] which states that in many cases 80% of the result is achieved by 20% of the effort, and, consequently, that the remaining 20% of the result takes 80% of the effort. This means, if you can live with 80% of the result, you are 16 times more efficient than when you insist on the 100%.
+
+The chief of the World Food Programme (WFP) [[https://insight.wfp.org/wfp-chief-warns-of-hunger-pandemic-as-global-food-crises-report-launched-3ee3edb38e47][warned]] the UN Security Council that in a few months the world might face “multiple famines of biblical proportions” from the economic impact of COVID-19 that could result in 300,000 deaths /per day/ over a three-month period. That's the same amount of victims /per day/ as COVID-19 has taken so far /in total/!
+
+I think this calls for us to stop our [[/covid19-whats-the-point][100% ambition]] and start applying the Pareto principle. But what would the 20% effort be to contain COVID-19? I think it is this (but remember: /I am no expert/):
+
+1. _Mind your hygiene_:
+   - wash you hands regularly and thoroughly
+   - sneeze in your elbow
+2. _Stay at home_ when you may contaminate others, including:
+   - when you have been tested positive
+   - when you have symptoms
+   - when you have been in contact with someone you know belongs to one of the above
+3. _Avoid busy places_, which means
+   - places where you are consistently or frequently within 1.5 meters from people you don't know intimately (think bars, churches, gyms)
+4. If you can't avoid a busy place, _wear a face mask_ there.
+   - think public transport
+   - think professions like hair dressers, waiters, physiotherapists, etc.
+
+[[/keep-calm-corona.jpg]]
+
+Additional remarks:
+- The rule to stay at home applies to all contagious illnesses, including but not limited to the common flu. No more toughing it out: stay at home! I think this rule and the hygiene rule are sensible rules even without Corona.
+- The 1.5 meter criterion is no longer a rule by itself, but becomes a rule of thumb for the rule to avoid busy places. This enables us to relax a little. Don't worry too much when you occasionally and briefly get within 1.5 meters of other customers in the supermarket. Viruses don't fly and don't jump.
+- The face mask is not intended to protect you from others, it is meant to protect others from you.
+
+These rules allow some wiggle room. That is intentional. When you are extra vulnerable to this virus, for example because of your age or because of an existing condition, you can apply the rules more strictly. Others can be a bit more relaxed. This way I hope we can get maximum effectiveness with minimal collateral damage.
+
+And remember, the current measures against COVID-19 /are/ doing a lot of damage. The billions we spend/loose now will have consequences for years and maybe even decades to come. This will mean less budget for health, education, social services, and foreign aid. This will hit the vulnerable the hardest, including the elderly, the poor, and the ill, which are exactly those we intend to protect from Corona now.
+
 
 * PUBLISHED COVID19: What's the point?                              :society:
 CLOSED: [2020-04-22 wo 11:27]
