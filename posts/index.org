@@ -107,6 +107,25 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
+* PUBLISHED Windows on Linux                                     :tech:sysop:
+CLOSED: [2020-05-29 vr 19:23]
+
+I have been running Windows and Linux side-by-side in dual-boot since forever. Switching between OSs this way is a pain, but the best I could get for a long time. Worse, the dual-boot configuration seems to hamper the Windows update process, so my Windows 10 version was beginning to get outdated.
+
+Previously I have considered:
+- Running Windows 10 in a VM on a Ubuntu host with an illegal version of Windows (which I object to) or buying an extra license (which feels stupid, because my laptop came with Windows pre-installed).
+- Running Ubuntu in a VM on a Windows host, which felt like adding insult to injury.
+
+[[Virtual Machine Management][Recently]] I rediscovered Qemu, which rekindled my interest in virtual machines (which I had sort of written off since my switch from Vagrant to Docker). But from Apple users I heard of [[https://www.parallels.com/][Parallels]] and how conveniently it merged the MacOS and Windows environments, so I started considering getting a MacBook. But I didn't want to give up on Linux yet.
+
+And then I found [[https://www.techrepublic.com/article/how-to-install-windows-10-in-a-vm-on-a-linux-machine/][this]] article, which pointed me to the ~acpica-tools~. With it, you can retrieve your Windows 10 product key. So now I simply did:
+1. install Qemu and virt-manager
+2. download Windows 10 ISO straight from Microsoft
+3. install  ~acpica-tools~ and acquire product key
+4. install Windows 10 in VM
+
+This has the added benefit that I now have an up-to-date install of Windows 10 without any bloatware.
+
 * PUBLISHED COVID-19 and Pareto                                     :society:
 CLOSED: [2020-05-16 za 19:20]
 
