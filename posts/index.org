@@ -107,6 +107,50 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
+* DRAFT Corona Blues
+
+It has been almost a [[COVID-19][year]] since my first post on COVID-19. And I am starting to suffer from a mild form of the Corona Blues:
+
+#+BEGIN_QUOTE
+The condition of depression and hopelessness caused by COVID-19 measures.
+#+END_QUOTE
+
+Initially I thought it would be over soon. Even later, I could see light at the end of the tunnel. But it is getting harder and harder to have faith that the current measures will get us out of this mess.
+
+Here in the Netherlands we are in our strictest lockdown since the start of this pandemic:
+- only one visitor a day, which means that my mother cannot come and visit, because at her age she needs someone to accompany her
+- work at home as much as possible, which means some workers have not met their colleagues in person for almost a year
+- schools are closed, which means our children in college have been studying almost exclusively at home for almost a year now. They struggle (and by now start to fail) to keep up the motivation and self discipline.
+- no sports, theater, hair dressers, traveling, shopping, museums, restaurants, etc., which means it feels like life is reduced to /sleep, eat, work, repeat/.
+- other illnesses (like cancer) get treated later and slower, and loved ones are severely limited in their ability to support patients
+- curfew between 9 pm and 4.30 am, which is mostly a psychological burden
+
+I actually am proud of our household: so far, we have managed to keep our spirits up and avoided serious conflicts. Nut to be honest, others are (far) worse off than I am:
+- I already worked mostly from home
+- our children are at an age that they take care of themselves
+- our income has not suffered
+
+* PUBLISHED COVID-19: How it adds up                                :society:
+CLOSED: [2021-02-24 wo 19:06]
+
+I have been crunching some numbers.
+
+Since the start of the COVID-19 pandemic we have had a little over a million contaminations in [[https://eenvandaag.avrotros.nl/coronacrisis/coronacrisis-in-cijfers/besmettingen-doden-en-ziekenhuisopnames-in-nederland/][Holland]] and a little over fifteen thousand casualties in a few days short of a year (1.038.156 and 15.017 on February 17, 2021 respectively).
+
+We [[https://www.rivm.nl/coronavirus-covid-19/grafieken][know]] that 90% of casualties is over 70 and two thirds is over 80, and in [[https://www.volksgezondheidenzorg.info/onderwerp/levensverwachting/cijfers-context/huidige-situatie][Holland]] life expectancy is a little over 80. When we combine age distribution of casualties with their life expectancy, we can calculate that we have lost a staggering 136.5 thousand life years to the virus so far (a little over 9 years per casualty).
+
+Now the opposite side of the coin.
+
+We have had restrictive measures for almost a year now and the effects are beginning to [[https://coronabarometer.nl/][show]], including depression, obesitas and loss of fitness. A way to measure this is the [[https://en.wikipedia.org/wiki/Quality-adjusted_life_year][Quality-adjusted life year]] (QALY). If we assume that the quality of life of all Dutch has been reduced by an average of [[https://www.umcg.nl/w/nieuws/mentale-gezondheid-daalt-tot-dieptepunt-sinds-begin-coronacrisisnews][10 percent]] we have lost almost 1.75 million QALYs this year alone. This gets worse if the quality of life deteriorates more, and this counter keeps running as long as the measures are maintained.
+
+But even if the corona measures were lifted as of today, we would still feel their consequences. Health care to non-corona patients has been delayed or reduced, with predictable effects. We spent and lost billions during the last year, which we can no longer spend on other causes like health, education or culture. But most of all, the mental damage we have done will have long-lasting effects. Social lives have been damaged, including healthy development of young people. If we assume that it will take us 10 years to fully recover from this, we will loose a multiple of the 1.75 million QALYs before this is all over.
+
+The losses from the virus are horrible. However, if we consider a life year and a QALY to be equal, and we accept the assumptions above, the losses of the current corona measures are over ten times worse. But they are less clearly visible: there is no funeral for a youth who lost 0.2 QALY this year. And the equality of life years and QALYs is debatable: the youth is still there, struggling through each day, but alive. I find it impossible to compare the death of one elderly (9 life years) to the loss of 0.2 QALY of 45 youths (9 QALYs in total), but I think they're both significant.
+
+When we extrapolate the death rate to the whole Dutch [[https://www.cbs.nl/nl-nl/visualisaties/bevolkingsteller][population]] we might loose 2.4 million life years (262 thousand casualties) if we let the virus run free. This might get worse, because hospitals (and Intensive Care units in particular) will get overwhelmed. It may also be less, because the virus will probably die out before contamination of the whole population (at some point we will reach [[https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19][herd immunity]]).
+
+I am aware that this reasoning is debatable, and the numbers are full of assumptions and estimates. But at some point the damage of the corona measures /will/ overtake the loss from corona itself. Some may think we are already way past this point. Others may feel we still have a long way to go. Personally, I find it hard to pinpoint where we stand, but regardless, let's hope we soon start seeing the [[https://nos.nl/artikel/2370107-rivm-gunstig-vaccinatie-effect-zichtbaar-in-verpleeghuizen.html][effects]] of vaccination.
+
 * PUBLISHED Windows on Linux                                     :tech:sysop:
 CLOSED: [2020-05-29 vr 19:23]
 
