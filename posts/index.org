@@ -107,7 +107,19 @@ https://yesterbox.com/
 
 Slow cooking, slow communication
 
-* DRAFT Corona Blues
+* PUBLISHED Stress                                             :productivity:
+CLOSED: [2021-03-11 do 12:19]
+
+People handle stress in projects in different ways. I find it helpful to use an analogy with electrical components:
+
+- stress resistor :: Some people shield others from stress. They pass on what needs to be done, but shield the team from negative pressure. They seem to think that passing on stress does not help productivity.
+- stress conductor :: Some people pass on stress to others. They seem to think that the team needs to share the stress they're under themselves to help them prioritize.
+- stress amplifyer :: Some people forward stress to the team with extra emphasis. They seem to think this spurs them on.
+
+I have my preferences, but I actually think neither of these options is either good or bad. The most effective strategy is highly situational, and depends for instance on the individual characters, the atmosphere in the team, and the phase of the project. So, I think a good project manager can switch based on the circumstances.
+
+* PUBLISHED Corona Blues
+CLOSED: [2021-03-02 do 19:19]
 
 It has been almost a [[COVID-19][year]] since my first post on COVID-19. And I am starting to suffer from a mild form of the Corona Blues:
 
@@ -125,7 +137,7 @@ Here in the Netherlands we are in our strictest lockdown since the start of this
 - other illnesses (like cancer) get treated later and slower, and loved ones are severely limited in their ability to support patients
 - curfew between 9 pm and 4.30 am, which is mostly a psychological burden
 
-I actually am proud of our household: so far, we have managed to keep our spirits up and avoided serious conflicts. Nut to be honest, others are (far) worse off than I am:
+I actually am proud of our household: so far, we have managed to keep our spirits up and avoided serious conflicts. To be honest, others are (far) worse off than I am:
 - I already worked mostly from home
 - our children are at an age that they take care of themselves
 - our income has not suffered
