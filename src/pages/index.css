@@ -1,9 +1,11 @@
 * {
-    line-height: 1.5;
-    font-family: Ubuntu, sans-serif;
+  line-height: 1.5;
+  font-family: Ubuntu, sans-serif;
 }
 
-.block, blockquote, pre {
+.block,
+blockquote,
+pre {
   background-color: #ddd;
   padding: 6pt;
   margin: 6pt 0 6pt;
@@ -16,7 +18,7 @@
 }
 
 table {
-    margin: auto;
+  margin: auto;
 }
 
 th {
@@ -33,11 +35,16 @@ button {
 }
 
 blockquote {
-    font-style: italic;
-    margin: 0 50pt 0 20pt;
+  font-style: italic;
+  margin: 0 50pt 0 20pt;
 }
 
 img {
-    float: right;
-    margin: 10pt;
+  float: right;
+  margin: 10pt;
+}
+
+pre *,
+code {
+  font-family: courier;
 }

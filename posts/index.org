@@ -2,6 +2,64 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
+* PUBLISHED Replicating a JS function in elisp                    :emacs:dev:
+CLOSED: [2021-06-11 vr 15:24]
+
+I wanted to replicate the following function from [[http://pajhome.org.uk/crypt/md5/][Javascript md5 module]] in Emacs lips:
+
+#+begin_src js
+  function b64_md5(s) { return rstr2b64(rstr_md5(str2rstr_utf8(s))); }
+#+end_src
+
+#+RESULTS:
+
+The nested functions are:
+1. =str2rstr_utf8= encodes a string as utf-8, assuming it is utf-16
+2. =rster_md5= calculates the md5 of a raw string
+3. =rstr2b64= converts a raw string to a base-64 string
+
+Outputs:
+
+#+begin_src js
+  str2rstr_utf8("test");      // "test"
+  rstr_md5("test");           // "\tkÍF!ÓsÊÞN&'´ö"
+  rstr2b64("test");           // "dGVzdA"
+  rstr2b64(rstr_md5("test"))  // "CY9rzUYh03PK3k6DJie09g"
+#+end_src
+
+I could quite easily find some elisp functions that may be equivalent:
+
+| Javascript md5 | Elisp                |
+|----------------+----------------------|
+| =str2rstr_utf8=  | =encode-coding-string= |
+| =rster_md5=      | =secure-hash=          |
+| =str2b64=        | =base64-encode-string= |
+
+On closer inspection I figured I would not need =encode-coding-string= because [[https://nullprogram.com/blog/2014/06/13/][Emacs]] already uses UTF8 encoding internally, while  [[https://mathiasbynens.be/notes/javascript-encoding][Javascript]] uses UTF-16.
+
+It turns out that the other two elisp functions are close matches to their JS counterparts:
+
+#+begin_src emacs-lisp
+  (base64-encode-string "test")   ; "dGVzdA", same as rstr2b64
+  (secure-hash 'md5 "test")       ; "098f6bcd4621d373cade4e832627b4f6" which is hex for "	kÍF!ÓsÊÞN&'´ö"
+#+end_src
+
+So, I need a function to [[https://stackoverflow.com/questions/12003231/how-do-i-convert-a-string-of-hex-into-ascii-using-elisp][decode a HEX string]]:
+
+#+begin_src emacs-lisp
+  (defun decode-hex-string (hex-string)
+    (let ((res nil))
+      (dotimes (i (/ (length hex-string) 2) (apply #'concat (reverse res)))
+        (let ((hex-byte (substring hex-string (* 2 i) (* 2 (+ i 1)))))
+          (push (format "%c" (string-to-number hex-byte 16)) res)))))
+
+  (decode-hex-string (secure-hash 'md5 "test"))    ; "	kÍF!ÓsÊÞN&'´ö" same as rster_md5
+  (base64-encode-string
+   (decode-hex-string (secure-hash 'md5 "test")))  ; "CY9rzUYh03PK3k6DJie09g"
+#+end_src
+
+Et voilá!
+
 * DRAFT Freedom!
 
 I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
