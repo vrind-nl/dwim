@@ -1030,33 +1030,20 @@ When I learned to program (/oldtimer speaking/), there was no Internet. If I wan
 
 To me, the biggest innovation in programming of the last decade is package managers like [[https://pipenv.kennethreitz.org/][pipenv]] and [[https://yarnpkg.com/][yarn]], which make finding, installing and maintaining packages a breeze. And to top it off, documentation has improved dramatically over the last couple of years.
 * PUBLISHED About me                                           :meta:private:
-CLOSED: [2020-01-01 wo 19:40]
+CLOSED: [2021-06-11 vr 17:33]
 :PROPERTIES:
 :PINNED:   t
 :END:
 
-/Latest update: January 16, 2020/
+I am a software developer, living in the Netherlands. I was born almost 50 years ago.
 
-I am a software engineer, living in the Netherlands. I was born almost 50 years ago.
+I mostly build full-stack websites, but also the occasional desktop application, or daemon/service. [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]] is my go to programming language for web, for both client and server. For some older web-projects I use [[https://www.python.org/][Python]], which I also use for data wrangling. For more technical software I use C/C++, and for desktop applications sometimes [[https://www.lazarus-ide.org/][Lazarus/FreePascal]].
 
-I develop software; mostly websites, but also the occasional CLI or daemon. [[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]]. Lately I am even drawn to [[http://www.typescriptlang.org/][Typescript]].
+I prefer open technologies and use open source software (OSS) whenever I can. And practically the only times that I can't, involve working together with others on Microsoft Office documents. My preferred tools include:
 
-I prefer /open technologies/: I use open source software (OSS) whenever I can. And practically the only times that I can't, involve working together with others on Microsoft Office documents. My preferred tools include:
-
-- [[https://www.ubuntu.com/][Ubuntu]], but sometimes I need to work on Windows. Therefore, all my tools preferably work on both.
-- I bounce back and forth between [[https://emacs.org][Emacs]] and other editors for coding.
+- [[https://www.ubuntu.com/][Ubuntu]], but sometimes I need to work on Windows, so I run that in a [[https://virt-manager.org/][virtual machine]].
+- [[https://emacs.org][Emacs]] with [[https://orgmode.org/][Org Mode]] is my primary tool for my projects. My config is [[https://github.com/otech-nl/emacs.d][here]].
 - [[https://git-scm.com/doc][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
-- [[https://www.docker.com/][Docker]] for managing development environments when [[https://pipenv.kennethreitz.org/][pipenv]] or [[https://yarnpkg.com/][yarn]] are not enough.
-- [[file:orgmode.org][org-mode]] and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]] for plain text editing.
+- [[https://www.docker.com/][Docker]] for managing development environments.
 
 Have a look at [[/setting-up-this-blog/][this]] blog post to find out how I set up this blog.
-
-* DRAFT Test post                                                      :meta:
-:PROPERTIES:
-:ID:       b5d76ebc-ac1f-4d9a-aaaf-68166835322f
-:END:
-#+date: 2099-12-31
-#+published: nil
-#+tags: [meta]
-
-This is a test post. It normally shouldn't show in production.
