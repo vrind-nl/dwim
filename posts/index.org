@@ -2,6 +2,105 @@
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
+* DRAFT Freedom!
+
+I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
+
+What I want:
+- test-drive as VM (Qemu with virt-manager)
+- work on my laptop
+- relatively painless (be productive quickly_
+- pleasing on the eye
+
+To get networking in the guest I had to select NAT for network source and "hypervisor default" for device model as my NIC.
+
+- https://guix.gnu.org: Running quickly but after that the going gets rough.
+- https://pureos.net/: looks good (GNOME).
+- https://trisquel.info/
+- https://guix.gnu.org/manual/devel/en/html_node/Running-Guix-in-a-VM.html
+
+- https://virt-manager.org/
+
+* DRAFT Make your tests fail                                           :blog:
+ https://kentcdodds.com/blog/make-your-test-fail
+* DRAFT Microsoft Office on Schools
+* DRAFT Head-voice vs. quiet-mind
+
+http://esr.ibiblio.org/?p=8558
+
+* DRAFT News                                                        :society:
+
+Uit "alle mensen deugen": Ik ben nog opgevoed met de gedachte dat het nieuws goed is voor je ontwikkeling. Een betrokken burger zou regelmatig de krant moeten lezen en het journaal kijken. Hoe beter we het nieuws volgen, hoe beter we geïnformeerd zijn, hoe gezonder de democratie.
+
+* DRAFT Software development is a craft                                  :coding:
+
+It is not a science (yet)
+Learn through master/apprentice
+
+* DRAFT Yesterbox                                              :productivity:
+
+https://yesterbox.com/
+
+Slow cooking, slow communication
+
+* DRAFT How to make impossible choices        :productivity:org:emacs:coding:
+
+Life is full of impossible choices. In those cases I follow these conservative but practical rules:
+- When in doubt, stay on the same road.
+- If it's not broken, don't fix it.
+
+Let me give you some examples:
+
+** Emacs vs other editors
+
+I keep bouncing back and forth between [[https://emacs.org][Emacs]] and other text editors (most recently: [[https://code.visualstudio.com/][VSCode]]) for coding.
+
+Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript and not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (Lisp is an elegant language, but just not for everyone).
+
+One thing that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they may seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =C-x C-f=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
+
+But, at the same time, that's also one of the major down-sides of Emacs: every time I switch to another application, my mind has to switch to other key bindings. All of a sudden the ubiquitous =C-x= and =C-c= of Emacs have become =cut= and =copy=. And when I hit =C-w= (=kill-region=) to cut a piece of text, instead I close a tab. This switching is an annoying mental effort and /very/ error prone. Of course, I am aware of [[https://www.gnu.org/software/emacs/manual/html_node/emacs/CUA-Bindings.html][CUA mode]] but I prefer to use every tool as it was intended.
+
+But the killer app that currently drove me back to Emacs is [[/what-is-org-mode][Org mode]]. There is nothing comparable.
+
+_Result_: For now, I am back using Emacs, but I can already feel the rising frustration with the lack of compatibility with other apps, so at some point I will probably change back.
+
+** Literate coding or comments
+
+As an org mode user, literate programming is all the rage, with [[https://orgmode.org/worg/org-contrib/babel/intro.html][org-babel]] to 'untangle'. Emacs configs in an org mode document [[https://www.google.com/search?q=org+mode+emacs+config][abound]] online. And they /do/ make for very nicely readable documents. So, I have long intended to try this approach but never came round to it.
+
+In the end, the extra indirection and level of complexity added by literate programming need to be justified by some benefit. So, unless you are writing a book or blog posts, code comments are the easiest way to document code.
+
+_Result_: I just add comments.
+
+** Where to put stuff
+
+Many things can (or should) be stored only once. For example, a book, a piece of code, or the contact information of your doctor. But to be able to find them, it may be useful to store them in different places. A book, for example, can be stored alphabetically by title, by author, or by subject. But if you have only one copy (and why shouldn't you), you can only store it in one place at a time.
+
+Fortunately, especially with digital data, indexing and searching make this a non-issue. For example, I used to label all my emails, but these days I just archive them and search.
+
+** Programming language
+
+[[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]].
+
+** Emacs completion framework
+
+Completion makes life so much easier. On the command line first bash, but these days [[https://ohmyz.sh/][Oh My ZSH!]].
+* PUBLISHED I bit the bullet                                       :sysop:vm:
+CLOSED: [2021-06-18 vr 11:27]
+
+My laptop has 16GB RAM and 512GB SSD storage. I ran Windows 10 and Ubuntu in dual-boot mode for years, but switching back-and-forth drove me crazy, so about a year ago I started using [[Windows on Linux][Windows on Linux]] in a virtual machine.
+
+But I still kept my Windows 10 dual-boot as fall-back, which meant Windows and Ubuntu had to share my 512GB storage. Windows was getting the lion share, because I had been unable to shrink its partition to less than about 270GB and I had the Windows VM on Linux which was gobbling up over 40GB extra of the Ubuntu partition (and growing), which left Ubuntu about 200GB.
+
+The storage limitation was starting to annoy me. Mostly, because it kept me from installing Visual Studio on the Windows VM, without freeing space first. So, I decided to wipe my Windows partition and grow the Ubuntu one:
+
+1. The Windows partition was easily removed with the Ubuntu =disks= tool.
+2. It turned out you can't resize a partition you're running from, so I made myself a [[https://gparted.org/livecd.php][parted live USB]] and booted from it. Which sounds easier than it actually was, because of /secure boot/ issues, but in the end I managed to grow the Ubuntu partition.
+3. And then nothing, because [[https://help.ubuntu.com/community/Grub2][GRUB]] got lost along the way. The suggested [[https://gparted.org/display-doc.php?name=help-manual&lang=C#gparted-fix-grub-boot-problem][solution]] from the =parted= FAQ didn't solve it, but it did allow me to explore my file system. I found that I somehow trashed my =grub.cfg= (probably when I played around with =grub-install=), which left grub without a clue what to do. Restoring a backup solved that problem.
+
+Ubuntu now lives on a whopping 500GB partition, which hopefully extends the life-span of my laptop with at least another year or so.
+
 * PUBLISHED Replicating a JS function in elisp                    :emacs:dev:
 CLOSED: [2021-06-11 vr 15:24]
 
@@ -40,8 +139,9 @@ On closer inspection I figured I would not need =encode-coding-string= because [
 It turns out that the other two elisp functions are close matches to their JS counterparts:
 
 #+begin_src emacs-lisp
-  (base64-encode-string "test")   ; "dGVzdA", same as rstr2b64
-  (secure-hash 'md5 "test")       ; "098f6bcd4621d373cade4e832627b4f6" which is hex for "	kÍF!ÓsÊÞN&'´ö"
+   (base64-encode-string "test")   ; "dGVzdA", same as rstr2b64
+   (secure-hash 'md5 "test")       ; "098f6bcd4621d373cade4e832627b4f6"
+                                   ; which is HEX for "	kÍF!ÓsÊÞN&'´ö"
 #+end_src
 
 So, I need a function to [[https://stackoverflow.com/questions/12003231/how-do-i-convert-a-string-of-hex-into-ascii-using-elisp][decode a HEX string]]:
@@ -60,110 +160,16 @@ So, I need a function to [[https://stackoverflow.com/questions/12003231/how-do-i
 
 Et voilá!
 
-* DRAFT Freedom!
-
-I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
-
-What I want:
-- test-drive as VM (Qemu with virt-manager)
-- work on my laptop
-- relatively painless (be productive quickly_
-- pleasing on the eye
-
-To get networking in the guest I had to select NAT for network source and "hypervisor default" for device model as my NIC.
-
-- https://guix.gnu.org: Running quickly but after that the going gets rough.
-- https://pureos.net/: looks good (GNOME).
-- https://trisquel.info/
-- https://guix.gnu.org/manual/devel/en/html_node/Running-Guix-in-a-VM.html
-
-- https://virt-manager.org/
-
-* DRAFT Make your tests fail                                           :blog:
- https://kentcdodds.com/blog/make-your-test-fail
-* DRAFT Microsoft Office on Schools
-
-* DRAFT Emacs Language Server Protocol                            :emacs:dev:
-
-[[https://github.com/emacs-lsp/lsp-mode][LSP mode]] | [[https://github.com/emacs-lsp/lsp-docker/][LSP-docker]] | [[https://langserver.org/][langserver]]
-
-https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/
-
-* DRAFT Head-voice vs. quiet-mind
-
-http://esr.ibiblio.org/?p=8558
-
-
-* DRAFT News                                                        :society:
-
-Uit "alle mensen deugen": Ik ben nog opgevoed met de gedachte dat het nieuws goed is voor je ontwikkeling. Een betrokken burger zou regelmatig de krant moeten lezen en het journaal kijken. Hoe beter we het nieuws volgen, hoe beter we geïnformeerd zijn, hoe gezonder de democratie.
-
-* DRAFT Emacs is no text editor | Eigenbahn blog                       :emacs:
-
-https://www.eigenbahn.com/2020/01/12/emacs-is-no-editor
+* PUBLISHED What is Emacs          :emacs:
+CLOSED: [2021-04-11 zo 11:43]
 
 Emacs is stable. You can get back to it after years, and immediately be productive. That's why my alternative editor keeps changing (UltraEdit, Sublime, VSCode), but Emacs has been a recurring thing since the early nineties.
 
 For instance, I was editing an extensive code comment lately, and my fingers just went =M-q= to word wrap the comment block. I hadn't done that since the years I read email with RMAIL (early nineties), but without thinking, the key combination happened.
 
 Compared to Emacs, most text editors (like VSCode) are glorified typewriters.
-Compared to Emacs, most word processors (like MS Word) are just text editors with formatting.
-Emacs is a true text processing platform.
-
-* DRAFT How to make impossible choices        :productivity:org:emacs:coding:
-
-Life is full of impossible choices. In those cases I follow these conservative but practical rules:
-- When in doubt, stay on the same road.
-- If it's not broken, don't fix it.
-
-Let me give you some examples:
-
-** Emacs vs other editors
-
-I keep bouncing back and forth between [[https://emacs.org][Emacs]] and other text editors (most recently: [[https://code.visualstudio.com/][VSCode]]) for coding.
-
-Current editors like VSCode are just more modern. Many things are so much easier. And the main selling feature of Emacs, "the [[https://www.gnu.org/software/emacs/emacs-paper.html][extensible, customizable]] editor", is now also available in editors [[https://www.sublimetext.com/][like]] VSCode. You have a virtually unlimited choice of plugins and can relatively easily program your own. In Javascript. And not [[https://learnxinyminutes.com/docs/elisp/][elisp]] (Lisp is an elegant language, but just not for everyone).
-
-One thing that keeps driving me back to Emacs is that the key bindings are in my muscle memory. To outsiders they may seem archaic and mysterious, but to me they feel comfortable and homey. When I just /think/ of opening a file, my fingers want to go =C-x C-f=. And Emacs allows me to mostly stay away from the mouse, which saves me time and context switches.
-
-But, at the same time, that's also one of the major down-sides of Emacs: every time I switch to another application, my mind has to switch to other key bindings. All of a sudden the ubiquitous =C-x= and =C-c= of Emacs have become =cut= and =copy=. And when I hit =C-w= (=kill-region=) to cut a piece of text, instead I close a tab. This switching is an annoying mental effort and /very/ error prone. Of course, I am aware of [[https://www.gnu.org/software/emacs/manual/html_node/emacs/CUA-Bindings.html][CUA mode]] but I prefer to use every tool as it was intended.
-
-But the killer app that currently drove me back to Emacs is [[/what-is-org-mode][Org mode]]. There is nothing comparable.
-
-_Result_: For now, I am back using Emacs, but I can already feel the rising frustration with the lack of compatibility with other apps, so at some point I will probably change back.
-
-** Literate coding or comments
-
-As an org mode user, literate programming is all the rage, with [[https://orgmode.org/worg/org-contrib/babel/intro.html][org-babel]] to 'untangle'. Emacs configs in an org mode document [[https://www.google.com/search?q=org+mode+emacs+config][abound]] online. And they /do/ make for very nicely readable documents. So, I have long intended to try this approach but never came round to it.
-
-In the end, the extra indirection and level of complexity added by literate programming need to be justified by some benefit. So, unless you are writing a book or blog posts, code comments are the easiest way to document code.
-
-_Result_: I just add comments.
-
-** Where to put stuff
-
-Many things can (or should) be stored only once. For example, a book, a piece of code, or the contact information of your doctor. But to be able to find them, it may be useful to store them in different places. A book, for example, can be stored alphabetically by title, by author, or by subject. But if you have only one copy (and why shouldn't you), you can only store it in one place at a time.
-
-Fortunaltely, indexing
-
-** Programming language
-
-[[https://www.python.org/][Python]] has long been my go to programming language, but I find I am moving more and more towards [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]]. Lately I am even drawn to [[http://www.typescriptlang.org/][Typescript]].
-
-** Emacs completion framework
-
-Completion makes life so much easier. On the command line first bash, but these days [[https://ohmyz.sh/][Oh My ZSH!]].
-
-* DRAFT Software development is a craft                                  :coding:
-
-It is not a science (yet)
-Learn through master/apprentice
-
-* DRAFT Yesterbox                                              :productivity:
-
-https://yesterbox.com/
-
-Slow cooking, slow communication
+Compared to Emacs, most word processors (like MS Word) are just text editors with WYSIWYG formatting.
+Emacs is a true [[https://www.eigenbahn.com/2020/01/12/emacs-is-no-editor][text processing platform]].
 
 * PUBLISHED Stress                                             :productivity:
 CLOSED: [2021-03-11 do 12:19]
@@ -221,7 +227,7 @@ When we extrapolate the death rate to the whole Dutch [[https://www.cbs.nl/nl-nl
 
 I am aware that this reasoning is debatable, and the numbers are full of assumptions and estimates. But at some point the damage of the corona measures /will/ overtake the loss from corona itself. Some may think we are already way past this point. Others may feel we still have a long way to go. Personally, I find it hard to pinpoint where we stand, but regardless, let's hope we soon start seeing the [[https://nos.nl/artikel/2370107-rivm-gunstig-vaccinatie-effect-zichtbaar-in-verpleeghuizen.html][effects]] of vaccination.
 
-* PUBLISHED Windows on Linux                                     :tech:sysop:
+* PUBLISHED Windows on Linux                                  :sysop:vm:
 CLOSED: [2020-05-29 vr 19:23]
 
 I have been running Windows and Linux side-by-side in dual-boot since forever. Switching between OSs this way is a pain, but the best I could get for a long time. Worse, the dual-boot configuration seems to hamper the Windows update process, so my Windows 10 version was beginning to get outdated.
@@ -230,7 +236,7 @@ Previously I have considered:
 - Running Windows 10 in a VM on a Ubuntu host with an illegal version of Windows (which I object to) or buying an extra license (which feels stupid, because my laptop came with Windows pre-installed).
 - Running Ubuntu in a VM on a Windows host, which felt like adding insult to injury.
 
-[[Virtual Machine Management][Recently]] I rediscovered Qemu, which rekindled my interest in virtual machines (which I had sort of written off since my switch from Vagrant to Docker). But from Apple users I heard of [[https://www.parallels.com/][Parallels]] and how conveniently it merged the MacOS and Windows environments, so I started considering getting a MacBook. But I didn't want to give up on Linux yet.
+[[Virtual Machine Management][Recently]] I rediscovered Qemu, which rekindled my interest in virtual machines (which I had sort of written off since my switch from Vagrant to Docker). But from Apple users I heard of [[https://www.parallels.com/][Parallels]] and how conveniently it merged the MacOS and Windows environments, so I started considering getting a MacBook. But I didn't want to give up on Linux just yet.
 
 And then I found [[https://www.techrepublic.com/article/how-to-install-windows-10-in-a-vm-on-a-linux-machine/][this]] article, which pointed me to the ~acpica-tools~. With it, you can retrieve your Windows 10 product key. So now I simply did:
 1. install Qemu and virt-manager
@@ -272,7 +278,6 @@ Additional remarks:
 These rules allow some wiggle room. That is intentional. When you are extra vulnerable to this virus, for example because of your age or because of an existing condition, you can apply the rules more strictly. Others can be a bit more relaxed. This way I hope we can get maximum effectiveness with minimal collateral damage.
 
 And remember, the current measures against COVID-19 /are/ doing a lot of damage. The billions we spend/loose now will have consequences for years and maybe even decades to come. This will mean less budget for health, education, social services, and foreign aid. This will hit the vulnerable the hardest, including the elderly, the poor, and the ill, which are exactly those we intend to protect from Corona now.
-
 
 * PUBLISHED COVID19: What's the point?                              :society:
 CLOSED: [2020-04-22 wo 11:27]
