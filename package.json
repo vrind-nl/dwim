@@ -8,12 +8,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve -o"
   },
-  "keywords": [
-    "blog",
-    "gatsby"
-  ],
-  "author": "Random Rambler",
-  "email": "randomrambler@gmail.com",
+  "keywords": ["blog", "gatsby"],
+  "author": "Vrind",
+  "email": "vrind@dwim.nl",
   "license": "ISC",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.7",
