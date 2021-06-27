@@ -689,6 +689,73 @@ db.organisations.find({"teams.members": ObjectId("5e5146d2b941b21ccea02c48")})
 #+END_SRC
 So far, I haven't been able to figure out how to get the relavant teams only. So, I end up writing Javascript code instead of Mongo queries. Hopefully, I will be able to follow-up on this post soon with a solution.
 
+* PUBLISHED 0 is true                                             :emacs:dev:
+CLOSED: [2021-06-27 zo 11:09]
+
+
+I was reading, as one does on a Sunday morning, [[https://www.gnu.org/software/emacs/manual/eintr.html][An Introduction to Programming in Emacs Lisp]] and came across the statement [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Truth-_0026-Falsehood.html][“false” is just our old friend nil. Anything else—anything at all—is “true”]].
+
+Which made me blink, because in most other programming languages this is not the case. So, I checked, and found the statement to be correct (duh\trade):
+
+#+begin_src bash
+ *** Welcome to IELM ***  Type (describe-mode) for help.
+ELISP> (not nil)
+t
+ELISP> (not 0)
+nil
+ELISP> (not "")
+nil
+#+end_src
+
+I would expect elisp to be similar to other scripted languages. For example, Javascript has a whole list of [[https://developer.mozilla.org/en-US/docs/Glossary/Falsy][falsy]] values, including (testing with negation, to cast to boolean):
+
+#+begin_src bash
+Welcome to Node.js v12.21.0.
+Type ".help" for more information.
+> !undefined
+true
+> !0
+true
+> !""
+true
+#+end_src
+
+Or in [[https://docs.python.org/2.4/lib/truth.html][Python]]:
+
+#+begin_src bash
+Python 3.9.5 (default, May 11 2021, 08:20:37)
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> not None
+True
+>>> not 0
+True
+>>> not ""
+True
+#+end_src
+
+Or maybe elisp would be closer to C, because that what it's base functions are written in. But even that is a bit different:
+
+#+begin_src c
+  #include <stdio.h>
+
+  int main() {
+    printf("NULL = %d\n", !NULL);
+    printf("0 = %d\n", !0);
+    printf("\"\" = %d\n", !"");
+  }
+#+end_src
+
+gives
+
+#+begin_src sh
+  NULL = 1
+  0 = 1
+  "" = 0
+#+end_src
+
+So, elisp is unlike any other language I know. Weird. And good to be aware of.
+
 * PUBLISHED Emacs: Is it worth it?                   :emacs:org:productivity:
 CLOSED: [2020-02-20 do 16:05]
 
@@ -733,12 +800,13 @@ Section 1 "The Organization of the Screen" introduces much Emacs jargon that may
 
 Then, when you actually start to use Emacs, the menu bar provides access to most common commands, including the key bindings that go with them for commands you find you need most often. /Please/ resist the urge to install all those shiny third-party packages for now, and first dig through all the features that Emacs ships with out of the box, like searching, bookmarks, email and version control. Also have a look at all you can customize through the /Options/ menu. But again, /please/ stick with the defaults at first. They have been selected based on years of experience, and more often than not make more sense that you might think at first (promise!).
 
-Finally, I you ever wonder /How do I do X?:/ =C-h= is your friend.
+Finally, I you ever wonder /How do I do X?/ =C-h= is your friend:
 - =C-h ?= shows all help command, including the ones I use most:
 - =C-h a= (apropos) show commands matching a pattern
 - =C-h k= describes a key
 - =C-h f= describes a function (by default the function under point) and the keys associated with it
 - =C-h v= describes a variable, its current value, its original value, and its possible values
+- =C-h m= describes all currently active modes
 - =C-h i= starts Info, which opens a whole library full of manuals, I don't believe you I will ever finish in this lifetime
 
 Have fun exploring Emacs!
