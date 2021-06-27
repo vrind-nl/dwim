@@ -734,7 +734,7 @@ True
 True
 #+end_src
 
-Or maybe elisp would be closer to C, because that what it's base functions are written in. But even that is a bit different:
+Or maybe elisp would be closer to C, because that's what its base functions are written in. But even that is a bit different:
 
 #+begin_src c
   #include <stdio.h>
