@@ -1,4 +1,4 @@
-name: Publish to gh-pages
+name: Publish to Github pages
 
 on:
   push:
@@ -10,22 +10,30 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: 12.x
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
-    - name: Build the Website
-      run: |
-        yarn
-        yarn run build
-      env:
-        CI: true
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@2.0.3
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: develop
-        FOLDER: public
-        BRANCH: master
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install node packages and build the Website
+        run: |
+          yarn
+          yarn run build
+        env:
+          CI: true
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: develop
+          FOLDER: public
+          BRANCH: master
