@@ -1,30 +1,29 @@
 #+TITLE: DWIM
+#+STARTUP: overview
 #+ORGA_PUBLISH_KEYWORD: PUBLISHED
 #+TODO: DRAFT(d) | PUBLISHED(p) CANCELLED(c)
 
-* DRAFT Freedom!
+* DRAFT Freedom!                                                   :tech:oss:
 
 I came across GNU's list of [[https://www.gnu.org/distros/free-distros.html][Free Distros]] recently.
 
 What I want:
-- test-drive as VM (Qemu with virt-manager)
+- test-drive as VM ([[Windows on Linux][Qemu with virt-manager]])
 - work on my laptop
-- relatively painless (be productive quickly_
+- relatively painless (be productive quickly)
 - pleasing on the eye
 
 To get networking in the guest I had to select NAT for network source and "hypervisor default" for device model as my NIC.
 
-- https://guix.gnu.org: Running quickly but after that the going gets rough.
-- https://pureos.net/: looks good (GNOME).
-- https://trisquel.info/
-- https://guix.gnu.org/manual/devel/en/html_node/Running-Guix-in-a-VM.html
-
-- https://virt-manager.org/
+I gave the following distros a spin:
+- [[https://guix.gnu.org/manual/devel/en/html_node/Running-Guix-in-a-VM.html][GUIX]]: Running quickly but after that the going gets rough.
+- [[https://pureos.net/][PureOS]]: looks good (GNOME).
+- [[https://trisquel.info/][Trisquel]]
 
 * DRAFT Make your tests fail                                           :blog:
  https://kentcdodds.com/blog/make-your-test-fail
-* DRAFT Microsoft Office on Schools
-* DRAFT Head-voice vs. quiet-mind
+* DRAFT Microsoft Office on Schools                            :society:tech:
+* DRAFT Head-voice vs. quiet-mind                     :productivity:personal:
 
 http://esr.ibiblio.org/?p=8558
 
@@ -32,7 +31,7 @@ http://esr.ibiblio.org/?p=8558
 
 Uit "alle mensen deugen": Ik ben nog opgevoed met de gedachte dat het nieuws goed is voor je ontwikkeling. Een betrokken burger zou regelmatig de krant moeten lezen en het journaal kijken. Hoe beter we het nieuws volgen, hoe beter we geïnformeerd zijn, hoe gezonder de democratie.
 
-* DRAFT Software development is a craft                                  :coding:
+* DRAFT Software development is a craft                              :coding:
 
 It is not a science (yet)
 Learn through master/apprentice
@@ -86,6 +85,88 @@ Fortunately, especially with digital data, indexing and searching make this a no
 ** Emacs completion framework
 
 Completion makes life so much easier. On the command line first bash, but these days [[https://ohmyz.sh/][Oh My ZSH!]].
+* DRAFT Security                                                      :sysop:
+https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/windows-10-performance-and-install-integrity/75529fd4-fac7-4653-893a-dd8cd4b4db00
+
+- Disable Windows Script Host (via Registry Editor HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings\Enabled)
+- Disable Windows PowerShell (via Windows Features)
+- Deactivate AutoPlay (via Autoplay Settings)
+* PUBLISHED Still learning                                 :dev:productivity:
+CLOSED: [2021-07-08 do 08:57]
+
+I have been programming since the 1980s, and professionally since the 1990s. And I am still learning. Recently this has been mainly from studying other people's code.
+
+For example, I work with highly technical code in C with lots of hardware interfaces and mathematical algorithms. The existing code is strictly organized and was written by a very disciplined developer. This level of structure and discipline helps me to write code like that myself.
+
+As another example, I have been browsing through some code Emacs Lisp lately, like the very basic [[https://github.com/emacs-mirror/emacs/blob/master/lisp/simple.el][simple.el]]. As Emacs is "self-documenting", comments are an integral part of elisp to begin with, and developers have clearly taken care to explain their code where they saw fit. Although I think that comments can be [[https://www.red-gate.com/simple-talk/opinion/opinion-pieces/fighting-evil-code-comments-comments/][evil]] at worst and are a code-smell at best, good comments can be really valuable, and I can learn from the way Emacs modules have been documented.
+
+* PUBLISHED 0 is true                                             :emacs:dev:
+CLOSED: [2021-06-27 zo 11:09]
+
+
+I was reading, as one does on a Sunday morning, [[https://www.gnu.org/software/emacs/manual/eintr.html][An Introduction to Programming in Emacs Lisp]] and came across the statement [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Truth-_0026-Falsehood.html][“false” is just our old friend nil. Anything else—anything at all—is “true”]].
+
+Which made me blink, because in most other programming languages this is not the case. So, I checked, and found the statement to be correct (duh\trade):
+
+#+begin_src bash
+ *** Welcome to IELM ***  Type (describe-mode) for help.
+ELISP> (not nil)
+t
+ELISP> (not 0)
+nil
+ELISP> (not "")
+nil
+#+end_src
+
+I would expect elisp to be similar to other scripted languages. For example, Javascript has a whole list of [[https://developer.mozilla.org/en-US/docs/Glossary/Falsy][falsy]] values, including (testing with negation, to cast to boolean):
+
+#+begin_src bash
+Welcome to Node.js v12.21.0.
+Type ".help" for more information.
+> !undefined
+true
+> !0
+true
+> !""
+true
+#+end_src
+
+Or in [[https://docs.python.org/2.4/lib/truth.html][Python]]:
+
+#+begin_src bash
+Python 3.9.5 (default, May 11 2021, 08:20:37)
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> not None
+True
+>>> not 0
+True
+>>> not ""
+True
+#+end_src
+
+Or maybe elisp would be closer to C, because that's what its base functions are written in. But even that is a bit different:
+
+#+begin_src c
+  #include <stdio.h>
+
+  int main() {
+    printf("NULL = %d\n", !NULL);
+    printf("0 = %d\n", !0);
+    printf("\"\" = %d\n", !"");
+  }
+#+end_src
+
+gives
+
+#+begin_src sh
+  NULL = 1
+  0 = 1
+  "" = 0
+#+end_src
+
+So, elisp is unlike any other language I know. Weird (but so are [[https://blog.robertelder.org/weird-c-syntax/][C]], [[https://colab.research.google.com/github/satwikkansal/wtfpython/blob/master/irrelevant/wtf.ipynb#scrollTo=mW-Bnl_i1u6v][Python]] and [[https://jsisweird.com/][JS]]). And good to be aware of.
+
 * PUBLISHED I bit the bullet                                       :sysop:vm:
 CLOSED: [2021-06-18 vr 11:27]
 
@@ -160,7 +241,7 @@ So, I need a function to [[https://stackoverflow.com/questions/12003231/how-do-i
 
 Et voilá!
 
-* PUBLISHED What is Emacs          :emacs:
+* PUBLISHED What is Emacs                                             :emacs:
 CLOSED: [2021-04-11 zo 11:43]
 
 Emacs is stable. You can get back to it after years, and immediately be productive. That's why my alternative editor keeps changing (UltraEdit, Sublime, VSCode), but Emacs has been a recurring thing since the early nineties.
@@ -182,7 +263,7 @@ People handle stress in projects in different ways. I find it helpful to use an 
 
 I have my preferences, but I actually think neither of these options is either good or bad. The most effective strategy is highly situational, and depends for instance on the individual characters, the atmosphere in the team, and the phase of the project. So, I think a good project manager can switch based on the circumstances.
 
-* PUBLISHED Corona Blues
+* PUBLISHED Corona Blues                                   :society:personal:
 CLOSED: [2021-03-02 do 19:19]
 
 It has been almost a [[COVID-19][year]] since my first post on COVID-19. And I am starting to suffer from a mild form of the Corona Blues:
@@ -227,7 +308,7 @@ When we extrapolate the death rate to the whole Dutch [[https://www.cbs.nl/nl-nl
 
 I am aware that this reasoning is debatable, and the numbers are full of assumptions and estimates. But at some point the damage of the corona measures /will/ overtake the loss from corona itself. Some may think we are already way past this point. Others may feel we still have a long way to go. Personally, I find it hard to pinpoint where we stand, but regardless, let's hope we soon start seeing the [[https://nos.nl/artikel/2370107-rivm-gunstig-vaccinatie-effect-zichtbaar-in-verpleeghuizen.html][effects]] of vaccination.
 
-* PUBLISHED Windows on Linux                                  :sysop:vm:
+* PUBLISHED Windows on Linux                                       :sysop:vm:
 CLOSED: [2020-05-29 vr 19:23]
 
 I have been running Windows and Linux side-by-side in dual-boot since forever. Switching between OSs this way is a pain, but the best I could get for a long time. Worse, the dual-boot configuration seems to hamper the Windows update process, so my Windows 10 version was beginning to get outdated.
@@ -632,7 +713,7 @@ Now envision all the discussions that will ensue. The viewers from the top are c
 
 I think this abstract figure translates directly to reality. For example in a discussion between graphical designers, marketeers and software developers. More often than not, they actually agree, even though they embark on endless discussions.
 
-* PUBLISHED Embedded Documents in Mongodb                                :mongo:js:
+* PUBLISHED Embedded Documents in Mongodb                          :mongo:js:
 CLOSED: [2020-02-23 zo 17:23]
 
 I have done many attempts to wrap my head around [[https://www.mongodb.com/][MongoDB]]. As I come from the traditional world of RDBMSs, this does not come naturally to me. But the more I work with Javascript, the more natural the step to Mongo becomes.
@@ -688,73 +769,6 @@ db.organisations.find({"teams.members": ObjectId("5e5146d2b941b21ccea02c48")})
 // gives the correct organisation, but includes all teams
 #+END_SRC
 So far, I haven't been able to figure out how to get the relavant teams only. So, I end up writing Javascript code instead of Mongo queries. Hopefully, I will be able to follow-up on this post soon with a solution.
-
-* PUBLISHED 0 is true                                             :emacs:dev:
-CLOSED: [2021-06-27 zo 11:09]
-
-
-I was reading, as one does on a Sunday morning, [[https://www.gnu.org/software/emacs/manual/eintr.html][An Introduction to Programming in Emacs Lisp]] and came across the statement [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Truth-_0026-Falsehood.html][“false” is just our old friend nil. Anything else—anything at all—is “true”]].
-
-Which made me blink, because in most other programming languages this is not the case. So, I checked, and found the statement to be correct (duh\trade):
-
-#+begin_src bash
- *** Welcome to IELM ***  Type (describe-mode) for help.
-ELISP> (not nil)
-t
-ELISP> (not 0)
-nil
-ELISP> (not "")
-nil
-#+end_src
-
-I would expect elisp to be similar to other scripted languages. For example, Javascript has a whole list of [[https://developer.mozilla.org/en-US/docs/Glossary/Falsy][falsy]] values, including (testing with negation, to cast to boolean):
-
-#+begin_src bash
-Welcome to Node.js v12.21.0.
-Type ".help" for more information.
-> !undefined
-true
-> !0
-true
-> !""
-true
-#+end_src
-
-Or in [[https://docs.python.org/2.4/lib/truth.html][Python]]:
-
-#+begin_src bash
-Python 3.9.5 (default, May 11 2021, 08:20:37)
-[GCC 10.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> not None
-True
->>> not 0
-True
->>> not ""
-True
-#+end_src
-
-Or maybe elisp would be closer to C, because that's what its base functions are written in. But even that is a bit different:
-
-#+begin_src c
-  #include <stdio.h>
-
-  int main() {
-    printf("NULL = %d\n", !NULL);
-    printf("0 = %d\n", !0);
-    printf("\"\" = %d\n", !"");
-  }
-#+end_src
-
-gives
-
-#+begin_src sh
-  NULL = 1
-  0 = 1
-  "" = 0
-#+end_src
-
-So, elisp is unlike any other language I know. Weird. And good to be aware of.
 
 * PUBLISHED Emacs: Is it worth it?                   :emacs:org:productivity:
 CLOSED: [2020-02-20 do 16:05]
@@ -1083,7 +1097,7 @@ Based on the Gatsby page about [[https://www.gatsbyjs.org/docs/adding-search/][a
 
 [[/migrated-to-org][Update Feb 2, 2020]]: I migrated to org mode.
 
-Feel free to check [[https://github.com/randomrambler/dwim][Github]] for all the gory details.
+Feel free to check [[https://github.com/vrind-nl/dwim][Github]] for all the gory details.
 
 * PUBLISHED Package management                                       :coding:
 CLOSED: [2020-01-04 za 19:40]
@@ -1102,7 +1116,7 @@ When I learned to program (/oldtimer speaking/), there was no Internet. If I wan
 [[http://www.ourdigitalheritage.org/archive/playitagain/why-write-a-commodore-64-game-today/][src]]
 
 To me, the biggest innovation in programming of the last decade is package managers like [[https://pipenv.kennethreitz.org/][pipenv]] and [[https://yarnpkg.com/][yarn]], which make finding, installing and maintaining packages a breeze. And to top it off, documentation has improved dramatically over the last couple of years.
-* PUBLISHED About me                                           :meta:private:
+* PUBLISHED About me                                          :meta:personal:
 CLOSED: [2021-06-11 vr 17:33]
 :PROPERTIES:
 :PINNED:   t
