@@ -91,6 +91,15 @@ https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/windows
 - Disable Windows Script Host (via Registry Editor HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings\Enabled)
 - Disable Windows PowerShell (via Windows Features)
 - Deactivate AutoPlay (via Autoplay Settings)
+* PUBLISHED Bookmarks                                                 :emacs:
+CLOSED: [2021-07-13 di 16:23]
+
+I used to have Emacs keybindings for files I visit often, like my Emacs config and my org notes. This was fast, but felt a bit overdone, and kept me from accessing too many files this way, because remembering the keybindings would be tedious.
+
+And then I remembered Emacs has bookmarks, which I had used in the past. This takes a few more key strokes (=C-x r b <first letter of bookmark> TAB=), but I only have to remember the one keybinding, and can then store as many bookmarks as I like, including remote files with Tramp and git repositories with Magit. At the moment, I have close to 20 of them.
+
+A typical /Dûh!/ moment...
+
 * PUBLISHED bag.el: Emacs package to manage links                 :org:emacs:
 CLOSED: [2021-07-12 ma 14:56]
 
