@@ -91,6 +91,15 @@ https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/windows
 - Disable Windows Script Host (via Registry Editor HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings\Enabled)
 - Disable Windows PowerShell (via Windows Features)
 - Deactivate AutoPlay (via Autoplay Settings)
+* PUBLISHED bag.el: Emacs package to manage links                 :org:emacs:
+CLOSED: [2021-07-12 ma 14:56]
+
+I use Emacs and org-mode on a daily basis for work. And I use a tablet for on-the-couch surfing. When I find something interesting I record a link in =mobile.org= through [[http://www.orgzly.com/help][Orgzly]], and refile it to my =links.org=  when I am back in Emacs.
+
+However, this leaves me with an endless list of URLs, which take a lot of work to be manually converted to org-mode sections headers with a link and tags. So, the last couple of days I wrote an Emacs package that does just that automatically: [[https://github.com/vrind-nl/bag.el][bag.el]].
+
+It [[http://www.catb.org/esr/writings/homesteading/cathedral-bazaar/ar01s02.html][scratched an itch]], and I hope it may be useful for others.
+
 * PUBLISHED Still learning                                 :dev:productivity:
 CLOSED: [2021-07-08 do 08:57]
 
