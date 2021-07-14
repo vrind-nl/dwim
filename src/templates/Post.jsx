@@ -33,7 +33,7 @@ export default ({ data, pageContext }) => {
         <PostLink {...previous} side="left" />
         <PostLink {...next} side="right" />
       </div>
-      <ReactUtterences repo="randomrambler/dwim" type="pathname" />
+      <ReactUtterences repo="vrind-nl/dwim" type="pathname" />
     </Layout>
   );
 };

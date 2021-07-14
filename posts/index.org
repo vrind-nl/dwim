@@ -109,6 +109,8 @@ However, this leaves me with an endless list of URLs, which take a lot of work t
 
 It [[http://www.catb.org/esr/writings/homesteading/cathedral-bazaar/ar01s02.html][scratched an itch]], and I hope it may be useful for others.
 
+Update 13 July, 2021: while I was at it, I also created [[https://github.com/vrind-nl/rav.el][rav.el]] (a unique password generator).
+
 * PUBLISHED Still learning                                 :dev:productivity:
 CLOSED: [2021-07-08 do 08:57]
 

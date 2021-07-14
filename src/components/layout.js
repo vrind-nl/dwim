@@ -74,9 +74,7 @@ export default ({ page, children }) => {
           <button onClick={() => navigate("/rss.xml")}>
             <FaRss />
           </button>
-          <button
-            onClick={() => navigate("https://github.com/randomrambler/dwim")}
-          >
+          <button onClick={() => navigate("https://github.com/vrind-nl/dwim")}>
             <FaGithub />
           </button>
         </div>
