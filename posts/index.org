@@ -111,8 +111,8 @@ me seems like writing out a ticket to the state, because somebody was
 speeding on their highway. We are shooting the messengers.
 
 What's really worrying me, is that we make tech giants responsible for
-the behavior of their users, and [[https://en.wikipedia.org/wiki/With_great_power_comes_great_responsibility][with great responsibility comes great
-power]] (sic). The result could be that Google [[https://irreal.org/blog/?p=9837][controls]] what information
+the behavior of their users, and [[https://en.wikipedia.org/wiki/With_great_power_comes_great_responsibility][with great responsibility comes great power]]
+(sic). The result could be that Google [[https://irreal.org/blog/?p=9837][controls]] what information
 journalists and scholars may collect and share.
 
 I believe that the underlying issue why disinformation is such a
