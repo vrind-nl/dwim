@@ -105,29 +105,29 @@ Good, but that is exactly what the Chinese government would have said.
 
 It seems like science is the new religion. It used to be that
 disagreeing with the church could get you [[https://en.wikipedia.org/wiki/Galileo_affair][condemned]], or that cartoons
-of Muhammad could get you [[https://en.wikipedia.org/wiki/Charlie_Hebdo_shooting][killed]]. But these days, even the /carriers/
-of science criticism get accused of [[https://www.bbc.com/news/world-us-canada-57870778][killing people]]. Which to
+of Muhammad could get you [[https://en.wikipedia.org/wiki/Charlie_Hebdo_shooting][killed]]. But these days, even the
+/carriers/ of science criticism get accused of [[https://www.bbc.com/news/world-us-canada-57870778][killing people]]. Which to
 me seems like writing out a ticket to the state, because somebody was
 speeding on their highway. We are shooting the messengers.
 
-What's really worrying me, is that we make tech giants responsible for
-the behavior of their users, and [[https://en.wikipedia.org/wiki/With_great_power_comes_great_responsibility][with great responsibility comes great power]]
-(sic). The result could be that Google [[https://irreal.org/blog/?p=9837][controls]] what information
+What really worries me, is that we make tech giants responsible for
+the behavior of their users, and [[https://en.wikipedia.org/wiki/With_great_power_comes_great_responsibility][with great responsibility comes great power]] (sic).
+The result could be that Google [[https://irreal.org/blog/?p=9837][controls]] what information
 journalists and scholars may collect and share.
 
 I believe that the underlying issue why disinformation is such a
 resilient [[https://www.brookings.edu/research/how-to-combat-fake-news-and-disinformation/][problem]], and censorship is [[https://www.embopress.org/doi/full/10.15252/embr.202051420][inadequate]] at best, is that many
 have lost faith in [[https://www.cbc.ca/news/science/science-survey-1.5291291][science]] and the [[https://www.pewresearch.org/politics/2021/05/17/public-trust-in-government-1958-2021/][government]]. Trust must be earned,
 and the very journalists and scholars we suppress are our best bet on
-restoring faith, but censorship short-circuits their work.
+restoring faith.
 
 Instead of blaming big tech and forcing them to police the internet,
 we should let everybody do what they are meant for: companies make
 money, governments protect their citizens, journalists seek truth,
 scientists seek knowledge. What remains are the questions of ethics:
 what is right and what is wrong? Those we decide together, in open
-discussion in the media, in religions, on the street, etc., using
-knowledge and facts from scholars and journalists.
+discussion in the media, in religions, on the street, in politics,
+etc., using knowledge and facts from scholars and journalists.
 
 * PUBLISHED Bookmarks                                                 :emacs:
 CLOSED: [2021-07-13 di 16:23]
