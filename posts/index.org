@@ -91,6 +91,89 @@ https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/windows
 - Disable Windows Script Host (via Registry Editor HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings\Enabled)
 - Disable Windows PowerShell (via Windows Features)
 - Deactivate AutoPlay (via Autoplay Settings)
+* PUBLISHED New laptop                                                 :tech:
+CLOSED: [2022-04-29 vr 13:49]
+
+My current [[https://www.lenovo.com/nl/nl/laptops/yoga/yoga-2-in-1-series/Yoga-C930-13IKB/p/88YGC900982][Lenovo Yoga C930-13IKB]] (bought Nov 13, 2018 for €1900) is beginning to age. Its processor is starting to struggle when I am using VMs.
+
+So, I ordered a new laptop. A [[https://www.dell.com/nl-nl/work/shop/dell-laptops-en-notebooks/nieuw-xps-15/spd/xps-15-9520-laptop/bn95204cb][Dell XPS]] (€2900) this time, with:
+- 15" screen
+- 12th gen Intel i9 CPU
+- 32GB RAM
+- 1TB hard-disk
+- Windows 11 Pro (if Dell bloated the OS too much, I may replace it with a stock Windows)
+
+As usual I intend to start using it with the OS it came with, plus some of may favorite apps:
+- Productivity:
+  - [[https://www.google.com/chrome/][Chrome]] for Google tools (mainly GMail, Drive and Docs) and general browsing.
+    I choose Chrome, because it supports using multiple Google accounts (business and private, in my case).
+  - [[https://www.gnu.org/software/emacs/][Emacs]] for Org-mode (mainly)
+  - [[https://www.whatsapp.com/][Whatsapp]] client
+  - [[https://www.gimp.org/][Gimp]] image manipulation
+  - [[https://www.irfanview.com/][IrfanView]] graphic viewer
+- Development:
+  - [[https://code.visualstudio.com/][VS Code]] for editing
+  - [[https://www.microsoft.com/edge][Edge]] as dev browser (I currently use Firefox for its superior dev tools, but I will give Edge a try)
+  - [[https://git-scm.com/][Git]] for version management and bash
+  - [[https://www.docker.com/][Docker]] containers
+  - I considered [[https://docs.microsoft.com/windows/wsl/][WSL]] (Windows Subsystem for Linux) with [[https://www.debian.org/][Debian]], but will initially go with [[https://www.cygwin.com/][cygwin]] because it lets me compile C for Windows and because I had problems with sharing files between Windows and WSL in the past
+    - [[https://ohmyz.sh/][oh-my-zsh]] shell
+  - Programming environments [[https://www.python.org/][Python]] / [[https://pipenv.pypa.io/][pipenv]] and [[https://nodejs.org/][node.js]] / [[https://yarnpkg.com/][yarn]] (probably straight in Windows and not through cygwin)
+  - I may give [[https://docs.microsoft.com/windows/terminal/][Windows Terminal]] (instead of [[https://conemu.github.io/][ConEmu]]) and [[https://docs.microsoft.com/powershell/][PowerShell]] (instead of [[https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands][cmd]]) a try.
+
+* DRAFT Metoo                                                       :society:
+* DRAFT Gender and sexuality                                        :society:
+
+In our times, a lot of attentions goes to gender and sexuality. So, I thought I would record my views on these.
+
+** Gender
+
+I believe gender is not binary. Instead, it is a scale. You could represent someone's gender with a slider:
+
+#+begin_src bash
+male |--+-------------------| female
+#+end_src
+
+On this scale, I would position myself on the male end. I feel male, I identify as male, but I don't think e.g. aggression is required for a male.
+
+I think 80-90% of the population belong to the male or female ends of the scale. Consequently, 10-20% are somewhere in the middle. These people consider themselves both male and female, or neither. Some may feel more male during one period, and more female during the next. And many more alternatives exist.
+
+Still, in my opinion, it makes sense to organize our society as if gender /is/ binary, because for most people it is. But I understand this makes life harder for people in the middle of the scale. I think we should allow for this group, but I don't think we can expect society to cater all possible genders. So for instance, organizations should only ask for gender on a form when it is relevant. And when relevant, options male, female, and other are sufficient (no need to further specify the "other" category).
+
+There are different aspects to this scale, for instance:
+- people's idea of their gender may change during their lifetime or even from one period to the next
+- there may be a gap between the gender people identify with and the gender of their bodies (they feel they are in the wrong body)
+- there may be a gap between the gender people identify with and the gender society assigns to them
+
+One of the issues I have with the current attention to non-binary genders, is that almost all teenagers go through a phase in which they are unsure about who they are. They feel unsure about their body. They don't feel as if they belong anywhere. I feel like currently these youngster are pushed towards the conclusion that these doubts mean they have a non-binary gender, while instead they are just experiencing normal growing pains. This may force gender issues on them, where there were none.
+
+Don't get me wrong, I think we should take gender issues seriously, but I fear changing your gender may not solve the problems you hoped it would, and on top of that add a whole new set of problems that you didn't have before.
+
+** Sexuality
+
+I use a similar scale for sexual orientation:
+
+#+begin_src bash
+heterosexual |+---------------------| homosexual
+#+end_src
+
+Here I think 60-70% of people are on the hetero side of the scale, while 5-10% are on the homosexual end of the scale. The 20-30% in the middle may be bisexual, asexual or something else. [[https://en.wikipedia.org/wiki/Demographics_of_sexual_orientation][Surveys]] indicate these numbers are 80% hetero, 3% homosexual and 5% other. Apart from several [[https://en.wikipedia.org/wiki/Demographics_of_sexual_orientation#Research_issues][research issues]] results differ between genders, countries, generations and periods.
+
+Regardless of the exact numbers, I think being heterosexual is the easiest, so some people in the middle (and even at the homosexual end) may choose to live as heterosexuals. Fortunately, current culture where I live, especially among young people, more and more allows for other sexual orientations, even allowing [[https://en.wikipedia.org/wiki/Sexual_fluidity][sexual fluidity]].
+
+Personally, I do not see why sexuality should be as rigid and binary as it has been in the past. Procreation is biological, but sexuality is more than procreation, and can therefore be more personal and cultural.
+
+* DRAFT VS Code                                                   :emacs:dev:
+
+Lately, I have been drawn to VS Code again. And I like it.
+
+But what does VS Code that Emacs doesn't?
+
+Basically, it is just these few things:
+- It Just Works\trade
+  When I open a file, VS Code suggests extensions I can use. Just click "install" and you're good to go.
+- Integrated debugger
+
 * PUBLISHED Censorship worries                                      :society:
 CLOSED: [2021-07-19 ma 19:32]
 
