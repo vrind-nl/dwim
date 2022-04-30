@@ -91,37 +91,21 @@ https://answers.microsoft.com/en-us/windows/forum/windows_10-performance/windows
 - Disable Windows Script Host (via Registry Editor HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings\Enabled)
 - Disable Windows PowerShell (via Windows Features)
 - Deactivate AutoPlay (via Autoplay Settings)
-* PUBLISHED New laptop                                                 :tech:
-CLOSED: [2022-04-29 vr 13:49]
+* DRAFT The sex/favor-exchange                                      :society:
 
-My current [[https://www.lenovo.com/nl/nl/laptops/yoga/yoga-2-in-1-series/Yoga-C930-13IKB/p/88YGC900982][Lenovo Yoga C930-13IKB]] (bought Nov 13, 2018 for €1900) is beginning to age. Its processor is starting to struggle when I am using VMs.
+To me, the current MeToo-movement is all about the classical sex/favor-exchange: some men try to buy sex with favors (e.g. power or money), while some women use their sexuality for favors. (To keep things as simple as possible, I'll ignore for now that it's not always men who provide the favor and not always women who provide the sex.)
 
-So, I ordered a new laptop. A [[https://www.dell.com/nl-nl/work/shop/dell-laptops-en-notebooks/nieuw-xps-15/spd/xps-15-9520-laptop/bn95204cb][Dell XPS]] (€2900) this time, with:
-- 15" screen
-- 12th gen Intel i9 CPU
-- 32GB RAM
-- 1TB hard-disk
-- Windows 11 Pro (if Dell bloated the OS too much, I may replace it with a stock Windows)
+Some people may have a problem with this exchange for principal reasons, but personally I have no problem with it, as long as the exchange is transparent and with mutual consent.
 
-As usual I intend to start using it with the OS it came with, plus some of may favorite apps:
-- Productivity:
-  - [[https://www.google.com/chrome/][Chrome]] for Google tools (mainly GMail, Drive and Docs) and general browsing.
-    I choose Chrome, because it supports using multiple Google accounts (business and private, in my case).
-  - [[https://www.gnu.org/software/emacs/][Emacs]] for Org-mode (mainly)
-  - [[https://www.whatsapp.com/][Whatsapp]] client
-  - [[https://www.gimp.org/][Gimp]] image manipulation
-  - [[https://www.irfanview.com/][IrfanView]] graphic viewer
-- Development:
-  - [[https://code.visualstudio.com/][VS Code]] for editing
-  - [[https://www.microsoft.com/edge][Edge]] as dev browser (I currently use Firefox for its superior dev tools, but I will give Edge a try)
-  - [[https://git-scm.com/][Git]] for version management and bash
-  - [[https://www.docker.com/][Docker]] containers
-  - I considered [[https://docs.microsoft.com/windows/wsl/][WSL]] (Windows Subsystem for Linux) with [[https://www.debian.org/][Debian]], but will initially go with [[https://www.cygwin.com/][cygwin]] because it lets me compile C for Windows and because I had problems with sharing files between Windows and WSL in the past
-    - [[https://ohmyz.sh/][oh-my-zsh]] shell
-  - Programming environments [[https://www.python.org/][Python]] / [[https://pipenv.pypa.io/][pipenv]] and [[https://nodejs.org/][node.js]] / [[https://yarnpkg.com/][yarn]] (probably straight in Windows and not through cygwin)
-  - I may give [[https://docs.microsoft.com/windows/terminal/][Windows Terminal]] (instead of [[https://conemu.github.io/][ConEmu]]) and [[https://docs.microsoft.com/powershell/][PowerShell]] (instead of [[https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands][cmd]]) a try.
+The trouble starts when the exchange is
+- not transparent :: either party did expect more from the exchange (e.g. a committed relationship),
+- not with mutual consent :: either party is not interested in sex with the other,
+- simply fails :: the sex is not reciprocated with the expected favor, or vice versa. When the exchange is not transparent
 
-* DRAFT Metoo                                                       :society:
+Unfortunately, it is very hard to tell after the fact how parties originally went into the exchange. Traditionally, this means that it is very hard for women to prove they did not want the exchange since the beginning. Currently, it is also very hard for men to prove that the exchange was consensual from both sides.
+
+In my opinion nobody should ever be forced to perform or receive sexual acts, but in the current MeToo-narrative, the possibility that there may originally have been a transparent and consensual exchange seems to be completely ignored. When a woman realizes (or decides) years after the fact that in retrospect the act was not consensual, she suddenly becomes a victim. And the man a horrible rapist.
+
 * DRAFT Gender and sexuality                                        :society:
 
 In our times, a lot of attentions goes to gender and sexuality. So, I thought I would record my views on these.
@@ -173,6 +157,42 @@ Basically, it is just these few things:
 - It Just Works\trade
   When I open a file, VS Code suggests extensions I can use. Just click "install" and you're good to go.
 - Integrated debugger
+
+* PUBLISHED New laptop                                                 :tech:
+CLOSED: [2022-04-29 vr 13:49]
+
+My current [[https://www.lenovo.com/nl/nl/laptops/yoga/yoga-2-in-1-series/Yoga-C930-13IKB/p/88YGC900982][Lenovo Yoga C930-13IKB]] (bought Nov 13, 2018 for €1900) is beginning to age. Its processor is starting to struggle when I am using VMs.
+
+So, I ordered a new laptop. A [[https://www.dell.com/nl-nl/work/shop/dell-laptops-en-notebooks/nieuw-xps-15/spd/xps-15-9520-laptop/bn95204cb][Dell XPS]] (€2900) this time, with:
+- 15" screen
+- 12th gen Intel i9 CPU
+- 32GB RAM
+- 1TB hard-disk
+- Windows 11 Pro (if Dell bloated the OS too much, I may replace it with a stock Windows)
+
+As usual I intend to start using it with the OS it came with, plus some of may favorite apps:
+- System management:
+  - [[https://docs.microsoft.com/windows/package-manager/winget/][winget]] package manager
+  - [[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/][Hyper-V]] to run virtual machines
+  - [[https://docs.microsoft.com/windows/terminal/][Windows Terminal]] (instead of [[https://conemu.github.io/][ConEmu]])
+  - I may give [[https://docs.microsoft.com/powershell/][PowerShell]] (instead of [[https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands][cmd]]) a try.
+- Productivity:
+  - [[https://www.google.com/chrome/][Chrome]] for Google tools (mainly GMail, Drive and Docs) and general browsing.
+    I choose Chrome, because it supports using multiple Google accounts (business and private, in my case).
+  - [[https://www.gnu.org/software/emacs/][Emacs]] for Org-mode (mainly)
+  - [[https://www.whatsapp.com/][Whatsapp]] client
+  - [[https://www.gimp.org/][Gimp]] image manipulation
+  - [[https://www.irfanview.com/][IrfanView]] graphic viewer
+- Development:
+  - [[https://code.visualstudio.com/][VS Code]] for editing
+  - [[https://www.microsoft.com/edge][Edge]] as dev browser (I currently use Firefox for its superior dev tools, but I will give Edge a try)
+  - [[https://git-scm.com/][Git]] for version management and bash
+  - [[https://www.docker.com/][Docker]] containers
+  - I considered [[https://docs.microsoft.com/windows/wsl/][WSL]] (Windows Subsystem for Linux) with [[https://www.debian.org/][Debian]], but will initially go with [[https://www.cygwin.com/][cygwin]] because it lets me compile C for Windows and because I had problems with sharing files between Windows and WSL in the past
+    - [[https://ohmyz.sh/][oh-my-zsh]] shell
+  - Programming environments [[https://www.python.org/][Python]] / [[https://pipenv.pypa.io/][pipenv]] and [[https://nodejs.org/][node.js]] / [[https://yarnpkg.com/][yarn]] (probably straight in Windows and not through cygwin)
+
+My new laptop is due mid June.
 
 * PUBLISHED Censorship worries                                      :society:
 CLOSED: [2021-07-19 ma 19:32]
