@@ -164,7 +164,7 @@ CLOSED: [2022-06-08 Wed 18:51]
 My [[New laptop][new laptop]] arrived 'early' (May 31 instead of Jun 21: good marketing by Dell). These are my experiences so far with my intention to work under Windows instead of Ubuntu.
 
 - On the surface, Windows 11 isn't that much different from Windows 10. It may be very different under the hood, but I can't tell.
-- The [[https://docs.microsoft.com/windows/package-manager/winget/][winget]] package manager package manager works like a charm. I also installed apps through the store, just to experience the difference, but winget has a much wider choice. The weird thin is, that removing an app must be done by selecting "Uninstall" in the start menu...
+- The [[https://docs.microsoft.com/windows/package-manager/winget/][winget]] package manager works like a charm. I also installed apps through the store, just to experience the difference, but winget has a much wider choice. The weird thing is, that removing an app must still be done by selecting "Uninstall" in the start menu...
 - [[https://docs.microsoft.com/windows/terminal/][Windows Terminal]] works fine and I may get used to [[https://docs.microsoft.com/powershell/][PowerShell]] as well.
 - I am having trouble using [[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/][Hyper-V]]:
   - I can't share folders between the host and guest, like I am used to in e.g. VirtualBox. There is [[https://github.com/dorssel/usbipd-win][usbipd.win]] and you can of course use "Sharing" (i.e. Samba).
@@ -192,7 +192,6 @@ On top of my original plan, I installed some additional apps:
   - [[https://www.lazarus-ide.org/][Lazarus]]
 - Productivity
   - [[https://libreoffice.org/][LibreOffice]] although I use Google Docs when I can and Microsoft Office when I have to
-  - [[https://www.openoffice.org/][OpenOffice]]
   - [[https://www.teamviewer.com/][TeamViewer]]
   - [[https://zoom.us/][Zoom]]
 
@@ -208,9 +207,9 @@ App I like but don't need (yet):
 * PUBLISHED Emacs + GPG = EasyPG                                       :tech:
 CLOSED: [2022-06-06 Mon 11:09]
 
-I looked at [[https://keepass.info/][KeePass]] to store confidential information on Windows. But than it occured to me that org files can easily be encrypted, so I used that instead.
+I looked at [[https://keepass.info/][KeePass]] to store confidential information on Windows. But then it occured to me that org files can easily be encrypted, so now I use that instead.
 
-Just add the extension =.gpg= to your file (so =vault.org= becomes =vault.org.gpg=) and your good to go. The double extension lets Emacs know its both encrypted and an org file.
+Just add the extension =.gpg= to your file (so =vault.org= becomes =vault.org.gpg=) and you're good to go. The double extension lets Emacs know its both encrypted and an org file.
 
 I love how org mode turns out to be the perfect PIM with every new step.
 
@@ -219,7 +218,7 @@ And I was glad to find that EasyPG worked out of the box even on Windows.
 * PUBLISHED Website monitoring                                          :dev:
 CLOSED: [2022-06-05 Sun 12:20]
 
-I maintain a number of websites for different clients and need to monitor their status. At this point a simple check if the site is still up would be sufficient, so I would prefer something simple. Other requirements: open source, self-hosted, configurable, web dashboard, automatic alerte and preferably available through docker compose.
+I maintain a number of websites for different clients and need to monitor their status. At this point a simple check if the site is still up would be sufficient, so I would prefer something simple. Other requirements: open source, self-hosted, configurable, web dashboard, automatic alerts and preferably available through docker compose.
 
 Candidates:
 - [[https://www.nagios.org/][Nagios]] claims to be the industry standard for system monitoring but is a bit too much for me. There's also its open source fork [[https://icinga.com/][Icinga]].
