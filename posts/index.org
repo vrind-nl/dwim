@@ -158,7 +158,44 @@ Basically, it is just these few things:
   When I open a file, VS Code suggests extensions I can use. Just click "install" and you're good to go.
 - Integrated debugger
 
-* PUBLISHED New laptop arrived                                         :tech:
+* PUBLISHED The Hypervisor Conundrum                                :windows:
+CLOSED: [2022-06-21 Tue 09:54]
+
+Windows 11 Pro came pre-installed with a set of [[https://docs.microsoft.com/en-us/virtualization/][virtualization features]]:
+- Microsoft's own [[https://en.wikipedia.org/wiki/Hypervisor][hypervisor]]: [[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/][Hyper-V]]
+  - Hyper-V Managament Tools
+    - Hyper-V GUI Management Tools
+    - Hyper-V Module for Windows PowerShell
+  - Hyper-V Platform
+    - Hyper-V Hypervisor (/We'll come back to this one later/)
+    - Hyper-V Services
+- Virtual Machine Platform
+- Windows Hypervisor Platform
+- Windows Sandbox
+- Windows Subsystem for Linux
+
+Despite my [[New laptop arrived][misgivings]] about Hyper-V itself, I was pleasantly surprised that WSL now included [[WSL GUI][graphical abilities]]. It also turned out that Docker used WSL, which in retrospect was a sign of what was to come.
+
+Because last week I decided to experiment with pen-testing. The industry standard for a pen-testing lab seemed to be [[https://www.kali.org/][Kali Linux]] on [[https://www.kali.org/get-kali/#kali-virtual-machines][VirtualBox]]. So, =winget install virtualbox= and I'd be ready to go. Or so I thought.
+
+Modern computers come with hardware support for virtualization. The thing is that only one application can use this support at any one time. And on Windows that is Hyper-V, so when Hyper-V is running, other hypervisors need to access the virtualization hardware support /through/ Hyper-V. Which makes VirtualBox painfully slow: I had ample time to admire the frames in the animated Kali-logo.
+
+To disable all virtualization features, you need to perform some arcane [[https://docs.microsoft.com/en-us/troubleshoot/windows-client/application-management/virtualization-apps-not-work-with-hyper-v#how-to-disable-hyper-v][magic]]. And with Hyper-V disabled, WSL and Docker also go out the Window (/sic/), so I would have to switch on a regular basis. This is highly simplified by [[https://unclassified.software/en/apps/hypervswitch][HyperVSwitch]] (be careful: it reboots your machine without warning), but I would still need to restart my system every time...
+
+But Internet [[https://stackoverflow.com/a/69896662/5251833][posts]] kept telling me it's possible to have WSL and VirtualBox running simultaneously, because WSL uses the Hyper-V /architecture/ but not the Hyper-V /feature/. After completely [[https://pureinfotech.com/uninstall-wsl2-windows-10/][uninstalling WSL]] (and turning of /all/ virtualization features, and rebooting) and then =wsl --install= (and rebooting) only the features /Virtual Machine Platform/ and /Windows Subsystem for Linux/ were back on again. WSL was now running fine, but VirtualBox was crawling in software virtualization mode.
+
+Running =bcdedit /set hypervisorlaunchtype off= (and rebooting) allowed VirtualBox to run in hardware virtualization mode, but now WSL stopped working: =Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS=.
+
+So, with =hypervisorlaunchtype off=, VirtualBox is fine, but WSL not. And with =hypervisorlaunchtype auto=, WSL is fine, but VirtualBox is painfully slow in software virtualization mode. And switching requires a reboot. Every time.
+
+So, after three weeks of using Windows, I am considering moving back to Linux again...
+
+* PUBLISHED WSL GUI                                                     :wsl:
+CLOSED: [2022-06-13 Mon 11:58]
+
+Just found out that [[https://aka.ms/wslstorepage][WSL Preview]] provides [[https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps][WSL GUI]] which allows me to run graphical Linux apps.
+
+* PUBLISHED New laptop arrived                                 :tech:windows:
 CLOSED: [2022-06-08 Wed 18:51]
 
 My [[New laptop][new laptop]] arrived 'early' (May 31 instead of Jun 21: good marketing by Dell). These are my experiences so far with my intention to work under Windows instead of Ubuntu.
@@ -174,6 +211,12 @@ My [[New laptop][new laptop]] arrived 'early' (May 31 instead of Jun 21: good ma
 - It turns out [[https://www.docker.com/][Docker Desktop]] needs [[https://docs.microsoft.com/windows/wsl/][WSL]] (Windows Subsystem for Linux), so as I no longer need Cygwin, I decided to install Debian just for the fun of it (so far, I have no real need for it).
 
 On top of my original plan, I installed some additional apps:
+- Dev:
+  - [[https://www.sqlite.org/][SQLite]] (in =$HOME/bin=)
+  - [[https://github.com/coreybutler/nvm-windows][nvm for Windows]]
+  - [[https://winmerge.org/][WinMerge]]
+  - [[https://dbeaver.io/][DBeaver]]
+  - [[https://www.lazarus-ide.org/][Lazarus]]
 - Utilities:
   - [[https://www.7-zip.org/][7-zip]]
   - [[https://notepad-plus-plus.org/][Notepad++]] (associated with all text files instead of VSCode)
@@ -185,11 +228,6 @@ On top of my original plan, I installed some additional apps:
   - [[https://www.jam-software.com/treesize_free][TreeSize Free]]
   - [[https://docs.microsoft.com/en-us/windows/powertoys/][PowerToys]]
   - [[https://www.sysinternals.com][sysinternals]]
-- Dev:
-  - [[https://www.sqlite.org/][SQLite]] (in =$HOME/bin=)
-  - [[https://winmerge.org/][WinMerge]]
-  - [[https://dbeaver.io/][DBeaver]]
-  - [[https://www.lazarus-ide.org/][Lazarus]]
 - Productivity
   - [[https://libreoffice.org/][LibreOffice]] although I use Google Docs when I can and Microsoft Office when I have to
   - [[https://www.teamviewer.com/][TeamViewer]]
@@ -204,7 +242,7 @@ App I like but don't need (yet):
 - [[https://www.openshot.org/][OpenShot]] video editor
 - [[https://inkscape.org/][InkScape]] vector-based drawing
 
-* PUBLISHED Emacs + GPG = EasyPG                                       :tech:
+* PUBLISHED Emacs + GPG = EasyPG                               :tech:windows:
 CLOSED: [2022-06-06 Mon 11:09]
 
 I looked at [[https://keepass.info/][KeePass]] to store confidential information on Windows. But then it occured to me that org files can easily be encrypted, so now I use that instead.
@@ -1357,9 +1395,9 @@ CLOSED: [2021-06-11 vr 17:33]
 :PINNED:   t
 :END:
 
-I am a software developer, living in the Netherlands. I was born almost 50 years ago.
+I am a software developer, living in the Netherlands. I was born about 50 years ago.
 
-I mostly build full-stack websites, but also the occasional desktop application, or daemon/service. [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]] is my go to programming language for web, for both client and server. For some older web-projects I use [[https://www.python.org/][Python]], which I also use for data wrangling. For more technical software I use C/C++, and for desktop applications sometimes [[https://www.lazarus-ide.org/][Lazarus/FreePascal]].
+I mostly build full-stack websites, but also the occasional desktop application, or daemon/service. [[https://developer.mozilla.org/en-US/docs/Web/JavaScript][Javascript]] is my go to programming language for web, for both client and server. For other web-projects I use [[https://www.python.org/][Python]], which I also use for data wrangling. For more technical software I use C/C++, and for desktop applications sometimes [[https://www.lazarus-ide.org/][Lazarus/FreePascal]].
 
 I prefer open technologies and use open source software (OSS) whenever I can. And practically the only times that I can't, involve working together with others on Microsoft Office documents. My preferred tools include:
 
