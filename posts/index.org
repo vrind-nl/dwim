@@ -149,7 +149,7 @@ Personally, I do not see why sexuality should be as rigid and binary as it has b
 
 * DRAFT VS Code                                                   :emacs:dev:
 
-Lately, I have been drawn to VS Code again. And I like it.
+Over the last year, or so, I have been drawn to VS Code again. And I like it.
 
 But what does VS Code that Emacs doesn't?
 
@@ -157,6 +157,21 @@ Basically, it is just these few things:
 - It Just Works\trade
   When I open a file, VS Code suggests extensions I can use. Just click "install" and you're good to go.
 - Integrated debugger
+
+* PUBLISHED Scoop                                                   :windows:
+CLOSED: [2022-07-21 Thu 15:53]
+
+I have migrated from [[https://docs.microsoft.com/windows/package-manager/winget/][winget]] to [[https://scoop.sh/][scoop]]. Winget is a big stap up from manually downloading and installing applications, but in the end it is mainly just a wrapper around the application installer. You still get installer popups, which started to get under my skin.
+
+So far, scoop works great:
+- I have reinstalled all applications (except those from Microsoft, just to stay in touch with the Microsoft way of installing).
+- installation is much faster
+- you get parallel downloads with [[http://aria2.github.io/][aria2]] and administrator access with sudo
+- no more setup dialogues
+
+The main downside is that spplication icons seem to get lost, somehow. They are visible in =~/scoop/apps=, but not in =~/scoop/shims=. Also, some apps (like NotePad++) open a terminal when they start from a file association in file explorer.
+
+I also kept Docker under winget, because I couldn't get =dockerd= working properly. You need to start it as administrator, but than =docker-compose= needs to be run as administrator too. And that doesn't play well with the Docker extension in VSCode. It's probably just me, but after some trial and error I decided it was easier to switch back to Docker Desktop through winget.
 
 * PUBLISHED The Hypervisor Conundrum                                :windows:
 CLOSED: [2022-06-21 Tue 09:54]
@@ -176,17 +191,17 @@ Windows 11 Pro came pre-installed with a set of [[https://docs.microsoft.com/en-
 
 Despite my [[New laptop arrived][misgivings]] about Hyper-V itself, I was pleasantly surprised that WSL now included [[WSL GUI][graphical abilities]]. It also turned out that Docker used WSL, which in retrospect was a sign of what was to come.
 
-Because last week I decided to experiment with pen-testing. The industry standard for a pen-testing lab seemed to be [[https://www.kali.org/][Kali Linux]] on [[https://www.kali.org/get-kali/#kali-virtual-machines][VirtualBox]]. So, =winget install virtualbox= and I'd be ready to go. Or so I thought.
+Last week I decided to experiment with pen-testing. The industry standard for a pen-testing lab seemed to be [[https://www.kali.org/][Kali Linux]] on [[https://www.kali.org/get-kali/#kali-virtual-machines][VirtualBox]]. So, =winget install virtualbox= and I'd be ready to go. Or so I thought.
 
 Modern computers come with hardware support for virtualization. The thing is that only one application can use this support at any one time. And on Windows that is Hyper-V, so when Hyper-V is running, other hypervisors need to access the virtualization hardware support /through/ Hyper-V. Which makes VirtualBox painfully slow: I had ample time to admire the frames in the animated Kali-logo.
 
 To disable all virtualization features, you need to perform some arcane [[https://docs.microsoft.com/en-us/troubleshoot/windows-client/application-management/virtualization-apps-not-work-with-hyper-v#how-to-disable-hyper-v][magic]]. And with Hyper-V disabled, WSL and Docker also go out the Window (/sic/), so I would have to switch on a regular basis. This is highly simplified by [[https://unclassified.software/en/apps/hypervswitch][HyperVSwitch]] (be careful: it reboots your machine without warning), but I would still need to restart my system every time...
 
-But Internet [[https://stackoverflow.com/a/69896662/5251833][posts]] kept telling me it's possible to have WSL and VirtualBox running simultaneously, because WSL uses the Hyper-V /architecture/ but not the Hyper-V /feature/. After completely [[https://pureinfotech.com/uninstall-wsl2-windows-10/][uninstalling WSL]] (and turning of /all/ virtualization features, and rebooting) and then =wsl --install= (and rebooting) only the features /Virtual Machine Platform/ and /Windows Subsystem for Linux/ were back on again. WSL was now running fine, but VirtualBox was crawling in software virtualization mode.
+Internet [[https://stackoverflow.com/a/69896662/5251833][posts]] kept telling me it's possible to have WSL and VirtualBox running simultaneously, because WSL uses the Hyper-V /architecture/ but not the Hyper-V /feature/. After completely [[https://pureinfotech.com/uninstall-wsl2-windows-10/][uninstalling WSL]] (and turning of /all/ virtualization features, and rebooting) and then =wsl --install= (and rebooting) only the features /Virtual Machine Platform/ and /Windows Subsystem for Linux/ were back on again. WSL was now running fine, but VirtualBox was crawling in software virtualization mode.
 
 Running =bcdedit /set hypervisorlaunchtype off= (and rebooting) allowed VirtualBox to run in hardware virtualization mode, but now WSL stopped working: =Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS=.
 
-So, with =hypervisorlaunchtype off=, VirtualBox is fine, but WSL not. And with =hypervisorlaunchtype auto=, WSL is fine, but VirtualBox is painfully slow in software virtualization mode. And switching requires a reboot. Every time.
+So, with =hypervisorlaunchtype off=, VirtualBox is fine, but WSL is not. And with =hypervisorlaunchtype auto=, WSL is fine, but VirtualBox is painfully slow in software virtualization mode. And switching requires a reboot. Every time.
 
 So, after three weeks of using Windows, I am considering moving back to Linux again...
 
@@ -206,7 +221,7 @@ My [[New laptop][new laptop]] arrived 'early' (May 31 instead of Jun 21: good ma
 - I am having trouble using [[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/][Hyper-V]]:
   - I can't share folders between the host and guest, like I am used to in e.g. VirtualBox. There is [[https://github.com/dorssel/usbipd-win][usbipd.win]] and you can of course use "Sharing" (i.e. Samba).
   - I can't set the display resolution in Debian other than through Grub.
-- Migrating [[https://www.gnu.org/software/emacs/][Emacs]] was fairly painless. I just needed to set =$HOME= and install [[https://www.orgroam.com/manual.html#C-Compiler-for-Windows][MSys2]] for Org-roam. This latter also removed my need for [[https://www.cygwin.com/][cygwin]].
+- Migrating [[https://www.gnu.org/software/emacs/][Emacs]] was fairly painless. I just needed to set =$HOME=, install [[https://www.orgroam.com/manual.html#C-Compiler-for-Windows][MSys2]] for Org-roam and adding MSys's =/usr/bin= to my path. MSys2 also removed my need for [[https://www.cygwin.com/][cygwin]].
 - I also created =$HOME/bin= and added it to =$PATH= (mainly for sqlite)
 - It turns out [[https://www.docker.com/][Docker Desktop]] needs [[https://docs.microsoft.com/windows/wsl/][WSL]] (Windows Subsystem for Linux), so as I no longer need Cygwin, I decided to install Debian just for the fun of it (so far, I have no real need for it).
 
@@ -235,7 +250,7 @@ On top of my original plan, I installed some additional apps:
 
 My intention is to install server components like [[https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-docker-container-deployment?view=sql-server-ver16&pivots=cs1-bash][MSSQL]] through docker.
 
-App I like but don't need (yet):
+Apps I like but don't need (yet):
 - [[https://www.jenkins.io/][Jenkins]] CI/CD
 - [[https://filezilla-project.org/][FileZilla]] because most of my customers use [[https://winscp.net/][WinSCP]] and using the same tool makes communication easier
 - [[https://www.audacityteam.org/][Audacity]] sound editor
