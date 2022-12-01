@@ -158,6 +158,23 @@ Basically, it is just these few things:
   When I open a file, VS Code suggests extensions I can use. Just click "install" and you're good to go.
 - Integrated debugger
 
+* PUBLISHED Boter op ons hoofd                                      :society:
+CLOSED: [2022-12-01 Thu 09:57]
+
+Het is verschrikkelijk dat er vele arbeiders zijn omgekomen bij de bouw van de voetbalstadions in Qatar. Of dat nu tientallen, honderden, of duizenden arbeiders waren.
+
+Maar is het niet net zo verschrikkelijk dat er jaarlijks miljoenen mensen omkomen van de honger, terwijl wij het graan dat hen had kunnen voeden gebruiken om het vee vet te mesten voor onze dagelijkse homp vlees? Of net zo verschrikkelijk als de duizenden vluchtelingen die jaarlijks omkomen op de Middellandse Zee, omdat we hen onze welvaart niet gunnen? Of als de miljoenen arbeiders in verre landen die werken onder embarmelijke omstandigheden om bij ons de schappen van de ALDI, de Action en de Primark gevuld te houden?
+
+We hebben in het Rijke Westen natuurlijk veel bereikt in de laatste pakweg honderd jaar, zoals stemrecht voor vrouwen, openbaar onderwijs, recht op abortus en euthanasie, en het homohuwelijk. Maar bedenk dat we niet veel verder terug hoeven te gaan dan die honderd jaar, dat ons land in veel leek op het Qatar van nu: rijke industriëlen / landeigenaren / oliesjeiks maken de dienst uit ten koste van het lagere volk. En mogen we die voortuigang aan andere landen opdringen, als we er zelf nog maar zo kort mee hebben geëxperimenteerd?
+
+Bovendien: vooruitgang? Laten we er eens met een niet-Westerse blik naar kijken. Dan zou je kunnen zeggen dat de bandeloosheid al zo is geïnstitutionaliseerd dat abortus legaal is en de pil voor heel jonge meisjes in het basispakket. Je zou ook kunnen zeggen dat de zedeloosheid zo uit de hand is gelopen dat rokjes omhoog zijn gekropen tot in het kruis en decolletés afgedaald tot de navel. Je zou kunnen zeggen dat mensen die demonstreren tegen het overheidsbeleid door de politie worden [[https://nos.nl/l/2454599][geïntimideerd]] of zelfs voor de [[https://nos.nl/l/2453262][rechtbank]] moeten verschijnen. En kinderen spreken hun ouders niet meer aan met "u", maar met "jij", en soms zelfs met de voornaam, waarbij die vaak "klootzak" en "trut" lijken te luiden.
+
+We hebben boter op ons hoofd en enige bescheidenheid zou ons sieren.
+
+Want een inclusieve samenleving is niet alleen voor de linkse elite. Het is ook voor de voetballer die niet de One Love aanvoerdersband wil dragen. En voor hen die samenzweringstheoriën aanhangen omdat ze het geloof in de wetenschap al lang geleden hebben verloren. En voor de rechtse rakker die zich allang niet meer gehoord en gezien voelt door politiek Den Haag. En voor de vlogger die zijn mening niet vertegenwoordigd ziet in de mainstream media.
+
+Volgens mij is er nog ontzettend veel te bereiken in de eigen regio, voor we al te hoog van de toren blazen naar de rest van de wereld. Laten we ons daar nu eerst eens op focussen. Een beetje ongemakkelijk misschien, maar wel net zo zinvol.
+
 * PUBLISHED Scoop                                                   :windows:
 CLOSED: [2022-07-21 Thu 15:53]
 
@@ -264,9 +281,14 @@ I looked at [[https://keepass.info/][KeePass]] to store confidential information
 
 Just add the extension =.gpg= to your file (so =vault.org= becomes =vault.org.gpg=) and you're good to go. The double extension lets Emacs know its both encrypted and an org file.
 
-I love how org mode turns out to be the perfect PIM with every new step.
+If you want to hide that the file is an org file, you can even rename your file to just e.g. =vault.gpg= and start your file with:
+#+begin_src org
+# -*- coding: utf-8; mode: org -*-
+#+end_src
 
-And I was glad to find that EasyPG worked out of the box even on Windows.
+I love how org mode turns out to be the perfect PIM with every new step. And I was glad to find that EasyPG worked out of the box even on Windows.
+
+The only downside was that you need to enter your password in a popup window, instead of in the minibuffer. This is easily remedied by customizing =(epg-pinentry-mode 'loopback)=.
 
 * PUBLISHED Website monitoring                                          :dev:
 CLOSED: [2022-06-05 Sun 12:20]
