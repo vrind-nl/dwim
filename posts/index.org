@@ -206,7 +206,7 @@ Windows 11 Pro came pre-installed with a set of [[https://docs.microsoft.com/en-
 - Windows Sandbox
 - Windows Subsystem for Linux
 
-Despite my [[New laptop arrived][misgivings]] about Hyper-V itself, I was pleasantly surprised that WSL now included [[WSL GUI][graphical abilities]]. It also turned out that Docker used WSL, which in retrospect was a sign of what was to come.
+Despite my [[file:2022-06-08-18-51-new-laptop-arrived.html][misgivings]] about Hyper-V itself, I was pleasantly surprised that WSL now included [[FILE:2022-06-13-11-58-WSL-GUI.HTML][graphical abilities]]. It also turned out that Docker used WSL, which in retrospect was a sign of what was to come.
 
 Last week I decided to experiment with pen-testing. The industry standard for a pen-testing lab seemed to be [[https://www.kali.org/][Kali Linux]] on [[https://www.kali.org/get-kali/#kali-virtual-machines][VirtualBox]]. So, =winget install virtualbox= and I'd be ready to go. Or so I thought.
 
@@ -230,7 +230,7 @@ Just found out that [[https://aka.ms/wslstorepage][WSL Preview]] provides [[http
 * PUBLISHED New laptop arrived                                 :tech:windows:
 CLOSED: [2022-06-08 Wed 18:51]
 
-My [[New laptop][new laptop]] arrived 'early' (May 31 instead of Jun 21: good marketing by Dell). These are my experiences so far with my intention to work under Windows instead of Ubuntu.
+My [[file:2022-04-29-13-49-new-laptop.html][new laptop]] arrived 'early' (May 31 instead of Jun 21: good marketing by Dell). These are my experiences so far with my intention to work under Windows instead of Ubuntu.
 
 - On the surface, Windows 11 isn't that much different from Windows 10. It may be very different under the hood, but I can't tell.
 - The [[https://docs.microsoft.com/windows/package-manager/winget/][winget]] package manager works like a charm. I also installed apps through the store, just to experience the difference, but winget has a much wider choice. The weird thing is, that removing an app must still be done by selecting "Uninstall" in the start menu...
@@ -480,7 +480,7 @@ So, elisp is unlike any other language I know. Weird (but so are [[https://blog.
 * PUBLISHED I bit the bullet                                       :sysop:vm:
 CLOSED: [2021-06-18 vr 11:27]
 
-My laptop has 16GB RAM and 512GB SSD storage. I ran Windows 10 and Ubuntu in dual-boot mode for years, but switching back-and-forth drove me crazy, so about a year ago I started using [[Windows on Linux][Windows on Linux]] in a virtual machine.
+My laptop has 16GB RAM and 512GB SSD storage. I ran Windows 10 and Ubuntu in dual-boot mode for years, but switching back-and-forth drove me crazy, so about a year ago I started using [[file:2020-05-29-19-23-windows-on-linux.html][Windows on Linux]] in a virtual machine.
 
 But I still kept my Windows 10 dual-boot as fall-back, which meant Windows and Ubuntu had to share my 512GB storage. Windows was getting the lion share, because I had been unable to shrink its partition to less than about 270GB and I had the Windows VM on Linux which was gobbling up over 40GB extra of the Ubuntu partition (and growing), which left Ubuntu about 200GB.
 
@@ -576,7 +576,7 @@ I have my preferences, but I actually think neither of these options is either g
 * PUBLISHED Corona Blues                                   :society:personal:
 CLOSED: [2021-03-02 do 19:19]
 
-It has been almost a [[COVID-19][year]] since my first post on COVID-19. And I am starting to suffer from a mild form of the Corona Blues:
+It has been almost a [[FILE:2020-03-23-08-20-COVID-19.HTML][year]] since my first post on COVID-19. And I am starting to suffer from a mild form of the Corona Blues:
 
 #+BEGIN_QUOTE
 The condition of depression and hopelessness caused by COVID-19 measures.
@@ -627,7 +627,7 @@ Previously I have considered:
 - Running Windows 10 in a VM on a Ubuntu host with an illegal version of Windows (which I object to) or buying an extra license (which feels stupid, because my laptop came with Windows pre-installed).
 - Running Ubuntu in a VM on a Windows host, which felt like adding insult to injury.
 
-[[Virtual Machine Management][Recently]] I rediscovered Qemu, which rekindled my interest in virtual machines (which I had sort of written off since my switch from Vagrant to Docker). But from Apple users I heard of [[https://www.parallels.com/][Parallels]] and how conveniently it merged the MacOS and Windows environments, so I started considering getting a MacBook. But I didn't want to give up on Linux just yet.
+[[File:2020-03-08-20-03-Virtual-Machine-Management.Html][Recently]] I rediscovered Qemu, which rekindled my interest in virtual machines (which I had sort of written off since my switch from Vagrant to Docker). But from Apple users I heard of [[https://www.parallels.com/][Parallels]] and how conveniently it merged the MacOS and Windows environments, so I started considering getting a MacBook. But I didn't want to give up on Linux just yet.
 
 And then I found [[https://www.techrepublic.com/article/how-to-install-windows-10-in-a-vm-on-a-linux-machine/][this]] article, which pointed me to the ~acpica-tools~. With it, you can retrieve your Windows 10 product key. So now I simply did:
 1. install Qemu and virt-manager
@@ -699,7 +699,7 @@ Finally, let me say this. One thing I /did/ agree with in the prime minister's s
 
 PS1: Fortunately, after pressure from the government and the public, KLM have [[https://nieuws.klm.com/geen-voorgestelde-aanpassing-beloningsbeleid-klm/][cancelled]] raises and bonuses of the CEO in 2020.
 
-PS2: In my [[covid-19-end-game][previous post]] I have indicated what I think we /should/ do.
+PS2: In my [[file:2020-04-16-10-14-covid-19-end-game.html][previous post]] I have indicated what I think we /should/ do.
 
 * PUBLISHED COVID-19 End Game                                       :society:
 CLOSED: [2020-04-16 do 10:14]
@@ -716,7 +716,7 @@ I am no expert by any means. The views below are just my personal dribble. Follo
 - Almost all casualties are over 50 with the median around 83, and about half had an underlying condition. But I think it is patronizing and inhumane to isolate the elderly and the vulnerable in times when they are in desperate need of human contact.
 - Closing schools is highly disruptive to our society. It drives children and parents insane, and keeps adults away from their jobs. And infected children almost never develop any serious symptoms, so they hardly ever sneeze, so they hardly ever contaminate others.
 - The pandemic seems to be highly regional (Lombardy, New York, the south of The Netherlands).
-- I am [[covid-19][still]] not convinced that COVID-19 is significantly worse than the common flu. What I think we /can/ all agree on, is that COVID-19 is /new/, which means nobody had any immunity against it. I can't help but wonder if that is sufficient to explain the current pandemic.
+- I am [[file:2020-03-23-08-20-covid-19.html][still]] not convinced that COVID-19 is significantly worse than the common flu. What I think we /can/ all agree on, is that COVID-19 is /new/, which means nobody had any immunity against it. I can't help but wonder if that is sufficient to explain the current pandemic.
 
 ** What I think we should do
 
@@ -749,7 +749,7 @@ A big difference with Y2K is that COVID-19 will be a recurring phenomenon. If we
 * PUBLISHED COVID-19: Turning point                                 :society:
 CLOSED: [2020-04-05 zo 17:49]
 
-In my previous post on [[covid-19][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
+In my previous post on [[file:2020-03-23-08-20-covid-19.html][COVID-19]] I predicted that mid April we would be past the worst in the Netherlands. This post is an update.
 
 [[https://www.tweedekamer.nl/sites/default/files/atoms/files/20200325_briefing_coronavirus_tweede_kamer_presentatie_rivm.pdf][Last week]] [25 March, Dutch] the Dutch [[https://www.rivm.nl/en][National Institute for Public Health and the Environment]] gave the first careful signals that things were getting better: the daily growth of new patients was slowing down. In other words: the reproduction number /R0/ was moving below 1.0. [[https://www.tweedekamer.nl/sites/default/files/atoms/files/powerpoint_rivm_1_april_2020.pdf][This  week]] [April 1, Dutch] this trend was confirmed and more positive developments were starting to show. But the message is still: We need to keep doing what we're doing.
 
@@ -760,7 +760,7 @@ The most telling statistics at this point to me are that today's [[https://nos.n
 
 So, the question is when and how will we turn from [[https://www.nd.nl/nieuws/varia/961390/rutte-grootste-crisis-in-vredestijd-sinds-woii][this is the biggest disaster since WWII]] to "let's be reasonable about this". Politicians and policy makers cannot change their minds, without serious repercussions for their credibility and careers. Also, sudden changes in policy may lead to social unrest. So, this needs to be spinned carefully.
 
-I think the /when/ cannot be far away, because the [[ https://www.lastampa.it/cronaca/2020/04/03/news/esce-il-sole-strade-e-piazze-affollate-con-la-scusa-della-spesa-1.38674825][situation]] in Italy shows there's an end to how long people will endure a lock-down. So I expect the coming two weeks the pressure will rise. For example, when it becomes clear that hundreds of IC-beds are remaining empty. Gradually, more [[https://nos.nl/nieuwsuur/artikel/2329144-sterftecijfers-moeten-die-elke-dag-zo-expliciet-in-het-nieuws.html][critical]] messages will become more acceptable and more main stream. The media will more and more start to question the wisdom of the current lock-down. But it is not politically viable to change tack before the end of the current measures on April 28.
+I think the /when/ cannot be far away, because the [[https://www.lastampa.it/cronaca/2020/04/03/news/esce-il-sole-strade-e-piazze-affollate-con-la-scusa-della-spesa-1.38674825][situation]] in Italy shows there's an end to how long people will endure a lock-down. So I expect the coming two weeks the pressure will rise. For example, when it becomes clear that hundreds of IC-beds are remaining empty. Gradually, more [[https://nos.nl/nieuwsuur/artikel/2329144-sterftecijfers-moeten-die-elke-dag-zo-expliciet-in-het-nieuws.html][critical]] messages will become more acceptable and more main stream. The media will more and more start to question the wisdom of the current lock-down. But it is not politically viable to change tack before the end of the current measures on April 28.
 
 The /how/ is trickier, but I expect the tone will be "now we've brought COVID-19 successfully under control, we need to turn our attention to the economy". Look at [[https://nos.nl/liveblog/2329431-instroom-op-intensive-care-vlakt-af-doelstelling-ic-bedden-gehaald][how]] the possible over-capacity of IC beds is presented: "target achieved". I expect the common sense measures (wash you hands, reduce social contacts) will remain in place for some time, but the economy-killing measures like closing schools and the catering and entertainment industries will be reduced gradually by the end of the month. The [[https://www.rtlnieuws.nl/nieuws/politiek/artikel/5081496/ondernemersvoorman-meivakantie-hans-de-boer-vno-ncw-corona-gas][first signs]] are already there by the call of the Dutch entrepreneurs association [[https://www.vno-ncw.nl/][VNO-NCW]] to speed up after the May holidays.
 
@@ -1405,7 +1405,7 @@ So now I have decided to see if I can start one from scratch, based on [[http://
 
 Based on the Gatsby page about [[https://www.gatsbyjs.org/docs/adding-search/][adding search]] it seems you need some backend for search. As I don't want a backend, the blog will not have a search feature for now.
 
-[[/migrated-to-org][Update Feb 2, 2020]]: I migrated to org mode.
+[[migrated-to-org][Update Feb 2, 2020]]: I migrated to org mode.
 
 Feel free to check [[https://github.com/vrind-nl/dwim][Github]] for all the gory details.
 
@@ -1443,4 +1443,4 @@ I prefer open technologies and use open source software (OSS) whenever I can. An
 - [[https://git-scm.com/doc][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
 - [[https://www.docker.com/][Docker]] for managing development environments.
 
-Have a look at [[/setting-up-this-blog/][this]] blog post to find out how I set up this blog.
+Have a look at [[setting-up-this-blog][this]] blog post to find out how I set up this blog.
